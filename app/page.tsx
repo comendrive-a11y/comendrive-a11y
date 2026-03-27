@@ -385,6 +385,32 @@ Where the Road Ends
           </div>
         </div>
       </section>
+      <section
+  style={{
+    background: "#fff",
+    padding: "28px 20px",
+    display: "flex",
+    justifyContent: "center",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1100px",
+      width: "100%",
+      display: "flex",
+      justifyContent: "space-between",
+      gap: "20px",
+      flexWrap: "wrap",
+      fontSize: "14px",
+      fontWeight: 600,
+      color: "#1f1a17",
+    }}
+  >
+    <span>Driving licence required</span>
+    <span>Forest off-road route</span>
+    <span>1-hour beach swim stop</span>
+  </div>
+</section>
 
       <a
         href="https://wa.me/905446358280"
