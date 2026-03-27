@@ -27,11 +27,10 @@ export default function HomePage() {
 >
 <div
   style={{
+    color: "#ffffff",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
-    color: "#ffffff",
-    lineHeight: 1,
   }}
 >
   <span
@@ -39,6 +38,7 @@ export default function HomePage() {
       fontSize: "30px",
       fontWeight: 600,
       letterSpacing: "1.5px",
+      lineHeight: 1,
     }}
   >
     COME & DRIVE
@@ -51,6 +51,7 @@ export default function HomePage() {
       letterSpacing: "3px",
       opacity: 0.85,
       marginTop: "4px",
+      lineHeight: 1,
     }}
   >
     TRAVEL AGENCY
