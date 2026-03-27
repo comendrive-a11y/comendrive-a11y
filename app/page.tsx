@@ -25,37 +25,40 @@ export default function HomePage() {
     flexWrap: "wrap",
   }}
 >
+ <div
+  style={{
+    color: "#ffffff",
+    fontFamily: "system-ui, sans-serif",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    lineHeight: 1,
+  }}
+>
   <div
     style={{
-      color: "#ffffff",
-      fontFamily: "system-ui, sans-serif",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
+      fontSize: "30px",
+      fontWeight: 500,
+      letterSpacing: "2px",
+      textAlign: "center",
     }}
   >
-    <div
-      style={{
-        fontSize: "30px",
-        fontWeight: 500,
-        letterSpacing: "2px",
-        lineHeight: 1,
-      }}
-    >
-      COME & DRIVE
-    </div>
-
-    <div
-      style={{
-        fontSize: "11px",
-        letterSpacing: "4px",
-        opacity: 0.85,
-        marginTop: "4px",
-      }}
-    >
-      TRAVEL AGENCY
-    </div>
+    COME & DRIVE
   </div>
+
+  <div
+    style={{
+      fontSize: "11px",
+      letterSpacing: "3px",
+      opacity: 0.85,
+      marginTop: "5px",
+      textAlign: "center",
+    }}
+  >
+    TRAVEL AGENCY
+  </div>
+</div>
 
   <nav
     style={{
