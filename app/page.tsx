@@ -421,6 +421,61 @@ Where the Road Ends
     </div>
   </div>
 </section>
+      <section
+  style={{
+    padding: "80px 20px",
+    background: "#f7f4ee",
+    display: "flex",
+    justifyContent: "center",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "900px",
+      width: "100%",
+      background: "#fff",
+      borderRadius: "18px",
+      padding: "40px",
+      boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
+      textAlign: "center",
+    }}
+  >
+    <h2 style={{ fontSize: "36px", marginBottom: "10px" }}>
+      Buggy Safari Adventure
+    </h2>
+
+    <p style={{ opacity: 0.7, marginBottom: "25px" }}>
+      Forest off-road driving experience + 1-hour beach swim stop included.
+    </p>
+
+    <div
+      style={{
+        fontSize: "18px",
+        fontWeight: 600,
+        marginBottom: "30px",
+      }}
+    >
+      ⏱ Duration: 3 hours | 🌊 Swim break included
+    </div>
+
+    <a
+      href="https://wa.me/905446358280"
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        background: "#25D366",
+        color: "#fff",
+        padding: "16px 28px",
+        borderRadius: "999px",
+        textDecoration: "none",
+        fontWeight: 700,
+        fontSize: "18px",
+      }}
+    >
+      Book via WhatsApp
+    </a>
+  </div>
+</section>
 
       <a
         href="https://wa.me/905446358280"
