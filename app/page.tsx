@@ -25,7 +25,7 @@ export default function HomePage() {
     flexWrap: "wrap",
   }}
 >
- <div
+<div
   style={{
     color: "#ffffff",
     fontFamily: "system-ui, sans-serif",
@@ -36,6 +36,29 @@ export default function HomePage() {
     lineHeight: 1,
   }}
 >
+  <div
+    style={{
+      fontSize: "30px",
+      fontWeight: 500,
+      letterSpacing: "2px",
+      textAlign: "center",
+    }}
+  >
+    COME & DRIVE
+  </div>
+
+  <div
+    style={{
+      fontSize: "11px",
+      letterSpacing: "3px",
+      opacity: 0.85,
+      marginTop: "5px",
+      textAlign: "center",
+    }}
+  >
+    TRAVEL AGENCY
+  </div>
+</div>
   <div
     style={{
       fontSize: "30px",
