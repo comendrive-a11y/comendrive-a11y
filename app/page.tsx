@@ -5,7 +5,7 @@ export default function HomePage() {
         style={{
           minHeight: "100vh",
           background:
-            "linear-gradient(180deg, rgba(31,26,23,0.72) 0%, rgba(31,26,23,0.45) 100%), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80') center/cover",
+            "linear-gradient(180deg, rgba(31,26,23,0.72) 0%, rgba(31,26,23,0.45) 100%),url('/hero.jpg') center/cover",
           color: "#fff",
           padding: "24px 20px 60px",
           display: "flex",
