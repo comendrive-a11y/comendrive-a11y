@@ -16,7 +16,6 @@ export default function HomePage() {
     justifyContent: "space-between",
   }}
 >
->
         <header
           style={{
             maxWidth: "1200px",
