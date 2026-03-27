@@ -36,8 +36,17 @@ export default function HomePage() {
     backdropFilter: "blur(6px)",
   }}
 >
-  <img
-    src="/logo.png"
+ <img
+  src="/logo.png"
+  alt="Come and Drive Travel Agency"
+  style={{
+    height: "82px",
+    width: "auto",
+    objectFit: "contain",
+    display: "block",
+    filter: "drop-shadow(0 2px 8px rgba(255,255,255,0.45))",
+  }}
+/>
     alt="Come and Drive Travel Agency"
     style={{
       height: "78px",
