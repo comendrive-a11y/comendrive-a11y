@@ -487,57 +487,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-        id="reviews"
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "80px 20px",
-        }}
-      >
-        <p
-          style={{
-            textTransform: "uppercase",
-            letterSpacing: "2px",
-            fontSize: "13px",
-            color: "#7a6858",
-          }}
-        >
-          Social Proof
-        </p>
-
-        <h2 style={{ fontSize: "clamp(30px, 5vw, 46px)", margin: "10px 0 18px" }}>
-          5-Star Guest Love
-        </h2>
-
-        <p
-          style={{
-            maxWidth: "760px",
-            lineHeight: 1.7,
-            color: "#5c4632",
-            marginBottom: "28px",
-          }}
-        >
-          Your reputation is one of your strongest sales tools. Not magic, just earned dust.
-        </p>
-
-        <a
-          href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
-          target="_blank"
-          rel="noreferrer"
-          style={{
-            display: "inline-block",
-            background: "#1f1a17",
-            color: "#fff",
-            padding: "14px 24px",
-            borderRadius: "999px",
-            textDecoration: "none",
-            fontWeight: 700,
-          }}
-        >
-          View Tripadvisor Reviews
-        </a>
-      </section>
+  
 
       <section
         id="contact"
