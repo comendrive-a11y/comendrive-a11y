@@ -5,7 +5,8 @@ export default function HomePage() {
   style={{
     minHeight: "100vh",
     backgroundImage:
-      "url('https://raw.githubusercontent.com/comendrive-a11y/comendrive-a11y/main/public/hero.jpg')",
+      background:
+  "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg') center/cover",
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
