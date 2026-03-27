@@ -13,8 +13,7 @@ export default function HomePage() {
           justifyContent: "space-between",
         }}
       >
-        
-<header
+        <header
   style={{
     maxWidth: "1200px",
     width: "100%",
@@ -26,46 +25,17 @@ export default function HomePage() {
     flexWrap: "wrap",
   }}
 >
- <div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    padding: "8px 10px",
-    borderRadius: "14px",
-    background: "rgba(255,255,255,0.18)",
-    backdropFilter: "blur(6px)",
-  }}
->
- <img
-  src="/logo.png"
-  alt="Come and Drive Travel Agency"
-  style={{
-    height: "82px",
-    width: "auto",
-    objectFit: "contain",
-    display: "block",
-    filter: "drop-shadow(0 2px 8px rgba(255,255,255,0.45))",
-  }}
-/>
+  <img
+    src="/logo.png"
     alt="Come and Drive Travel Agency"
     style={{
-      height: "78px",
+      height: "82px",
       width: "auto",
       objectFit: "contain",
       display: "block",
+      filter: "drop-shadow(0 2px 8px rgba(255,255,255,0.45))",
     }}
   />
-</div>
-  alt="Come and Drive Travel Agency"
-style={{
-  height: "82px",
-  width: "auto",
-  objectFit: "contain",
-  display: "block",
- 
-}}
-/>
-  </div>
 
   <nav
     style={{
@@ -73,7 +43,6 @@ style={{
       gap: "16px",
       flexWrap: "wrap",
       fontSize: "14px",
-      alignItems: "center",
     }}
   >
     <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
@@ -106,6 +75,7 @@ style={{
     WhatsApp
   </a>
 </header>
+
         <div
           style={{
             maxWidth: "1200px",
