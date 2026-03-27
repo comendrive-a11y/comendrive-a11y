@@ -25,10 +25,37 @@ export default function HomePage() {
     flexWrap: "wrap",
   }}
 >
- <div
+<div
   style={{
-    fontSize: "28px",
-    fontWeight: 800,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    color: "#ffffff",
+    lineHeight: 1,
+  }}
+>
+  <span
+    style={{
+      fontSize: "30px",
+      fontWeight: 600,
+      letterSpacing: "1.5px",
+    }}
+  >
+    COME & DRIVE
+  </span>
+
+  <span
+    style={{
+      fontSize: "11px",
+      fontWeight: 400,
+      letterSpacing: "3px",
+      opacity: 0.85,
+      marginTop: "4px",
+    }}
+  >
+    TRAVEL AGENCY
+  </span>
+</div>
     letterSpacing: "1px",
     color: "#ffffff",
     lineHeight: 1.1,
