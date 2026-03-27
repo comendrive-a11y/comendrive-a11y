@@ -26,16 +26,34 @@ export default function HomePage() {
     flexWrap: "wrap",
   }}
 >
-  <div style={{ display: "flex", alignItems: "center" }}>
-<img
-  src="/logo.png"
+ <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    padding: "8px 10px",
+    borderRadius: "14px",
+    background: "rgba(255,255,255,0.18)",
+    backdropFilter: "blur(6px)",
+  }}
+>
+  <img
+    src="/logo.png"
+    alt="Come and Drive Travel Agency"
+    style={{
+      height: "78px",
+      width: "auto",
+      objectFit: "contain",
+      display: "block",
+    }}
+  />
+</div>
   alt="Come and Drive Travel Agency"
 style={{
   height: "82px",
   width: "auto",
   objectFit: "contain",
   display: "block",
-  mixBlendMode: "multiply"
+ 
 }}
 />
   </div>
