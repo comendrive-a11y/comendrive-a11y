@@ -1,8 +1,6 @@
 export default function HomePage() {
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
-      <section
-        style={{
           minHeight: "100vh",
           background:
             "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg') center/cover no-repeat",
