@@ -36,16 +36,14 @@ export default function HomePage() {
               }}
             >
               COME AND DRIVE
-            </span>
-            <span
-              style={{
-                fontSize: "11px",
-                letterSpacing: "2px",
-                textTransform: "uppercase",
-                opacity: 0.85,
-                color: "#fff",
-              }}
-            >
+            <img
+  src="/logo.png"
+  alt="Come and Drive Travel Agency"
+  style={{
+    height: "60px",
+    objectFit: "contain"
+  }}
+/>
               Travel Agency
             </span>
           </div>
