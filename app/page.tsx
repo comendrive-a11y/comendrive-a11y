@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
-  <section
+<section
   style={{
     minHeight: "100vh",
     backgroundImage:
@@ -15,6 +15,7 @@ export default function HomePage() {
     flexDirection: "column",
     justifyContent: "space-between",
   }}
+>
 >
         <header
           style={{
