@@ -598,6 +598,9 @@ export default function HomePage() {
       comendrive@gmail.com
     </a>
   </p>
+  <p style={{ marginTop: "18px", opacity: 0.8 }}>
+  Official TÜRSAB A-Group Travel Agency — License No: 11387
+</p>
 
   <div style={{ marginTop: "18px" }}>
     <p style={{ margin: 0, opacity: 0.8 }}>
