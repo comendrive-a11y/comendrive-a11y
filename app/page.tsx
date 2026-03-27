@@ -567,13 +567,14 @@ export default function HomePage() {
           <div>
             <h3>Contact</h3>
           <div style={{ marginTop: "18px" }}>
-  <img
-    src="https://www.tursab.org.tr/assets/img/logo.svg"
-    alt="TÜRSAB"
-    style={{ height: "42px", marginBottom: "8px" }}
-  />
-  <p style={{ margin: 0 }}>
-    TÜRSAB Licensed Travel Agency
+  <p style={{ margin: 0, opacity: 0.8 }}>
+    Official TÜRSAB A-Group Travel Agency
+  </p>
+
+  <p style={{ margin: 0, fontWeight: 700, fontSize: "18px" }}>
+    License No: 11387
+  </p>
+</div>
   </p>
   <p style={{ margin: 0, fontWeight: 700 }}>
     License No: 11387
