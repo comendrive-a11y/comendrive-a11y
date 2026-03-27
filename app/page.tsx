@@ -29,19 +29,21 @@ export default function HomePage() {
   style={{
     color: "#ffffff",
     fontFamily: "system-ui, sans-serif",
-    display: "flex",
+    display: "inline-flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     lineHeight: 1,
+    minWidth: "220px",
   }}
 >
   <div
     style={{
       fontSize: "30px",
       fontWeight: 500,
-      letterSpacing: "2px",
+      letterSpacing: "1.5px",
       textAlign: "center",
+      width: "100%",
     }}
   >
     COME & DRIVE
@@ -50,10 +52,11 @@ export default function HomePage() {
   <div
     style={{
       fontSize: "11px",
-      letterSpacing: "3px",
+      letterSpacing: "2.5px",
       opacity: 0.85,
-      marginTop: "5px",
+      marginTop: "6px",
       textAlign: "center",
+      width: "100%",
     }}
   >
     TRAVEL AGENCY
