@@ -27,16 +27,16 @@ export default function HomePage() {
   }}
 >
   <div style={{ display: "flex", alignItems: "center" }}>
-    <img
-      src="/logo.jpeg"
-      alt="Come and Drive Travel Agency"
-      style={{
-        height: "82px",
-        width: "auto",
-        objectFit: "contain",
-        display: "block",
-      }}
-    />
+<img
+  src="/logo.png"
+  alt="Come and Drive Travel Agency"
+  style={{
+    height: "82px",
+    width: "auto",
+    objectFit: "contain",
+    display: "block",
+  }}
+/>
   </div>
 
   <nav
