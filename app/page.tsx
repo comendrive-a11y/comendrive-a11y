@@ -385,12 +385,13 @@ Where the Road Ends
           </div>
         </div>
       </section>
-      <section
+     <section
   style={{
-    background: "#fff",
-    padding: "28px 20px",
+    background: "#ffffff",
+    padding: "32px 20px",
     display: "flex",
     justifyContent: "center",
+    borderBottom: "1px solid #eee",
   }}
 >
   <div
@@ -401,14 +402,23 @@ Where the Road Ends
       justifyContent: "space-between",
       gap: "20px",
       flexWrap: "wrap",
-      fontSize: "14px",
+      fontSize: "15px",
       fontWeight: 600,
       color: "#1f1a17",
+      textAlign: "center",
     }}
   >
-    <span>Driving licence required</span>
-    <span>Forest off-road route</span>
-    <span>1-hour beach swim stop</span>
+    <div style={{ flex: 1, minWidth: "220px" }}>
+      🚗 Driving licence required
+    </div>
+
+    <div style={{ flex: 1, minWidth: "220px" }}>
+      🌲 Forest off-road route
+    </div>
+
+    <div style={{ flex: 1, minWidth: "220px" }}>
+      🌊 1-hour beach swim stop
+    </div>
   </div>
 </section>
 
