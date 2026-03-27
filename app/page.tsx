@@ -30,12 +30,13 @@ export default function HomePage() {
 <img
   src="/logo.png"
   alt="Come and Drive Travel Agency"
-  style={{
-    height: "82px",
-    width: "auto",
-    objectFit: "contain",
-    display: "block",
-  }}
+style={{
+  height: "82px",
+  width: "auto",
+  objectFit: "contain",
+  display: "block",
+  mixBlendMode: "multiply"
+}}
 />
   </div>
 
