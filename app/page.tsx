@@ -13,17 +13,32 @@ export default function HomePage() {
     justifyContent: "space-between",
   }}
 >
-        <header
-          style={{
-            maxWidth: "1200px",
-            width: "100%",
-            margin: "0 auto",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "16px",
-            flexWrap: "wrap",
-          }}
+       <div style={{ marginTop: "20px" }}>
+  <a
+    href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+    target="_blank"
+    rel="noreferrer"
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "12px",
+      background: "#34E0A1",
+      color: "#000",
+      padding: "14px 22px",
+      borderRadius: "999px",
+      textDecoration: "none",
+      fontWeight: 700,
+      fontSize: "16px",
+    }}
+  >
+    <img
+      src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+      alt="Tripadvisor"
+      style={{ height: "20px" }}
+    />
+    Read Reviews
+  </a>
+</div>
         >
          <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
   <span
