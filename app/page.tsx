@@ -13,81 +13,71 @@ export default function HomePage() {
           justifyContent: "space-between",
         }}
       >
-        <header
-          style={{
-            maxWidth: "1200px",
-            width: "100%",
-            margin: "0 auto",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-start",
-            gap: "16px",
-            flexWrap: "wrap",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-            <span
-              style={{
-                fontSize: "24px",
-                fontWeight: 800,
-                letterSpacing: "1px",
-                color: "#fff",
-                lineHeight: 1,
-              }}
-            >
-              COME AND DRIVE
-            <img
-style={{
-  height: "80px",
-  objectFit: "contain",
-  display: "block"
-}}
-              Travel Agency
-            </span>
-          </div>
+        
+<header
+  style={{
+    maxWidth: "1200px",
+    width: "100%",
+    margin: "0 auto",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: "16px",
+    flexWrap: "wrap",
+  }}
+>
+  <div style={{ display: "flex", alignItems: "center" }}>
+    <img
+      src="/logo.jpeg"
+      alt="Come and Drive Travel Agency"
+      style={{
+        height: "82px",
+        width: "auto",
+        objectFit: "contain",
+        display: "block",
+      }}
+    />
+  </div>
 
-          <nav
-            style={{
-              display: "flex",
-              gap: "16px",
-              flexWrap: "wrap",
-              fontSize: "14px",
-            }}
-          >
-            <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
-              Tours
-            </a>
-            <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
-              Other Tours
-            </a>
-            <a href="#reviews" style={{ color: "#fff", textDecoration: "none" }}>
-              Reviews
-            </a>
-            <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
-              Contact
-            </a>
-          </nav>
+  <nav
+    style={{
+      display: "flex",
+      gap: "16px",
+      flexWrap: "wrap",
+      fontSize: "14px",
+      alignItems: "center",
+    }}
+  >
+    <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
+      Tours
+    </a>
+    <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
+      Other Tours
+    </a>
+    <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
+      Contact
+    </a>
+  </nav>
 
-          <a
-            href="https://wa.me/905446358280"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              background: "#25D366",
-              color: "#fff",
-              padding: "10px 18px",
-              borderRadius: "999px",
-              fontWeight: 600,
-              textDecoration: "none",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            WhatsApp
-          </a>
-        </header>
-
+  <a
+    href="https://wa.me/905446358280"
+    target="_blank"
+    rel="noreferrer"
+    style={{
+      background: "#25D366",
+      color: "#fff",
+      padding: "10px 18px",
+      borderRadius: "999px",
+      fontWeight: 600,
+      textDecoration: "none",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    WhatsApp
+  </a>
+</header>
         <div
           style={{
             maxWidth: "1200px",
