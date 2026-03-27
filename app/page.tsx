@@ -25,56 +25,37 @@ export default function HomePage() {
     flexWrap: "wrap",
   }}
 >
-<div
-  style={{
-    color: "#ffffff",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-  }}
->
-  <span
-    style={{
-      fontSize: "30px",
-      fontWeight: 600,
-      letterSpacing: "1.5px",
-      lineHeight: 1,
-    }}
-  >
-    COME & DRIVE
-  </span>
-
-  <span
-    style={{
-      fontSize: "11px",
-      fontWeight: 400,
-      letterSpacing: "3px",
-      opacity: 0.85,
-      marginTop: "4px",
-      lineHeight: 1,
-    }}
-  >
-    TRAVEL AGENCY
-  </span>
-</div>
-    letterSpacing: "1px",
-    color: "#ffffff",
-    lineHeight: 1.1,
-  }}
->
-  COME & DRIVE
   <div
     style={{
-      fontSize: "12px",
-      fontWeight: 500,
-      letterSpacing: "2px",
-      opacity: 0.8,
-      marginTop: "2px",
+      color: "#ffffff",
+      fontFamily: "system-ui, sans-serif",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
     }}
   >
-    TRAVEL AGENCY
+    <div
+      style={{
+        fontSize: "30px",
+        fontWeight: 500,
+        letterSpacing: "2px",
+        lineHeight: 1,
+      }}
+    >
+      COME & DRIVE
+    </div>
+
+    <div
+      style={{
+        fontSize: "11px",
+        letterSpacing: "4px",
+        opacity: 0.85,
+        marginTop: "4px",
+      }}
+    >
+      TRAVEL AGENCY
+    </div>
   </div>
-</div>
 
   <nav
     style={{
@@ -87,9 +68,11 @@ export default function HomePage() {
     <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
       Tours
     </a>
+
     <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
       Other Tours
     </a>
+
     <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
       Contact
     </a>
@@ -114,6 +97,8 @@ export default function HomePage() {
     WhatsApp
   </a>
 </header>
+       
+
 
         <div
           style={{
