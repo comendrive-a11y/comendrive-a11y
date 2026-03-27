@@ -20,7 +20,7 @@ export default function HomePage() {
             margin: "0 auto",
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "center",
+            alignItems: "flex-start",
             gap: "16px",
             flexWrap: "wrap",
           }}
@@ -37,13 +37,11 @@ export default function HomePage() {
             >
               COME AND DRIVE
             <img
-  src="/logo.png"
-  alt="Come and Drive Travel Agency"
-  style={{
-    height: "60px",
-    objectFit: "contain"
-  }}
-/>
+style={{
+  height: "80px",
+  objectFit: "contain",
+  display: "block"
+}}
               Travel Agency
             </span>
           </div>
