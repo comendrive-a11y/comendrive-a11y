@@ -74,9 +74,9 @@ export default function HomePage() {
                 margin: "0 0 18px",
               }}
             >
-              Fethiye’s Only
-              <br />
-              Buggy Safari Specialists
+        Life Begins
+<br />
+Where the Road Ends
             </h1>
 
             <p
