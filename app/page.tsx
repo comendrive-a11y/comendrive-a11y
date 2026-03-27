@@ -25,17 +25,28 @@ export default function HomePage() {
     flexWrap: "wrap",
   }}
 >
-  <img
-    src="/logo.png"
-    alt="Come and Drive Travel Agency"
+ <div
+  style={{
+    fontSize: "28px",
+    fontWeight: 800,
+    letterSpacing: "1px",
+    color: "#ffffff",
+    lineHeight: 1.1,
+  }}
+>
+  COME & DRIVE
+  <div
     style={{
-      height: "82px",
-      width: "auto",
-      objectFit: "contain",
-      display: "block",
-      filter: "drop-shadow(0 2px 8px rgba(255,255,255,0.45))",
+      fontSize: "12px",
+      fontWeight: 500,
+      letterSpacing: "2px",
+      opacity: 0.8,
+      marginTop: "2px",
     }}
-  />
+  >
+    TRAVEL AGENCY
+  </div>
+</div>
 
   <nav
     style={{
