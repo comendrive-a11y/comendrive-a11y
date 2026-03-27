@@ -579,22 +579,36 @@ export default function HomePage() {
   <p style={{ margin: 0, fontWeight: 700 }}>
     License No: 11387
   </p>
-</div>  <p>
-              <a
-                href="https://wa.me/905446358280"
-                target="_blank"
-                rel="noreferrer"
-                style={{ color: "#fff" }}
-              >
-                WhatsApp: +90 544 635 82 80
-              </a>
-            </p>
-            <p>
-              <a href="mailto:comendrive@gmail.com" style={{ color: "#fff" }}>
-                comendrive@gmail.com
-              </a>
-            </p>
-          </div>
+</div> <div>
+  <h3>Contact</h3>
+
+  <p>
+    <a
+      href="https://wa.me/905446358280"
+      target="_blank"
+      rel="noreferrer"
+      style={{ color: "#fff" }}
+    >
+      WhatsApp: +90 544 635 82 80
+    </a>
+  </p>
+
+  <p>
+    <a href="mailto:comendrive@gmail.com" style={{ color: "#fff" }}>
+      comendrive@gmail.com
+    </a>
+  </p>
+
+  <div style={{ marginTop: "18px" }}>
+    <p style={{ margin: 0, opacity: 0.8 }}>
+      Official TÜRSAB A-Group Travel Agency
+    </p>
+
+    <p style={{ margin: 0, fontWeight: 700, fontSize: "18px" }}>
+      License No: 11387
+    </p>
+  </div>
+</div>
 
           <div>
             <h3>Follow Us</h3>
