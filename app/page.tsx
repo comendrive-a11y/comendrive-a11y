@@ -1,19 +1,21 @@
 export default function HomePage() {
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
-      <section
-        style={{
-          minHeight: "100vh",
-          background:
-          background:
-  "url('https://raw.githubusercontent.com/comendrive-a11y/comendrive-a11y/main/public/hero.jpg') center/cover",,
-          color: "#fff",
-          padding: "24px 20px 60px",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-        }}
-      >
+  <section
+  style={{
+    minHeight: "100vh",
+    backgroundImage:
+      "url('https://raw.githubusercontent.com/comendrive-a11y/comendrive-a11y/main/public/hero.jpg')",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    color: "#fff",
+    padding: "24px 20px 60px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  }}
+>
         <header
           style={{
             maxWidth: "1200px",
