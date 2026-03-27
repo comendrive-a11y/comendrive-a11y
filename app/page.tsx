@@ -43,7 +43,24 @@ export default function HomePage() {
             <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>Other Tours</a>
             <a href="#reviews" style={{ color: "#fff", textDecoration: "none" }}>Reviews</a>
             <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>Contact</a>
-          </nav>
+          </nav><a
+  href="https://wa.me/905446358280"
+  target="_blank"
+  rel="noreferrer"
+  style={{
+    background: "#25D366",
+    color: "#fff",
+    padding: "10px 18px",
+    borderRadius: "999px",
+    fontWeight: 600,
+    textDecoration: "none",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+>
+  WhatsApp
+</a>
         </header>
 
         <div
