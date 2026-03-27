@@ -1,69 +1,54 @@
 export default function HomePage() {
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
-<section
-  style={{
-    minHeight: "100vh",
-    background:
-      "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg') center/cover no-repeat",
-    color: "#fff",
-    padding: "24px 20px 60px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-  }}
->
-       <div style={{ marginTop: "20px" }}>
-  <a
-    href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
-    target="_blank"
-    rel="noreferrer"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      gap: "12px",
-      background: "#34E0A1",
-      color: "#000",
-      padding: "14px 22px",
-      borderRadius: "999px",
-      textDecoration: "none",
-      fontWeight: 700,
-      fontSize: "16px",
-    }}
-  >
-    <img
-      src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-      alt="Tripadvisor"
-      style={{ height: "20px" }}
-    />
-    Read Reviews
-  </a>
-</div>
+      <section
+        style={{
+          minHeight: "100vh",
+          background:
+            "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg') center/cover no-repeat",
+          color: "#fff",
+          padding: "24px 20px 60px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <header
+          style={{
+            maxWidth: "1200px",
+            width: "100%",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: "16px",
+            flexWrap: "wrap",
+          }}
         >
-         <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-  <span
-    style={{
-      fontSize: "24px",
-      fontWeight: 800,
-      letterSpacing: "1px",
-      color: "#fff",
-      lineHeight: 1,
-    }}
-  >
-    COME AND DRIVE
-  </span>
-  <span
-    style={{
-      fontSize: "11px",
-      letterSpacing: "2px",
-      textTransform: "uppercase",
-      opacity: 0.85,
-      color: "#fff",
-    }}
-  >
-    Travel Agency
-  </span>
-</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+            <span
+              style={{
+                fontSize: "24px",
+                fontWeight: 800,
+                letterSpacing: "1px",
+                color: "#fff",
+                lineHeight: 1,
+              }}
+            >
+              COME AND DRIVE
+            </span>
+            <span
+              style={{
+                fontSize: "11px",
+                letterSpacing: "2px",
+                textTransform: "uppercase",
+                opacity: 0.85,
+                color: "#fff",
+              }}
+            >
+              Travel Agency
+            </span>
+          </div>
 
           <nav
             style={{
@@ -73,28 +58,38 @@ export default function HomePage() {
               fontSize: "14px",
             }}
           >
-            <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>Tours</a>
-            <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>Other Tours</a>
-            <a href="#reviews" style={{ color: "#fff", textDecoration: "none" }}>Reviews</a>
-            <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>Contact</a>
-          </nav><a
-  href="https://wa.me/905446358280"
-  target="_blank"
-  rel="noreferrer"
-  style={{
-    background: "#25D366",
-    color: "#fff",
-    padding: "10px 18px",
-    borderRadius: "999px",
-    fontWeight: 600,
-    textDecoration: "none",
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-  }}
->
-  WhatsApp
-</a>
+            <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
+              Tours
+            </a>
+            <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
+              Other Tours
+            </a>
+            <a href="#reviews" style={{ color: "#fff", textDecoration: "none" }}>
+              Reviews
+            </a>
+            <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
+              Contact
+            </a>
+          </nav>
+
+          <a
+            href="https://wa.me/905446358280"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              background: "#25D366",
+              color: "#fff",
+              padding: "10px 18px",
+              borderRadius: "999px",
+              fontWeight: 600,
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            WhatsApp
+          </a>
         </header>
 
         <div
@@ -125,9 +120,9 @@ export default function HomePage() {
                 margin: "0 0 18px",
               }}
             >
-        Life Begins
-<br />
-Where the Road Ends
+              Life Begins
+              <br />
+              Where the Road Ends
             </h1>
 
             <p
@@ -139,9 +134,8 @@ Where the Road Ends
                 color: "rgba(255,255,255,0.92)",
               }}
             >
-              Real off-road fun, family-friendly adventure and unforgettable tours.
-              From buggy safari to kids ATV, we create the kind of holiday memories
-              that stay dusty in the best way.
+              Real off-road fun, forest adventure and unforgettable holiday memories.
+              From buggy safari to kids ATV, we turn dust into stories worth telling.
             </p>
 
             <div
@@ -152,7 +146,7 @@ Where the Road Ends
               }}
             >
               <a
-                href="#tours"
+                href="#buggy-tour"
                 style={{
                   background: "#fff",
                   color: "#1f1a17",
@@ -162,7 +156,7 @@ Where the Road Ends
                   fontWeight: 700,
                 }}
               >
-                View Main Tours
+                View Main Tour
               </a>
 
               <a
@@ -187,6 +181,181 @@ Where the Road Ends
       </section>
 
       <section
+        style={{
+          background: "#ffffff",
+          padding: "32px 20px",
+          display: "flex",
+          justifyContent: "center",
+          borderBottom: "1px solid #eee",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            gap: "20px",
+            flexWrap: "wrap",
+            fontSize: "15px",
+            fontWeight: 600,
+            color: "#1f1a17",
+            textAlign: "center",
+          }}
+        >
+          <div style={{ flex: 1, minWidth: "220px" }}>
+            🚗 Driving licence required
+          </div>
+
+          <div style={{ flex: 1, minWidth: "220px" }}>
+            🌲 Forest off-road route
+          </div>
+
+          <div style={{ flex: 1, minWidth: "220px" }}>
+            🌊 1-hour beach swim stop
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="buggy-tour"
+        style={{
+          padding: "80px 20px",
+          background: "#f7f4ee",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "900px",
+            width: "100%",
+            background: "#fff",
+            borderRadius: "18px",
+            padding: "40px",
+            boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
+            textAlign: "center",
+          }}
+        >
+          <h2 style={{ fontSize: "36px", marginBottom: "10px" }}>
+            Buggy Safari Adventure
+          </h2>
+
+          <p style={{ opacity: 0.7, marginBottom: "25px", lineHeight: 1.7 }}>
+            Forest off-road driving experience with a 1-hour beach swim stop.
+            The perfect mix of adrenaline, nature and holiday fun.
+          </p>
+
+          <div
+            style={{
+              fontSize: "18px",
+              fontWeight: 600,
+              marginBottom: "30px",
+            }}
+          >
+            ⏱ Duration: 3 hours | 🌊 Swim break included
+          </div>
+
+          <a
+            href="https://wa.me/905446358280"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              background: "#25D366",
+              color: "#fff",
+              padding: "16px 28px",
+              borderRadius: "999px",
+              textDecoration: "none",
+              fontWeight: 700,
+              fontSize: "18px",
+            }}
+          >
+            Book via WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <section
+        style={{
+          padding: "60px 20px",
+          background: "#ffffff",
+          display: "flex",
+          justifyContent: "center",
+          borderTop: "1px solid #eee",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "900px",
+            width: "100%",
+            textAlign: "center",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "14px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              color: "#6b625b",
+              marginBottom: "12px",
+            }}
+          >
+            Guest Reviews
+          </p>
+
+          <h2
+            style={{
+              fontSize: "34px",
+              marginBottom: "14px",
+              color: "#1f1a17",
+            }}
+          >
+            Rated 5 Stars by Happy Guests
+          </h2>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#5f554d",
+              maxWidth: "720px",
+              margin: "0 auto 26px",
+            }}
+          >
+            Real reviews. Real tours. Real dust. See why our guests love the
+            Come and Drive experience.
+          </p>
+
+          <div style={{ marginTop: "20px" }}>
+            <a
+              href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "12px",
+                background: "#34E0A1",
+                color: "#000",
+                padding: "14px 22px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                fontWeight: 700,
+                fontSize: "16px",
+              }}
+            >
+              <img
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                alt="Tripadvisor"
+                style={{ height: "20px" }}
+              />
+              Read Reviews
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
         id="tours"
         style={{
           maxWidth: "1200px",
@@ -194,15 +363,31 @@ Where the Road Ends
           padding: "80px 20px",
         }}
       >
-        <p style={{ textTransform: "uppercase", letterSpacing: "2px", fontSize: "13px", color: "#7a6858" }}>
+        <p
+          style={{
+            textTransform: "uppercase",
+            letterSpacing: "2px",
+            fontSize: "13px",
+            color: "#7a6858",
+          }}
+        >
           Main Experiences
         </p>
+
         <h2 style={{ fontSize: "clamp(30px, 5vw, 48px)", margin: "10px 0 18px" }}>
           Our Signature Tours
         </h2>
-        <p style={{ maxWidth: "700px", lineHeight: 1.7, color: "#5c4632", marginBottom: "32px" }}>
-          We are not trying to do everything. We are known for doing buggy safari right.
-          And yes, kids get their own adrenaline too.
+
+        <p
+          style={{
+            maxWidth: "700px",
+            lineHeight: 1.7,
+            color: "#5c4632",
+            marginBottom: "32px",
+          }}
+        >
+          We are known for doing buggy safari right. And yes, kids get their own
+          adrenaline too.
         </p>
 
         <div
@@ -215,15 +400,15 @@ Where the Road Ends
           {[
             {
               title: "Buggy Safari Half Day",
-              text: "A perfect mix of dirt, fun and scenery for guests who want a shorter but exciting off-road experience.",
+              text: "A fun off-road experience for guests who want adrenaline, nature and a memorable holiday activity.",
             },
             {
               title: "Buggy Safari Full Day",
-              text: "A bigger adventure for guests who want more driving, more views and more of the real Come and Drive feeling.",
+              text: "A longer adventure for guests who want more driving, more views and more of the real buggy safari feeling.",
             },
             {
               title: "Kids ATV Tour",
-              text: "A 50-minute closed-track ride designed for children. Safe, fun and guaranteed to create big smiles.",
+              text: "A 50-minute closed-track ride designed for children. Safe, fun and full of big smiles.",
             },
           ].map((tour) => (
             <div
@@ -235,8 +420,12 @@ Where the Road Ends
                 boxShadow: "0 10px 35px rgba(0,0,0,0.08)",
               }}
             >
-              <h3 style={{ fontSize: "24px", marginTop: 0, marginBottom: "14px" }}>{tour.title}</h3>
-              <p style={{ lineHeight: 1.7, color: "#5c4632", marginBottom: 0 }}>{tour.text}</p>
+              <h3 style={{ fontSize: "24px", marginTop: 0, marginBottom: "14px" }}>
+                {tour.title}
+              </h3>
+              <p style={{ lineHeight: 1.7, color: "#5c4632", marginBottom: 0 }}>
+                {tour.text}
+              </p>
             </div>
           ))}
         </div>
@@ -250,9 +439,17 @@ Where the Road Ends
         }}
       >
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p style={{ textTransform: "uppercase", letterSpacing: "2px", fontSize: "13px", color: "#7a6858" }}>
+          <p
+            style={{
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              fontSize: "13px",
+              color: "#7a6858",
+            }}
+          >
             Other Tours
           </p>
+
           <h2 style={{ fontSize: "clamp(30px, 5vw, 46px)", margin: "10px 0 24px" }}>
             More Ways to Explore Fethiye
           </h2>
@@ -298,13 +495,29 @@ Where the Road Ends
           padding: "80px 20px",
         }}
       >
-        <p style={{ textTransform: "uppercase", letterSpacing: "2px", fontSize: "13px", color: "#7a6858" }}>
+        <p
+          style={{
+            textTransform: "uppercase",
+            letterSpacing: "2px",
+            fontSize: "13px",
+            color: "#7a6858",
+          }}
+        >
           Social Proof
         </p>
+
         <h2 style={{ fontSize: "clamp(30px, 5vw, 46px)", margin: "10px 0 18px" }}>
           5-Star Guest Love
         </h2>
-        <p style={{ maxWidth: "760px", lineHeight: 1.7, color: "#5c4632", marginBottom: "28px" }}>
+
+        <p
+          style={{
+            maxWidth: "760px",
+            lineHeight: 1.7,
+            color: "#5c4632",
+            marginBottom: "28px",
+          }}
+        >
           Your reputation is one of your strongest sales tools. Not magic, just earned dust.
         </p>
 
@@ -354,7 +567,12 @@ Where the Road Ends
           <div>
             <h3>Contact</h3>
             <p>
-              <a href="https://wa.me/905446358280" target="_blank" rel="noreferrer" style={{ color: "#fff" }}>
+              <a
+                href="https://wa.me/905446358280"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#fff" }}
+              >
                 WhatsApp: +90 544 635 82 80
               </a>
             </p>
@@ -400,189 +618,6 @@ Where the Road Ends
           </div>
         </div>
       </section>
-     <section
-  style={{
-    background: "#ffffff",
-    padding: "32px 20px",
-    display: "flex",
-    justifyContent: "center",
-    borderBottom: "1px solid #eee",
-  }}
->
-  <div
-    style={{
-      maxWidth: "1100px",
-      width: "100%",
-      display: "flex",
-      justifyContent: "space-between",
-      gap: "20px",
-      flexWrap: "wrap",
-      fontSize: "15px",
-      fontWeight: 600,
-      color: "#1f1a17",
-      textAlign: "center",
-    }}
-  >
-    <div style={{ flex: 1, minWidth: "220px" }}>
-      🚗 Driving licence required
-    </div>
-
-    <div style={{ flex: 1, minWidth: "220px" }}>
-      🌲 Forest off-road route
-    </div>
-
-    <div style={{ flex: 1, minWidth: "220px" }}>
-      🌊 1-hour beach swim stop
-    </div>
-  </div>
-</section>
-      <section
-  style={{
-    padding: "80px 20px",
-    background: "#f7f4ee",
-    display: "flex",
-    justifyContent: "center",
-  }}
->
-  <div
-    style={{
-      maxWidth: "900px",
-      width: "100%",
-      background: "#fff",
-      borderRadius: "18px",
-      padding: "40px",
-      boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
-      textAlign: "center",
-    }}
-  >
-    <h2 style={{ fontSize: "36px", marginBottom: "10px" }}>
-      Buggy Safari Adventure
-    </h2>
-
-    <p style={{ opacity: 0.7, marginBottom: "25px" }}>
-      Forest off-road driving experience + 1-hour beach swim stop included.
-    </p>
-
-    <div
-      style={{
-        fontSize: "18px",
-        fontWeight: 600,
-        marginBottom: "30px",
-      }}
-    >
-      ⏱ Duration: 3 hours | 🌊 Swim break included
-    </div>
-
-    <a
-      href="https://wa.me/905446358280"
-      target="_blank"
-      rel="noreferrer"
-      style={{
-        background: "#25D366",
-        color: "#fff",
-        padding: "16px 28px",
-        borderRadius: "999px",
-        textDecoration: "none",
-        fontWeight: 700,
-        fontSize: "18px",
-      }}
-    >
-      Book via WhatsApp
-    </a>
-  </div>
-</section>
-      <section
-  style={{
-    padding: "60px 20px",
-    background: "#ffffff",
-    display: "flex",
-    justifyContent: "center",
-    borderTop: "1px solid #eee",
-  }}
->
-  <div
-    style={{
-      maxWidth: "900px",
-      width: "100%",
-      textAlign: "center",
-    }}
-  >
-    <p
-      style={{
-        fontSize: "14px",
-        letterSpacing: "2px",
-        textTransform: "uppercase",
-        color: "#6b625b",
-        marginBottom: "12px",
-      }}
-    >
-      Guest Reviews
-    </p>
-
-    <h2
-      style={{
-        fontSize: "34px",
-        marginBottom: "14px",
-        color: "#1f1a17",
-      }}
-    >
-      Rated 5 Stars by Happy Guests
-    </h2>
-
-    <p
-      style={{
-        fontSize: "18px",
-        lineHeight: 1.7,
-        color: "#5f554d",
-        maxWidth: "720px",
-        margin: "0 auto 26px",
-      }}
-    >
-      Real reviews. Real tours. Real dust. See why our guests love the Come and Drive experience.
-    </p>
-
-    <a
-      href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
-      target="_blank"
-      rel="noreferrer"
-      style={{
-        display: "inline-block",
-        background: "#1f1a17",
-        color: "#fff",
-        padding: "14px 24px",
-        borderRadius: "999px",
-        textDecoration: "none",
-        fontWeight: 700,
-      }}
-    ><div style={{ marginTop: "20px" }}>
-  <a
-    href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
-    target="_blank"
-    rel="noreferrer"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      gap: "12px",
-      background: "#34E0A1",
-      color: "#000",
-      padding: "14px 22px",
-      borderRadius: "999px",
-      textDecoration: "none",
-      fontWeight: 700,
-      fontSize: "16px",
-    }}
-  >
-    <img
-      src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-      alt="Tripadvisor"
-      style={{ height: "20px" }}
-    />
-    Read Reviews
-  </a>
-</div>
-    </a>
-  </div>
-</section>
 
       <a
         href="https://wa.me/905446358280"
