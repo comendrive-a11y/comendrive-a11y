@@ -1,6 +1,8 @@
-export default function HomePage() { 
+export default function HomePage() {
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
+      <section
+        style={{
           minHeight: "100vh",
           background:
             "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg') center/cover no-repeat",
@@ -12,120 +14,93 @@ export default function HomePage() {
         }}
       >
         <header
-  style={{
-    maxWidth: "1200px",
-    width: "100%",
-    margin: "0 auto",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    gap: "16px",
-    flexWrap: "wrap",
-  }}
->
-<div
-  style={{
-    color: "#ffffff",
-    fontFamily: "system-ui, sans-serif",
-    display: "inline-flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    lineHeight: 1,
-    minWidth: "220px",
-  }}
->
-  <div
-    style={{
-      fontSize: "30px",
-      fontWeight: 500,
-      letterSpacing: "1.5px",
-      textAlign: "center",
-      width: "100%",
-    }}
-  >
-    COME & DRIVE
-  </div>
+          style={{
+            maxWidth: "1200px",
+            width: "100%",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: "16px",
+            flexWrap: "wrap",
+          }}
+        >
+          <div
+            style={{
+              color: "#ffffff",
+              fontFamily: "system-ui, sans-serif",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              lineHeight: 1,
+              minWidth: "220px",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "30px",
+                fontWeight: 500,
+                letterSpacing: "1.5px",
+                textAlign: "center",
+                width: "100%",
+              }}
+            >
+              COME & DRIVE
+            </div>
 
-  <div
-    style={{
-      fontSize: "11px",
-      letterSpacing: "2.5px",
-      opacity: 0.85,
-      marginTop: "6px",
-      textAlign: "center",
-      width: "100%",
-    }}
-  >
-    TRAVEL AGENCY
-  </div>
-</div>
-  <div
-    style={{
-      fontSize: "30px",
-      fontWeight: 500,
-      letterSpacing: "2px",
-      textAlign: "center",
-    }}
-  >
-    COME & DRIVE
-  </div>
+            <div
+              style={{
+                fontSize: "11px",
+                letterSpacing: "2.5px",
+                opacity: 0.85,
+                marginTop: "6px",
+                textAlign: "center",
+                width: "100%",
+              }}
+            >
+              TRAVEL AGENCY
+            </div>
+          </div>
 
-  <div
-    style={{
-      fontSize: "11px",
-      letterSpacing: "3px",
-      opacity: 0.85,
-      marginTop: "5px",
-      textAlign: "center",
-    }}
-  >
-    TRAVEL AGENCY
-  </div>
-</div>
+          <nav
+            style={{
+              display: "flex",
+              gap: "16px",
+              flexWrap: "wrap",
+              fontSize: "14px",
+            }}
+          >
+            <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
+              Tours
+            </a>
+            <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
+              Other Tours
+            </a>
+            <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
+              Contact
+            </a>
+          </nav>
 
-  <nav
-    style={{
-      display: "flex",
-      gap: "16px",
-      flexWrap: "wrap",
-      fontSize: "14px",
-    }}
-  >
-    <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
-      Tours
-    </a>
-
-    <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
-      Other Tours
-    </a>
-
-    <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
-      Contact
-    </a>
-  </nav>
-
-  <a
-    href="https://wa.me/905446358280"
-    target="_blank"
-    rel="noreferrer"
-    style={{
-      background: "#25D366",
-      color: "#fff",
-      padding: "10px 18px",
-      borderRadius: "999px",
-      fontWeight: 600,
-      textDecoration: "none",
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
-    }}
-  >
-    WhatsApp
-  </a>
-</header>
-       
-
+          <a
+            href="https://wa.me/905446358280"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              background: "#25D366",
+              color: "#fff",
+              padding: "10px 18px",
+              borderRadius: "999px",
+              fontWeight: 600,
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            WhatsApp
+          </a>
+        </header>
 
         <div
           style={{
@@ -238,17 +213,9 @@ export default function HomePage() {
             textAlign: "center",
           }}
         >
-          <div style={{ flex: 1, minWidth: "220px" }}>
-            🚗 Driving licence required
-          </div>
-
-          <div style={{ flex: 1, minWidth: "220px" }}>
-            🌲 Forest off-road route
-          </div>
-
-          <div style={{ flex: 1, minWidth: "220px" }}>
-            🌊 1-hour beach swim stop
-          </div>
+          <div style={{ flex: 1, minWidth: "220px" }}>🚗 Driving licence required</div>
+          <div style={{ flex: 1, minWidth: "220px" }}>🌲 Forest off-road route</div>
+          <div style={{ flex: 1, minWidth: "220px" }}>🌊 1-hour beach swim stop</div>
         </div>
       </section>
 
@@ -357,8 +324,7 @@ export default function HomePage() {
               margin: "0 auto 26px",
             }}
           >
-            Real reviews. Real tours. Real dust. See why our guests love the
-            Come and Drive experience.
+            Real reviews. Real tours. Real dust. See why our guests love the Come and Drive experience.
           </p>
 
           <div style={{ marginTop: "20px" }}>
@@ -421,8 +387,7 @@ export default function HomePage() {
             marginBottom: "32px",
           }}
         >
-          We are known for doing buggy safari right. And yes, kids get their own
-          adrenaline too.
+          We are known for doing buggy safari right. And yes, kids get their own adrenaline too.
         </p>
 
         <div
@@ -521,8 +486,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-  
 
       <section
         id="contact"
