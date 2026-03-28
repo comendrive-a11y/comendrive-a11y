@@ -345,6 +345,84 @@ export default function HomePage() {
 </section>
       <section
   style={{
+    padding: "60px 20px",
+    background: "#ffffff",
+    display: "flex",
+    justifyContent: "center",
+    borderTop: "1px solid #eee",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "900px",
+      width: "100%",
+      textAlign: "center",
+    }}
+  >
+    <p
+      style={{
+        fontSize: "14px",
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        color: "#6b625b",
+        marginBottom: "12px",
+      }}
+    >
+      Guest Reviews
+    </p>
+
+    <h2
+      style={{
+        fontSize: "34px",
+        marginBottom: "14px",
+        color: "#1f1a17",
+      }}
+    >
+      Rated 5 Stars by Happy Guests
+    </h2>
+
+    <p
+      style={{
+        fontSize: "18px",
+        lineHeight: 1.7,
+        color: "#5f554d",
+        maxWidth: "720px",
+        margin: "0 auto 26px",
+      }}
+    >
+      Real reviews. Real tours. Real dust. See why our guests love the Come and Drive experience.
+    </p>
+
+    <div style={{ marginTop: "20px" }}>
+      <a
+        href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "12px",
+          background: "#34E0A1",
+          color: "#000",
+          padding: "14px 22px",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: 700,
+          fontSize: "16px",
+        }}
+      >
+        <img
+          src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+          alt="Tripadvisor"
+          style={{ height: "20px" }}
+        />
+        Read Reviews
+      </a>
+    </div>
+  </div>
+</section>
+      <section
+  style={{
     background: "#ffffff",
     padding: "32px 20px",
     display: "flex",
