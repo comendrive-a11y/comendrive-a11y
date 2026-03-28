@@ -63,14 +63,34 @@ export default function HomePage() {
             </div>
           </div>
 
-          <nav
-            style={{
-              display: "flex",
-              gap: "16px",
-              flexWrap: "wrap",
-              fontSize: "14px",
-            }}
-          >
+         <nav
+  style={{
+    display: "flex",
+    gap: "16px",
+    flexWrap: "wrap",
+    fontSize: "14px",
+  }}
+>
+  <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
+    Buggy Safari Half Day
+  </a>
+
+  <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
+    Buggy Safari Full Day
+  </a>
+
+  <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
+    Kids Quad Bike
+  </a>
+
+  <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
+    Other Tours
+  </a>
+
+  <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
+    Contact
+  </a>
+</nav>
             <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
               Tours
             </a>
