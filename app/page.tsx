@@ -380,6 +380,103 @@ export default function HomePage() {
   </div>
 </section>
       <section
+  id="other-tours"
+  style={{
+    padding: "80px 20px",
+    background: "#efe7dc",
+  }}
+>
+  <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+    <p
+      style={{
+        fontSize: "14px",
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        color: "#6b625b",
+        marginBottom: "12px",
+      }}
+    >
+      Other Tours
+    </p>
+
+    <h2
+      style={{
+        fontSize: "40px",
+        marginBottom: "16px",
+        color: "#1f1a17",
+      }}
+    >
+      More Ways to Explore Fethiye
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "720px",
+        fontSize: "18px",
+        lineHeight: 1.7,
+        color: "#5f554d",
+        marginBottom: "32px",
+      }}
+    >
+      Beyond buggy safari, we also help our guests enjoy the best of Fethiye and Ölüdeniz.
+      Choose from our most popular extra experiences.
+    </p>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+        gap: "20px",
+      }}
+    >
+      {[
+        "Airport Transfer",
+        "Jeep Safari",
+        "Ölüdeniz Boat Trip",
+        "Horse Riding",
+        "Private Boat Tour",
+        "Paragliding",
+      ].map((tour) => (
+        <div
+          key={tour}
+          style={{
+            background: "#fff",
+            borderRadius: "20px",
+            padding: "24px",
+            boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+          }}
+        >
+          <h3
+            style={{
+              marginTop: 0,
+              marginBottom: "12px",
+              fontSize: "22px",
+              color: "#1f1a17",
+            }}
+          >
+            {tour}
+          </h3>
+
+          <a
+            href={`https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
+              tour
+            )}`}
+            style={{
+              display: "inline-block",
+              marginTop: "8px",
+              color: "#1f1a17",
+              fontWeight: 600,
+              textDecoration: "none",
+            }}
+          >
+            Ask on WhatsApp →
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+      <section
   style={{
     padding: "60px 20px",
     background: "#ffffff",
