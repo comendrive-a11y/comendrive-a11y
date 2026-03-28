@@ -64,33 +64,32 @@ export default function HomePage() {
               TRAVEL AGENCY
             </div>
           </div>
-
           <nav
-            style={{
-              display: "flex",
-              gap: "18px",
-              flexWrap: "wrap",
-              fontSize: "14px",
-              alignItems: "center",
-            }}
-          >
-            <a href="#half-day" style={{ color: "#fff", textDecoration: "none" }}>
+  style={{
+    display: "flex",
+    gap: "14px",
+    flexWrap: "wrap",
+    fontSize: "13px",
+    alignItems: "center",
+  }}
+>
+            <a href="#half-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
               Buggy Safari Half Day
             </a>
 
-            <a href="#full-day" style={{ color: "#fff", textDecoration: "none" }}>
+            <a href="#full-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
               Buggy Safari Full Day
             </a>
 
-            <a href="#kids-quad" style={{ color: "#fff", textDecoration: "none" }}>
+            <a href="#kids-quad" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
               Kids Quad Bike
             </a>
 
-            <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
+            <a href="#other-tours" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
               Other Tours
             </a>
 
-            <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
+            <a href="#contact" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
               Contact
             </a>
           </nav>
