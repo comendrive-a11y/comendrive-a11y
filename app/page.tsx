@@ -13,6 +13,42 @@ export default function HomePage() {
           justifyContent: "space-between",
         }}
       >
+         <section
+  style={{
+    background: "#ffffff",
+    padding: "32px 20px",
+    display: "flex",
+    justifyContent: "center",
+    borderBottom: "1px solid #eee",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1100px",
+      width: "100%",
+      display: "flex",
+      justifyContent: "space-between",
+      gap: "20px",
+      flexWrap: "wrap",
+      fontSize: "15px",
+      fontWeight: 600,
+      color: "#1f1a17",
+      textAlign: "center",
+    }}
+  >
+    <div style={{ flex: 1, minWidth: "220px" }}>
+      🚗 Driving licence required
+    </div>
+
+    <div style={{ flex: 1, minWidth: "220px" }}>
+      🌲 Forest off-road route
+    </div>
+
+    <div style={{ flex: 1, minWidth: "220px" }}>
+      🌊 1-hour beach swim stop
+    </div>
+  </div>
+</section>
         <header
           style={{
             maxWidth: "1200px",
@@ -196,7 +232,7 @@ export default function HomePage() {
   </p>
 
   <a
-    href="https://wa.me/"
+    href="https://wa.me/905446358280"
     style={{
       display: "inline-block",
       marginTop: "20px",
@@ -421,42 +457,7 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-      <section
-  style={{
-    background: "#ffffff",
-    padding: "32px 20px",
-    display: "flex",
-    justifyContent: "center",
-    borderBottom: "1px solid #eee",
-  }}
->
-  <div
-    style={{
-      maxWidth: "1100px",
-      width: "100%",
-      display: "flex",
-      justifyContent: "space-between",
-      gap: "20px",
-      flexWrap: "wrap",
-      fontSize: "15px",
-      fontWeight: 600,
-      color: "#1f1a17",
-      textAlign: "center",
-    }}
-  >
-    <div style={{ flex: 1, minWidth: "220px" }}>
-      🚗 Driving licence required
-    </div>
-
-    <div style={{ flex: 1, minWidth: "220px" }}>
-      🌲 Forest off-road route
-    </div>
-
-    <div style={{ flex: 1, minWidth: "220px" }}>
-      🌊 1-hour beach swim stop
-    </div>
-  </div>
-</section>
+     
       <section
   id="contact"
   style={{
