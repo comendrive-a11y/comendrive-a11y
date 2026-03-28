@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Come and Drive Travel Agency",
   description: "Fethiye buggy safari, kids ATV and adventure tours.",
 };
+import "./globals.css";
 
 export default function RootLayout({
   children,
