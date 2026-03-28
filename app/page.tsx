@@ -14,17 +14,24 @@ export default function HomePage() {
         }}
       >
         <header
-          style={{
-            maxWidth: "1200px",
-            width: "100%",
-            margin: "0 auto",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "16px",
-            flexWrap: "wrap",
-          }}
-        >
+  style={{
+    position: "sticky",
+    top: "12px",
+    zIndex: 100,
+    maxWidth: "1200px",
+    width: "100%",
+    margin: "0 auto",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: "16px",
+    flexWrap: "wrap",
+    padding: "14px 18px",
+    borderRadius: "18px",
+    background: "rgba(20,18,15,0.45)",
+    backdropFilter: "blur(8px)",
+  }}
+>
           <div
             style={{
               color: "#ffffff",
