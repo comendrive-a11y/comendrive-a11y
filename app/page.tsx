@@ -72,11 +72,11 @@ export default function HomePage() {
       alignItems: "center",
     }}
   >
-    <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
+   <a href="#buggy-half-day" style={{ color: "#fff", textDecoration: "none" }}>
       Buggy Safari Half Day
     </a>
 
-    <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
+    <a href="#buggy-full-day" style={{ color: "#fff", textDecoration: "none" }}>
       Buggy Safari Full Day
     </a>
 
@@ -230,9 +230,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-        id="buggy-tour"
-        style={{
+     <section id="buggy-half-day"
+       <section
+  id="buggy-full-day"
+  style={{
+    padding: "80px 20px",
+    background: "#efe7dc",
+    display: "flex",
+    justifyContent: "center",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "900px",
+      width: "100%",
+      background: "#fff",
+      borderRadius: "18px",
+      padding: "40px",
+      boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
+      textAlign: "center",
+    }}
+  >
+    <h2 style={{ fontSize: "36px", marginBottom: "10px" }}>
+      Buggy Safari Full Day
+    </h2>
+
+    <p style={{ opacity: 0.7, marginBottom: "25px", lineHeight: 1.7 }}>
+      A longer off-road adventure with more driving time, more nature and more hidden places around Babadağ mountain.
+    </p>
+
+    <div
+      style={{
+        fontSize: "18px",
+        fontWeight: 600,
+        marginBottom: "30px",
+      }}
+    >
+      ⏱ Duration: Full Day Experience
+    </div>
+
+    <a
+      href="https://wa.me/905446358280"
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        background: "#25D366",
+        color: "#fff",
+        padding: "16px 28px",
+        borderRadius: "999px",
+        textDecoration: "none",
+        fontWeight: 700,
+        fontSize: "18px",
+      }}
+    >
+      Book via WhatsApp
+    </a>
+  </div>
+</section>
+      style={{
           padding: "80px 20px",
           background: "#f7f4ee",
           display: "flex",
