@@ -62,8 +62,7 @@ export default function HomePage() {
               TRAVEL AGENCY
             </div>
           </div>
-
-      <nav
+          <nav
   style={{
     display: "flex",
     gap: "16px",
