@@ -6,6 +6,131 @@ export default function HomePage() {
   const [lang, setLang] = React.useState("en");
 
   const t = {
+    halfGalleryTop: lang === "en" ? "Half Day Experience" : "Yarım Gün Deneyimi",
+
+halfGalleryTitle:
+  lang === "en"
+    ? "Buggy Safari Half Day Adventure"
+    : "Buggy Safari Yarım Gün Macerası",
+
+halfGallerySubtitle:
+  lang === "en"
+    ? "35 km of real forest off-road driving + 1-hour swim stop at Gemiler Beach."
+    : "35 km gerçek orman off-road sürüşü + Gemiler Beach’te 1 saat yüzme molası.",
+
+halfGallerySlogan:
+  lang === "en"
+    ? "More than a tour. A real drive."
+    : "Bir turdan fazlası. Gerçek bir sürüş deneyimi.",
+
+halfDayDetailsTitle: lang === "en" ? "Tour Details" : "Tur Detayları",
+halfDayDaysTitle: lang === "en" ? "Tour Days & Times" : "Tur Günleri ve Saatleri",
+halfDayIncludedTitle: lang === "en" ? "Included in Price" : "Fiyata Dahil Olanlar",
+halfDayExtraTitle: lang === "en" ? "Extra Charges" : "Ekstra Ücretli Olanlar",
+halfDayRulesTitle: lang === "en" ? "Participation Rules" : "Katılım Şartları",
+halfDayWhyTitle:
+  lang === "en" ? "Why Choose This Tour?" : "Bu Turu Neden Seçmelisiniz?",
+
+halfDayLocation:
+  lang === "en" ? "Start point: Hisarönü – Fethiye" : "Başlangıç: Hisarönü – Fethiye",
+halfDayDuration:
+  lang === "en" ? "Duration: 3.5 hours" : "Süre: 3,5 saat",
+halfDayDistance:
+  lang === "en" ? "Total route: 35 km off-road" : "Toplam rota: 35 km off-road",
+halfDaySwim:
+  lang === "en"
+    ? "Swim stop: Gemiler Beach (entry included)"
+    : "Yüzme molası: Gemiler Beach (giriş dahil)",
+halfDayVehicle:
+  lang === "en"
+    ? "Vehicle: 550cc automatic Mud Monster buggy"
+    : "Araç: 550cc otomatik Mud Monster buggy",
+halfDaySeats:
+  lang === "en"
+    ? "2 people can ride together in the same buggy"
+    : "Aynı araçta 2 kişi birlikte sürüş yapabilir",
+
+halfDayEasy:
+  lang === "en"
+    ? "Easy to drive. No previous experience needed."
+    : "Sürmesi kolaydır. Önceden deneyim gerektirmez.",
+
+halfDaySchedule1:
+  lang === "en"
+    ? "Monday – Friday (every weekday)"
+    : "Pazartesi – Cuma (hafta içi her gün)",
+halfDaySchedule2:
+  lang === "en"
+    ? "Morning tour: 09:00 – 12:30"
+    : "Sabah turu: 09:00 – 12:30",
+halfDaySchedule3:
+  lang === "en"
+    ? "Afternoon tour: 14:00 – 17:30"
+    : "Öğleden sonra turu: 14:00 – 17:30",
+halfDaySchedule4:
+  lang === "en"
+    ? "Weekend is reserved for Babadağ Exclusive Full Day."
+    : "Hafta sonları Babadağ Exclusive Full Day turu yapılmaktadır.",
+
+halfDayInc1:
+  lang === "en" ? "550cc buggy vehicle" : "550cc buggy aracı",
+halfDayInc2:
+  lang === "en" ? "Guiding service" : "Rehberlik hizmeti",
+halfDayInc3:
+  lang === "en" ? "Activity insurance" : "Aktivite sigortası",
+halfDayInc4:
+  lang === "en" ? "Protective goggles" : "Koruyucu gözlük",
+halfDayInc5:
+  lang === "en" ? "1 bottle of water" : "1 şişe su",
+halfDayInc6:
+  lang === "en" ? "Gemiler Beach entrance fee" : "Gemiler Beach giriş ücreti",
+halfDayInc7:
+  lang === "en" ? "1-hour swim stop" : "1 saat yüzme molası",
+
+halfDayEx1:
+  lang === "en" ? "Bandana (optional)" : "Bandana (isteğe bağlı)",
+halfDayEx2:
+  lang === "en" ? "Personal beach expenses" : "Plaj harcamaları",
+halfDayEx3:
+  lang === "en" ? "Tour photos" : "Tur fotoğrafları",
+halfDayEx4:
+  lang === "en"
+    ? "Around 80% of our guests choose the photo package."
+    : "Misafirlerimizin yaklaşık %80’i tur fotoğraflarını tercih etmektedir.",
+
+halfDayRule1:
+  lang === "en" ? "Minimum driver age: 18" : "Minimum sürücü yaşı: 18",
+halfDayRule2:
+  lang === "en" ? "Driving licence required" : "Ehliyet zorunlu",
+halfDayRule3:
+  lang === "en"
+    ? "Not suitable for children under 4"
+    : "4 yaş altı çocuklar katılamaz",
+
+halfDayWhy1:
+  lang === "en"
+    ? "35 km of real off-road route"
+    : "35 km uzun gerçek off-road rota",
+halfDayWhy2:
+  lang === "en"
+    ? "Forest driving experience"
+    : "Orman içi sürüş deneyimi",
+halfDayWhy3:
+  lang === "en"
+    ? "Swim break at Gemiler Beach"
+    : "Gemiler Beach’te yüzme molası",
+halfDayWhy4:
+  lang === "en"
+    ? "Side-by-side buggy vehicles"
+    : "Side-by-side buggy araçlar",
+halfDayWhy5:
+  lang === "en"
+    ? "Small group concept"
+    : "Küçük grup konsepti",
+halfDayWhy6:
+  lang === "en"
+    ? "Easy to drive for both women and men"
+    : "Kadın ve erkek sürücüler için kolay kullanım",
     otherToursList:
   lang === "en"
     ? [
