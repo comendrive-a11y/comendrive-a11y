@@ -508,13 +508,216 @@ halfDayWhy6:
       </section>
 
       <section
-        id="half-day"
+  id="half-day"
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "80px 20px",
+  }}
+>
+  <p
+    style={{
+      fontSize: "14px",
+      letterSpacing: "2px",
+      textTransform: "uppercase",
+      color: "#6b625b",
+      marginBottom: "12px",
+    }}
+  >
+    {t.halfGalleryTop}
+  </p>
+
+  <h2
+    style={{
+      fontSize: "42px",
+      marginBottom: "14px",
+      color: "#1f1a17",
+    }}
+  >
+    {t.halfGalleryTitle}
+  </h2>
+
+  <p
+    style={{
+      maxWidth: "760px",
+      fontSize: "19px",
+      lineHeight: 1.7,
+      color: "#5f554d",
+      marginBottom: "16px",
+    }}
+  >
+    {t.halfGallerySubtitle}
+  </p>
+
+  <p
+    style={{
+      fontSize: "18px",
+      fontWeight: 600,
+      color: "#1f1a17",
+      marginBottom: "34px",
+    }}
+  >
+    {t.halfGallerySlogan}
+  </p>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+      gap: "16px",
+      marginBottom: "40px",
+    }}
+  >
+    {[
+      "Half Day Photo 1",
+      "Half Day Photo 2",
+      "Half Day Photo 3",
+      "Half Day Photo 4",
+      "Half Day Photo 5",
+    ].map((item) => (
+      <div
+        key={item}
         style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "80px 20px",
+          aspectRatio: "4 / 3",
+          background: "#e9e0d5",
+          borderRadius: "20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#7a6f65",
+          fontWeight: 600,
+          fontSize: "15px",
+          textAlign: "center",
+          padding: "12px",
         }}
       >
+        {item}
+      </div>
+    ))}
+  </div>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+      gap: "26px",
+    }}
+  >
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "24px",
+        padding: "28px",
+        boxShadow: "0 10px 24px rgba(0,0,0,0.05)",
+      }}
+    >
+      <h3 style={{ marginTop: 0 }}>{t.halfDayDetailsTitle}</h3>
+      <p>{t.halfDayLocation}</p>
+      <p>{t.halfDayDuration}</p>
+      <p>{t.halfDayDistance}</p>
+      <p>{t.halfDaySwim}</p>
+      <p>{t.halfDayVehicle}</p>
+      <p>{t.halfDaySeats}</p>
+      <p style={{ marginBottom: 0 }}>{t.halfDayEasy}</p>
+    </div>
+
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "24px",
+        padding: "28px",
+        boxShadow: "0 10px 24px rgba(0,0,0,0.05)",
+      }}
+    >
+      <h3 style={{ marginTop: 0 }}>{t.halfDayDaysTitle}</h3>
+      <p>{t.halfDaySchedule1}</p>
+      <p>{t.halfDaySchedule2}</p>
+      <p>{t.halfDaySchedule3}</p>
+      <p style={{ marginBottom: 0 }}>{t.halfDaySchedule4}</p>
+    </div>
+
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "24px",
+        padding: "28px",
+        boxShadow: "0 10px 24px rgba(0,0,0,0.05)",
+      }}
+    >
+      <h3 style={{ marginTop: 0 }}>{t.halfDayIncludedTitle}</h3>
+      <p>✔ {t.halfDayInc1}</p>
+      <p>✔ {t.halfDayInc2}</p>
+      <p>✔ {t.halfDayInc3}</p>
+      <p>✔ {t.halfDayInc4}</p>
+      <p>✔ {t.halfDayInc5}</p>
+      <p>✔ {t.halfDayInc6}</p>
+      <p style={{ marginBottom: 0 }}>✔ {t.halfDayInc7}</p>
+    </div>
+
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "24px",
+        padding: "28px",
+        boxShadow: "0 10px 24px rgba(0,0,0,0.05)",
+      }}
+    >
+      <h3 style={{ marginTop: 0 }}>{t.halfDayExtraTitle}</h3>
+      <p>– {t.halfDayEx1}</p>
+      <p>– {t.halfDayEx2}</p>
+      <p>– {t.halfDayEx3}</p>
+      <p style={{ marginBottom: 0 }}>📸 {t.halfDayEx4}</p>
+    </div>
+
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "24px",
+        padding: "28px",
+        boxShadow: "0 10px 24px rgba(0,0,0,0.05)",
+      }}
+    >
+      <h3 style={{ marginTop: 0 }}>{t.halfDayRulesTitle}</h3>
+      <p>✔ {t.halfDayRule1}</p>
+      <p>✔ {t.halfDayRule2}</p>
+      <p style={{ marginBottom: 0 }}>✔ {t.halfDayRule3}</p>
+    </div>
+
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "24px",
+        padding: "28px",
+        boxShadow: "0 10px 24px rgba(0,0,0,0.05)",
+      }}
+    >
+      <h3 style={{ marginTop: 0 }}>{t.halfDayWhyTitle}</h3>
+      <p>✔ {t.halfDayWhy1}</p>
+      <p>✔ {t.halfDayWhy2}</p>
+      <p>✔ {t.halfDayWhy3}</p>
+      <p>✔ {t.halfDayWhy4}</p>
+      <p>✔ {t.halfDayWhy5}</p>
+      <p style={{ marginBottom: 0 }}>✔ {t.halfDayWhy6}</p>
+    </div>
+  </div>
+
+  <div style={{ marginTop: "34px" }}>
+    <a
+      href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Half%20Day%20Buggy%20Safari"
+      style={{
+        display: "inline-block",
+        background: "#1f1a17",
+        color: "#fff",
+        padding: "14px 24px",
+        borderRadius: "999px",
+        textDecoration: "none",
+        fontWeight: 600,
+      }}
+    >
+      {t.bookHalf}
+    </a>
+  </div>
+</section>
         <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>{t.halfDayTitle}</h2>
 
         <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
