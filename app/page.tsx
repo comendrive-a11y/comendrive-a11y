@@ -17,7 +17,7 @@ export default function HomePage() {
     dark: "#1f1a17",
     green: "#25D366",
 
-    switchLang: lang === "en" ? "TR" : "EN",
+    switchLang: lang === "en" ? "EN" : "TR",
 
     halfTitle: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
     halfSlogan:
