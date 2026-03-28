@@ -88,6 +88,9 @@ export default function HomePage() {
             <a href="#other-tours" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
               Other Tours
             </a>
+            <a href="#reservation" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+  Reserve
+</a>
 
             <a href="#contact" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
               Contact
@@ -383,6 +386,96 @@ export default function HomePage() {
     >
       Book Kids Quad Bike
     </a>
+  </div>
+</section>
+      <section
+  id="reservation"
+  style={{
+    padding: "80px 20px",
+    background: "#ffffff",
+    borderTop: "1px solid #eee",
+    borderBottom: "1px solid #eee",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1100px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <p
+      style={{
+        fontSize: "14px",
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        color: "#6b625b",
+        marginBottom: "12px",
+      }}
+    >
+      Reservation
+    </p>
+
+    <h2
+      style={{
+        fontSize: "40px",
+        marginBottom: "16px",
+        color: "#1f1a17",
+      }}
+    >
+      Check Availability & Reserve
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "760px",
+        margin: "0 auto 30px",
+        fontSize: "18px",
+        lineHeight: 1.7,
+        color: "#5f554d",
+      }}
+    >
+      Our online booking area will appear here soon. Until then, you can reserve
+      your place directly via WhatsApp and get quick confirmation from our team.
+    </p>
+
+    <div
+      style={{
+        maxWidth: "760px",
+        margin: "0 auto",
+        padding: "36px 24px",
+        border: "2px dashed #d8d0c6",
+        borderRadius: "24px",
+        background: "#f7f4ee",
+      }}
+    >
+      <p
+        style={{
+          margin: "0 0 18px",
+          fontSize: "18px",
+          color: "#7a6f65",
+        }}
+      >
+        Bókun booking widget will be integrated here
+      </p>
+
+      <a
+        href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20check%20availability%20for%20a%20tour"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          display: "inline-block",
+          background: "#25D366",
+          color: "#fff",
+          padding: "14px 24px",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: 600,
+        }}
+      >
+        Ask Availability on WhatsApp
+      </a>
+    </div>
   </div>
 </section>
       <section
