@@ -431,7 +431,7 @@ export default function HomePage() {
     >
       {[
         "Airport Transfer",
-        "Saklikent canyon Safari",
+        "Saklikent Canyon Safari",
         "Ölüdeniz Boat Trip",
         "Horse Riding",
         "Private Boat Tour",
