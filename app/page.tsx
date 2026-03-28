@@ -6,6 +6,24 @@ export default function HomePage() {
   const [lang, setLang] = React.useState("en");
 
   const t = {
+    otherToursList:
+  lang === "en"
+    ? [
+        "Airport Transfer",
+        "Saklikent Canyon Safari",
+        "Ölüdeniz Boat Trip",
+        "Horse Riding",
+        "Private Boat Tour",
+        "Paragliding",
+      ]
+    : [
+        "Havalimanı Transferi",
+        "Saklıkent Kanyon Safari",
+        "Ölüdeniz Tekne Turu",
+        "At Turu",
+        "Özel Tekne Turu",
+        "Yamaç Paraşütü",
+      ],
     heroTop:
       lang === "en"
         ? "5-STAR GUEST SATISFACTION · ÖLÜDENİZ / FETHİYE"
@@ -662,14 +680,7 @@ export default function HomePage() {
               gap: "20px",
             }}
           >
-            {[
-              "Airport Transfer",
-              "Saklikent Canyon Safari",
-              "Ölüdeniz Boat Trip",
-              "Horse Riding",
-              "Private Boat Tour",
-              "Paragliding",
-            ].map((tour) => (
+           {t.otherToursList.map((tour) => (
               <div
                 key={tour}
                 style={{
