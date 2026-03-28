@@ -178,6 +178,73 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section
+  id="half-day"
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "80px 20px",
+  }}
+>
+  <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>
+    Buggy Safari Half Day
+  </h2>
+
+  <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
+    Forest off-road driving, dust, adrenaline and a refreshing swim stop.
+    Perfect balance between adventure and comfort.
+  </p>
+
+  <a
+    href="https://wa.me/"
+    style={{
+      display: "inline-block",
+      marginTop: "20px",
+      background: "#1f1a17",
+      color: "#fff",
+      padding: "12px 22px",
+      borderRadius: "999px",
+      textDecoration: "none",
+    }}
+  >
+    Book Half Day
+  </a>
+</section>
+
+
+<section
+  id="full-day"
+  style={{
+    background: "#fff",
+    padding: "80px 20px",
+  }}
+>
+  <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+    <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>
+      Buggy Safari Full Day
+    </h2>
+
+    <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
+      Mountains, hidden roads, Saklıkent canyon line and long adventure route.
+      A real expedition day for explorers.
+    </p>
+
+    <a
+      href="https://wa.me/"
+      style={{
+        display: "inline-block",
+        marginTop: "20px",
+        background: "#1f1a17",
+        color: "#fff",
+        padding: "12px 22px",
+        borderRadius: "999px",
+        textDecoration: "none",
+      }}
+    >
+      Book Full Day
+    </a>
+  </div>
+</section>
     </main>
   );
 }
