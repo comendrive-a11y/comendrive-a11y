@@ -14,113 +14,104 @@ export default function HomePage() {
         }}
       >
         <header
-          style={{
-            maxWidth: "1200px",
-            width: "100%",
-            margin: "0 auto",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "16px",
-            flexWrap: "wrap",
-          }}
-        >
-          <div
-            style={{
-              color: "#ffffff",
-              fontFamily: "system-ui, sans-serif",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              lineHeight: 1,
-              minWidth: "220px",
-            }}
-          >
-            <div
-              style={{
-                fontSize: "30px",
-                fontWeight: 500,
-                letterSpacing: "1.5px",
-                textAlign: "center",
-                width: "100%",
-              }}
-            >
-              COME & DRIVE
-            </div>
-
-            <div
-              style={{
-                fontSize: "11px",
-                letterSpacing: "2.5px",
-                opacity: 0.85,
-                marginTop: "6px",
-                textAlign: "center",
-                width: "100%",
-              }}
-            >
-              TRAVEL AGENCY
-            </div>
-          </div>
-        <nav
   style={{
+    maxWidth: "1200px",
+    width: "100%",
+    margin: "0 auto",
     display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
     gap: "16px",
     flexWrap: "wrap",
-    fontSize: "14px",
-    alignItems: "center",
   }}
 >
-  <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
-    Buggy Safari Half Day
-  </a>
+  <div
+    style={{
+      color: "#ffffff",
+      fontFamily: "system-ui, sans-serif",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      lineHeight: 1,
+      minWidth: "220px",
+    }}
+  >
+    <div
+      style={{
+        fontSize: "30px",
+        fontWeight: 500,
+        letterSpacing: "1.5px",
+        textAlign: "center",
+        width: "100%",
+      }}
+    >
+      COME & DRIVE
+    </div>
 
-  <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
-    Buggy Safari Full Day
-  </a>
+    <div
+      style={{
+        fontSize: "11px",
+        letterSpacing: "2.5px",
+        opacity: 0.85,
+        marginTop: "6px",
+        textAlign: "center",
+        width: "100%",
+      }}
+    >
+      TRAVEL AGENCY
+    </div>
+  </div>
 
-  <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
-    Kids Quad Bike
-  </a>
+  <nav
+    style={{
+      display: "flex",
+      gap: "16px",
+      flexWrap: "wrap",
+      fontSize: "14px",
+      alignItems: "center",
+    }}
+  >
+    <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
+      Buggy Safari Half Day
+    </a>
 
-  <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
-    Other Tours
-  </a>
+    <a href="#buggy-tour" style={{ color: "#fff", textDecoration: "none" }}>
+      Buggy Safari Full Day
+    </a>
 
-  <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
-    Contact
-  </a>
-</nav>
-            <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
-              Tours
-            </a>
-            <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
-              Other Tours
-            </a>
-            <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
-              Contact
-            </a>
-          </nav>
+    <a href="#tours" style={{ color: "#fff", textDecoration: "none" }}>
+      Kids Quad Bike
+    </a>
 
-          <a
-            href="https://wa.me/905446358280"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              background: "#25D366",
-              color: "#fff",
-              padding: "10px 18px",
-              borderRadius: "999px",
-              fontWeight: 600,
-              textDecoration: "none",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            WhatsApp
-          </a>
-        </header>
+    <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
+      Other Tours
+    </a>
+
+    <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
+      Contact
+    </a>
+  </nav>
+
+  <a
+    href="https://wa.me/905446358280"
+    target="_blank"
+    rel="noreferrer"
+    style={{
+      background: "#25D366",
+      color: "#fff",
+      padding: "10px 18px",
+      borderRadius: "999px",
+      fontWeight: 600,
+      textDecoration: "none",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    WhatsApp
+  </a>
+</header>
 
         <div
           style={{
