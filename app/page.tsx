@@ -616,8 +616,20 @@ export default function HomePage() {
     href="https://www.instagram.com/comeanddrive"
     target="_blank"
     rel="noreferrer"
-    style={{ color: "#E4405F", textDecoration: "none", fontWeight: 600 }}
+    style={{
+      color: "#E4405F",
+      textDecoration: "none",
+      fontWeight: 600,
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+    }}
   >
+    <img
+      src="https://cdn.simpleicons.org/instagram/E4405F"
+      alt="Instagram"
+      style={{ width: "20px", height: "20px" }}
+    />
     Instagram
   </a>
 </p>
@@ -627,8 +639,20 @@ export default function HomePage() {
     href="https://www.facebook.com/comendrivetravel"
     target="_blank"
     rel="noreferrer"
-    style={{ color: "#1877F2", textDecoration: "none", fontWeight: 600 }}
+    style={{
+      color: "#1877F2",
+      textDecoration: "none",
+      fontWeight: 600,
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+    }}
   >
+    <img
+      src="https://cdn.simpleicons.org/facebook/1877F2"
+      alt="Facebook"
+      style={{ width: "20px", height: "20px" }}
+    />
     Facebook
   </a>
 </p>
@@ -638,8 +662,20 @@ export default function HomePage() {
     href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
     target="_blank"
     rel="noreferrer"
-    style={{ color: "#34E0A1", textDecoration: "none", fontWeight: 600 }}
+    style={{
+      color: "#34E0A1",
+      textDecoration: "none",
+      fontWeight: 600,
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+    }}
   >
+    <img
+      src="https://cdn.simpleicons.org/tripadvisor/34E0A1"
+      alt="Tripadvisor"
+      style={{ width: "20px", height: "20px" }}
+    />
     Tripadvisor
   </a>
 </p>
