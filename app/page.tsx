@@ -163,7 +163,7 @@ export default function HomePage() {
             </a>
 
             <a
-              href="https://wa.me/"
+              href="https://wa.me/905446358280"
               style={{
                 border: "1px solid #fff",
                 color: "#fff",
@@ -266,7 +266,7 @@ export default function HomePage() {
     </p>
 
     <a
-      href="https://wa.me/"
+      href="https://wa.me/905446358280"
       style={{
         display: "inline-block",
         marginTop: "20px",
