@@ -513,38 +513,38 @@ export default function HomePage() {
     <div>
       <h3>Follow Us</h3>
 
-      <p>
-        <a
-          href="https://www.instagram.com/comeanddrive"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          Instagram
-        </a>
-      </p>
+<p>
+  <a
+    href="https://www.instagram.com/comeanddrive"
+    target="_blank"
+    rel="noreferrer"
+    style={{ color: "#E4405F", textDecoration: "none", fontWeight: 600 }}
+  >
+    Instagram
+  </a>
+</p>
 
-      <p>
-        <a
-          href="https://www.facebook.com/comendrivetravel"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          Facebook
-        </a>
-      </p>
+<p>
+  <a
+    href="https://www.facebook.com/comendrivetravel"
+    target="_blank"
+    rel="noreferrer"
+    style={{ color: "#1877F2", textDecoration: "none", fontWeight: 600 }}
+  >
+    Facebook
+  </a>
+</p>
 
-      <p>
-        <a
-          href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          Tripadvisor
-        </a>
-      </p>
+<p>
+  <a
+    href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+    target="_blank"
+    rel="noreferrer"
+    style={{ color: "#34E0A1", textDecoration: "none", fontWeight: 600 }}
+  >
+    Tripadvisor
+  </a>
+</p>
     </div>
   </div>
 </section>
