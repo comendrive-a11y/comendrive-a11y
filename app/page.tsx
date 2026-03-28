@@ -57,7 +57,7 @@ export default function HomePage() {
           justifyContent: "space-between",
         }}
       >
-        <header
+     <header
   style={{
     position: "sticky",
     top: "12px",
@@ -76,122 +76,132 @@ export default function HomePage() {
     backdropFilter: "blur(8px)",
   }}
 >
-          <div
-            style={{
-              color: "#ffffff",
-              fontFamily: "system-ui, sans-serif",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              justifyContent: "center",
-              lineHeight: 1,
-            }}
-          >
-            <div
-              style={{
-                fontSize: "26px",
-                fontWeight: 500,
-                letterSpacing: "2px",
-              }}
-            >
-              COME & DRIVE
-            </div>
-
-            <div
-              style={{
-                fontSize: "11px",
-                letterSpacing: "3px",
-                opacity: 0.85,
-                marginTop: "4px",
-              }}
-            >
-              TRAVEL AGENCY
-            </div>
-          </div>
-          <div
-  style={{
-    display: "flex",
-    gap: "8px",
-    alignItems: "center",
-  }}
->
-  <button
-    onClick={() => setLang("en")}
+  <div
     style={{
-      background: "transparent",
-      border: "1px solid rgba(255,255,255,0.4)",
-      color: "#fff",
-      padding: "4px 10px",
-      borderRadius: "999px",
-      cursor: "pointer",
-      fontSize: "12px",
+      color: "#ffffff",
+      fontFamily: "system-ui, sans-serif",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      justifyContent: "center",
+      lineHeight: 1,
     }}
   >
-    EN
-  </button>
+    <div
+      style={{
+        fontSize: "26px",
+        fontWeight: 500,
+        letterSpacing: "2px",
+      }}
+    >
+      COME & DRIVE
+    </div>
 
-  <button
-    onClick={() => setLang("tr")}
+    <div
+      style={{
+        fontSize: "11px",
+        letterSpacing: "3px",
+        opacity: 0.85,
+        marginTop: "4px",
+      }}
+    >
+      TRAVEL AGENCY
+    </div>
+  </div>
+
+  <div
     style={{
-      background: "transparent",
-      border: "1px solid rgba(255,255,255,0.4)",
-      color: "#fff",
-      padding: "4px 10px",
-      borderRadius: "999px",
-      cursor: "pointer",
-      fontSize: "12px",
+      display: "flex",
+      gap: "8px",
+      alignItems: "center",
     }}
   >
-    TR
-  </button>
-</div>
-          <nav
-  style={{
-    display: "flex",
-    gap: "14px",
-    flexWrap: "wrap",
-    fontSize: "13px",
-    alignItems: "center",
-  }}
->
-            <a href="#half-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
-              Buggy Safari Half Day
-            </a>
+    <button
+      onClick={() => setLang("en")}
+      style={{
+        background: lang === "en" ? "#fff" : "transparent",
+        border: "1px solid rgba(255,255,255,0.45)",
+        color: lang === "en" ? "#1f1a17" : "#fff",
+        padding: "4px 10px",
+        borderRadius: "999px",
+        cursor: "pointer",
+        fontSize: "12px",
+        fontWeight: 600,
+      }}
+    >
+      EN
+    </button>
 
-            <a href="#full-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
-              Buggy Safari Full Day
-            </a>
+    <button
+      onClick={() => setLang("tr")}
+      style={{
+        background: lang === "tr" ? "#fff" : "transparent",
+        border: "1px solid rgba(255,255,255,0.45)",
+        color: lang === "tr" ? "#1f1a17" : "#fff",
+        padding: "4px 10px",
+        borderRadius: "999px",
+        cursor: "pointer",
+        fontSize: "12px",
+        fontWeight: 600,
+      }}
+    >
+      TR
+    </button>
+  </div>
 
-            <a href="#kids-quad" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
-              Kids Quad Bike
-            </a>
+  <nav
+    style={{
+      display: "flex",
+      gap: "14px",
+      flexWrap: "wrap",
+      fontSize: "13px",
+      alignItems: "center",
+    }}
+  >
+    <a href="#half-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+      Buggy Safari Half Day
+    </a>
 
-            <a href="#other-tours" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
-              Other Tours
-            </a>
-            <a href="#reservation" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
-  Reserve
-</a>
+    <a href="#full-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+      Buggy Safari Full Day
+    </a>
 
-            <a href="#contact" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
-              Contact
-            </a>
-          </nav>
+    <a href="#kids-quad" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+      Kids Quad Bike
+    </a>
 
-          <a
-            href="https://wa.me/905446358280"
-            style={{
-              background: "#25D366",
-              color: "#fff",
-              padding: "10px 18px",
-              borderRadius: "999px",
-              textDecoration: "none",
-              fontWeight: 500,
-            }}
-          >
-            WhatsApp
-          </a>
-        </header>
+    <a href="#reservation" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+      Reserve
+    </a>
+
+    <a href="#other-tours" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+      Other Tours
+    </a>
+
+    <a href="#contact" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+      Contact
+    </a>
+  </nav>
+
+  <a
+    href="https://wa.me/905446358280"
+    target="_blank"
+    rel="noreferrer"
+    style={{
+      background: "#25D366",
+      color: "#fff",
+      padding: "10px 18px",
+      borderRadius: "999px",
+      fontWeight: 600,
+      textDecoration: "none",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    WhatsApp
+  </a>
+</header>
 
         <div
           style={{
