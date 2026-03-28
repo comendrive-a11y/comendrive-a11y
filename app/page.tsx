@@ -6,30 +6,47 @@ export default function HomePage() {
   const [lang, setLang] = React.useState<"en" | "tr">("en");
 
   const t = {
-    halfDayTitle: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
-    halfDaySlogan:
+    pageBg: "#f5f1eb",
+    cardBg: "#ffffff",
+    softBg: "#f8f6f2",
+    text: "#1f1a17",
+    muted: "#6b625c",
+    border: "#ddd4ca",
+    dark: "#1f1a17",
+    green: "#25D366",
+
+    switchLang: lang === "en" ? "TR" : "EN",
+
+    halfTitle: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
+    halfSlogan:
       lang === "en"
         ? "More than a tour. A real drive."
         : "Bir turdan fazlası. Gerçek bir sürüş deneyimi.",
-    halfDaySubtitle:
+    halfSubtitle:
       lang === "en"
-        ? "Forest off-road driving, dust, adrenaline and a refreshing swim stop. A premium small-group tour with real driving experience."
-        : "Orman içi off-road sürüş, toz, adrenalin ve serinletici yüzme molası. Gerçek sürüş hissi sunan premium küçük grup turu.",
-    halfDayDesc:
+        ? "35 km of real off-road driving, forest trails and a 1-hour swim break at Gemiler Beach."
+        : "35 km gerçek off-road sürüş, orman parkurları ve Gemiler Beach’te 1 saat yüzme molası.",
+    halfText:
       lang === "en"
-        ? "Starting from Hisarönü, this half-day buggy safari takes you through 35 km of real off-road driving with a 1-hour swim stop at Gemiler Beach. We are the only company in the city offering buggy safari with a beach swim break. Tours run on weekdays in two daily departures and each slot is limited to a maximum of 8 buggies for a small-group, semi-private experience."
-        : "Hisarönü çıkışlı bu yarım günlük buggy safari turu, sizi 35 km gerçek off-road sürüşe çıkarır ve Gemiler Beach’te 1 saatlik yüzme molası sunar. Şehirde buggy safari ile plaj yüzme molasını birleştiren tek firmayız. Turlar hafta içi her gün 2 ayrı slotta yapılır ve her slot maksimum 8 buggy ile sınırlıdır; yani küçük grup, yarı özel bir deneyim sunar.",
-    halfDayGalleryLabel: lang === "en" ? "Tour Gallery" : "Tur Galerisi",
-    halfDayBook: lang === "en" ? "Book Half Day" : "Yarım Gün Rezervasyon",
-    halfDayDetailsTitle: lang === "en" ? "Tour Details" : "Tur Detayları",
-    halfDayDetails:
+        ? "This premium small-group experience starts from Hisarönü and runs on weekdays with two daily departures. You drive a 550 cc automatic Mud Monster buggy through real off-road terrain. Each slot is limited to maximum 8 buggies, giving the tour a more private and comfortable feeling. We are the only company in the city combining buggy safari with a beach swim break."
+        : "Bu premium küçük grup deneyimi Hisarönü çıkışlıdır ve hafta içi her gün iki farklı saatte yapılır. Gerçek off-road arazisinde 550 cc otomatik Mud Monster buggy ile sürüş yaparsınız. Her slot maksimum 8 buggy ile sınırlıdır, bu da daha özel ve konforlu bir his verir. Şehirde buggy safariyi plaj yüzme molasıyla birleştiren tek firmayız.",
+
+    halfGallery: lang === "en" ? "Tour Gallery" : "Tur Galerisi",
+    halfButton: lang === "en" ? "Book Half Day" : "Yarım Gün Rezervasyon",
+    halfDetails: lang === "en" ? "Tour Details" : "Tur Detayları",
+    halfIncluded: lang === "en" ? "Included" : "Dahil Olanlar",
+    halfExtra: lang === "en" ? "Extra / Optional" : "Ekstra / Opsiyonel",
+    halfBring: lang === "en" ? "What to Bring" : "Yanınızda Getirmeniz Gerekenler",
+    halfRules: lang === "en" ? "Driver Rules" : "Sürücü Kuralları",
+
+    halfDetailsItems:
       lang === "en"
         ? [
             "Location: Hisarönü, Fethiye",
             "Weekdays only",
             "Two departures daily: 09:00–12:30 / 14:00–17:30",
             "35 km off-road driving",
-            "1-hour swim stop at Gemiler Beach",
+            "1-hour swim break at Gemiler Beach",
             "550 cc automatic Mud Monster buggy",
             "Maximum 8 buggies per slot",
           ]
@@ -42,8 +59,8 @@ export default function HomePage() {
             "550 cc otomatik Mud Monster buggy",
             "Her slotta maksimum 8 buggy",
           ],
-    halfDayIncludedTitle: lang === "en" ? "Included" : "Dahil Olanlar",
-    halfDayIncluded:
+
+    halfIncludedItems:
       lang === "en"
         ? [
             "Protective goggles",
@@ -61,75 +78,90 @@ export default function HomePage() {
             "Transfer",
             "Gemiler Beach giriş ücreti",
           ],
-    halfDayExtraTitle: lang === "en" ? "Extra / Optional" : "Ekstra / Opsiyonel",
-    halfDayExtra:
-      lang === "en"
-        ? ["Photos", "Drinks at the beach"]
-        : ["Fotoğraflar", "Plajdaki içecekler"],
-    halfDayBringTitle: lang === "en" ? "What to Bring" : "Yanınızda Getirmeniz Gerekenler",
-    halfDayBring:
-      lang === "en"
-        ? ["Driving licence", "Sunglasses", "Towel", "Swimwear", "Some money for beach drinks"]
-        : ["Ehliyet", "Güneş gözlüğü", "Havlu", "Swimwear", "Plajdaki içecekler için bir miktar para"],
-    halfDayRulesTitle: lang === "en" ? "Driver Rules" : "Sürücü Kuralları",
-    halfDayRules:
-      lang === "en"
-        ? ["Minimum driving age: 18", "Not suitable for children under 4", "Driver must bring driving licence or provisional licence"]
-        : ["Minimum sürüş yaşı: 18", "4 yaş altı çocuklar için uygun değildir", "Sürücü ehliyet veya provisional licence getirmelidir"],
 
-    fullDayTitle: lang === "en" ? "Buggy Safari Full Day" : "Buggy Safari Tam Gün",
-    fullDaySlogan:
+    halfExtraItems:
+      lang === "en" ? ["Photos", "Drinks at the beach"] : ["Fotoğraflar", "Plajdaki içecekler"],
+
+    halfBringItems:
+      lang === "en"
+        ? ["Driving licence", "Sunglasses", "Towel", "Swimwear", "Some money for drinks"]
+        : ["Ehliyet", "Güneş gözlüğü", "Havlu", "Swimwear", "İçecekler için bir miktar para"],
+
+    halfRulesItems:
+      lang === "en"
+        ? ["Minimum driving age: 18", "Not suitable for children under 4", "Driving licence required"]
+        : ["Minimum sürüş yaşı: 18", "4 yaş altı çocuklar için uygun değildir", "Ehliyet zorunludur"],
+
+    fullTitle: lang === "en" ? "Buggy Safari Full Day" : "Buggy Safari Tam Gün",
+    fullSlogan:
       lang === "en"
         ? "Half day for fun. Full day for discovery."
         : "Yarım gün eğlence için. Tam gün keşif için.",
-    fullDaySubtitle:
+    fullSubtitle:
       lang === "en"
-        ? "Mountains, hidden roads, ancient history, premium lunch and a beach swim stop — a complete day for real explorers."
-        : "Dağlar, gizli yollar, antik tarih, premium öğle yemeği ve plaj yüzme molası — gerçek kaşifler için dolu dolu bir gün.",
-    fullDayDesc:
+        ? "75 km of mountain adventure, hidden roads, ancient history, premium lunch and a beach swim stop."
+        : "75 km dağ macerası, gizli yollar, antik tarih, premium öğle yemeği ve plaj yüzme molası.",
+    fullText:
       lang === "en"
-        ? "This full-day off-road route starts from our truck and climbs up to 1500 metres on Babadağ with breathtaking views. The route includes the ancient Lycian city of Pınara, a photo stop above Hidden Canyon, an exclusive lunch with Butterfly Valley views and a 1-hour swim stop at Kıdrak Beach. The biggest highlight of this tour is discovering off-road routes that almost nobody else drives. Recommended for experienced drivers and guests without fear of heights."
-        : "Bu tam günlük off-road rota, truck çıkışıyla başlar ve Babadağ’da 1500 metre yüksekliğe kadar muhteşem manzaralar eşliğinde devam eder. Tur kapsamında antik Likya kenti Pınara, Hidden Canyon tepesinde fotoğraf molası, Butterfly Valley manzaralı özel öğle yemeği ve Kıdrak Beach’te 1 saat yüzme molası bulunur. Bu turun en büyük özelliği, neredeyse kimsenin sürmediği off-road yolları keşfetmektir. Deneyimli sürücüler ve yükseklik korkusu olmayan misafirler için tavsiye edilir.",
-    fullDayGalleryLabel: lang === "en" ? "Tour Gallery" : "Tur Galerisi",
-    fullDayBook: lang === "en" ? "Book Full Day" : "Tam Gün Rezervasyon",
-    fullDayDetailsTitle: lang === "en" ? "Tour Details" : "Tur Detayları",
-    fullDayDetails:
+        ? "This full-day experience begins from our truck and climbs up to 1500 metres on Babadağ. The route includes the ancient city of Pınara, a photo stop at Hidden Canyon, an exclusive lunch with Butterfly Valley view and a 1-hour swim break at Kıdrak Beach. It is recommended for experienced drivers and guests without fear of heights. The biggest difference of this tour is discovering off-road routes that almost nobody else drives."
+        : "Bu tam günlük deneyim truck çıkışıyla başlar ve Babadağ’da 1500 metreye kadar çıkar. Rota; Pınara antik kenti, Hidden Canyon’da fotoğraf molası, Butterfly Valley manzaralı özel öğle yemeği ve Kıdrak Beach’te 1 saat yüzme molasını içerir. Deneyimli sürücüler ve yükseklik korkusu olmayan misafirler için tavsiye edilir. Bu turun en büyük farkı, neredeyse kimsenin sürmediği off-road yolları keşfetmektir.",
+
+    fullGallery: lang === "en" ? "Tour Gallery" : "Tur Galerisi",
+    fullButton: lang === "en" ? "Book Full Day" : "Tam Gün Rezervasyon",
+    fullDetails: lang === "en" ? "Tour Details" : "Tur Detayları",
+    fullIncluded: lang === "en" ? "Included" : "Dahil Olanlar",
+    fullBring: lang === "en" ? "What to Bring" : "Yanınızda Getirmeniz Gerekenler",
+    fullRules: lang === "en" ? "Driver & Passenger Rules" : "Sürücü & Yolcu Kuralları",
+
+    fullDetailsItems:
       lang === "en"
         ? [
             "Saturday & Sunday only",
             "09:00–17:00",
-            "75 km total driving route",
+            "75 km total route",
             "Babadağ climb up to 1500 metres",
             "Visit to ancient city of Pınara",
             "Photo break at Hidden Canyon",
-            "Exclusive lunch with Butterfly Valley view",
+            "Premium lunch with Butterfly Valley view",
             "1-hour swim stop at Kıdrak Beach",
           ]
         : [
             "Sadece Cumartesi & Pazar",
             "09:00–17:00",
-            "Toplam 75 km sürüş rotası",
+            "Toplam 75 km rota",
             "Babadağ’da 1500 metreye kadar çıkış",
             "Pınara antik kenti ziyareti",
             "Hidden Canyon’da fotoğraf molası",
-            "Butterfly Valley manzaralı özel öğle yemeği",
+            "Butterfly Valley manzaralı premium öğle yemeği",
             "Kıdrak Beach’te 1 saat yüzme molası",
           ],
-    fullDayIncludedTitle: lang === "en" ? "Included" : "Dahil Olanlar",
-    fullDayIncluded:
+
+    fullIncludedItems:
       lang === "en"
-        ? ["All-day water", "Premium lunch", "Beach entrance fee", "Photos included", "Guide service", "Insurance"]
+        ? ["All day water", "Premium lunch", "Beach entrance fee", "Photos included", "Guide service", "Insurance"]
         : ["Gün boyu su", "Premium öğle yemeği", "Plaj giriş ücreti", "Fotoğraflar dahil", "Rehberlik hizmeti", "Sigorta"],
-    fullDayBringTitle: lang === "en" ? "What to Bring" : "Yanınızda Getirmeniz Gerekenler",
-    fullDayBring:
+
+    fullBringItems:
       lang === "en"
         ? ["Driving licence", "Sunglasses", "Towel", "Swimwear"]
         : ["Ehliyet", "Güneş gözlüğü", "Havlu", "Swimwear"],
-    fullDayRulesTitle: lang === "en" ? "Driver & Passenger Rules" : "Sürücü & Yolcu Kuralları",
-    fullDayRules:
+
+    fullRulesItems:
       lang === "en"
-        ? ["Minimum driver age: 20", "Driving licence required", "Minimum passenger age: 6", "Recommended for experienced drivers", "Not suitable for guests with fear of heights"]
-        : ["Minimum sürücü yaşı: 20", "Ehliyet zorunludur", "Minimum yolcu yaşı: 6", "Deneyimli sürücüler için tavsiye edilir", "Yükseklik korkusu olan misafirler için uygun değildir"],
+        ? [
+            "Minimum driver age: 20",
+            "Driving licence required",
+            "Minimum passenger age: 6",
+            "Recommended for experienced drivers",
+            "Not suitable for guests with fear of heights",
+          ]
+        : [
+            "Minimum sürücü yaşı: 20",
+            "Ehliyet zorunludur",
+            "Minimum yolcu yaşı: 6",
+            "Deneyimli sürücüler için tavsiye edilir",
+            "Yükseklik korkusu olanlar için uygun değildir",
+          ],
 
     kidsTitle: lang === "en" ? "Kids Quad Bike" : "Kids Quad Bike",
     kidsSlogan:
@@ -138,16 +170,20 @@ export default function HomePage() {
         : "Küçük sürücüler. Büyük gülümsemeler.",
     kidsSubtitle:
       lang === "en"
-        ? "A safe and exciting first off-road experience for children on the city’s biggest closed track."
-        : "Çocuklar için şehrin en büyük kapalı parkurunda güvenli ve heyecan dolu ilk off-road deneyimi.",
-    kidsDesc:
+        ? "A safe first off-road adventure for children on the city’s biggest closed track."
+        : "Çocuklar için şehrin en büyük kapalı parkurunda güvenli ilk off-road macerası.",
+    kidsText:
       lang === "en"
-        ? "Kids ride brand-new Yamaha 50 cc ATVs on a 1.2 km closed track under guide supervision. The activity is designed for children aged 6 to 14, with a maximum weight of 60 kg. Safety comes first: helmets are included and the ATVs have rear safety limiters. Parents can relax in the chilling zone while children enjoy a fun activity that also builds coordination and confidence."
-        : "Çocuklar, rehber eşliğinde 1.2 km kapalı parkurda yepyeni Yamaha 50 cc ATV’lerle sürüş yapar. Aktivite 6–14 yaş arası ve maksimum 60 kg çocuklar için tasarlanmıştır. Güvenlik ön plandadır: kask dahildir ve ATV’lerin arkasında emniyet kilitleri vardır. Aileler chilling zone alanında dinlenirken çocuklar hem eğlenir hem de koordinasyon ve özgüven kazanır.",
-    kidsGalleryLabel: lang === "en" ? "Activity Gallery" : "Aktivite Galerisi",
-    kidsBook: lang === "en" ? "Book Kids Quad" : "Kids Quad Rezervasyon",
-    kidsDetailsTitle: lang === "en" ? "Activity Details" : "Aktivite Detayları",
-    kidsDetails:
+        ? "Children ride brand-new Yamaha 50 cc ATVs on a 1.2 km closed track under guide supervision. The activity lasts 50 minutes and is designed for children aged 6 to 14 with a maximum weight of 60 kg. Helmets are included, rear safety limiters are installed and parents can relax in the chilling zone while children enjoy a fun activity that also builds confidence and coordination."
+        : "Çocuklar, rehber eşliğinde 1.2 km kapalı parkurda yepyeni Yamaha 50 cc ATV’lerle sürüş yapar. Aktivite 50 dakika sürer ve 6–14 yaş arası, maksimum 60 kg çocuklar için tasarlanmıştır. Kask dahildir, arka emniyet kilitleri vardır ve aileler chilling zone alanında dinlenirken çocuklar hem eğlenir hem de özgüven ve koordinasyon kazanır.",
+
+    kidsGallery: lang === "en" ? "Activity Gallery" : "Aktivite Galerisi",
+    kidsButton: lang === "en" ? "Book Kids Quad" : "Kids Quad Rezervasyon",
+    kidsDetails: lang === "en" ? "Activity Details" : "Aktivite Detayları",
+    kidsSchedule: lang === "en" ? "Daily Hours" : "Günlük Saatler",
+    kidsRules: lang === "en" ? "Requirements" : "Kurallar",
+
+    kidsDetailsItems:
       lang === "en"
         ? [
             "Brand-new Yamaha 50 cc ATVs",
@@ -167,198 +203,289 @@ export default function HomePage() {
             "Aileler için chilling zone",
             "Kask dahil",
           ],
-    kidsScheduleTitle: lang === "en" ? "Daily Hours" : "Günlük Saatler",
-    kidsSchedule:
-      lang === "en"
-        ? ["10:00", "11:30", "15:00", "18:00"]
-        : ["10:00", "11:30", "15:00", "18:00"],
-    kidsRulesTitle: lang === "en" ? "Requirements" : "Kurallar",
-    kidsRules:
+
+    kidsScheduleItems: ["10:00", "11:30", "15:00", "18:00"],
+
+    kidsRulesItems:
       lang === "en"
         ? ["Age: 6–14", "Maximum weight: 60 kg", "Designed only for children"]
         : ["Yaş: 6–14", "Maksimum kilo: 60 kg", "Sadece çocuklar için tasarlanmıştır"],
 
-    reservationNote:
+    reserveNote:
       lang === "en"
-        ? "Booking infrastructure will be connected to Bokun and virtual POS later."
-        : "Rezervasyon altyapısı daha sonra Bokun ve sanal POS ile bağlanacaktır.",
-    languageButton: lang === "en" ? "TR" : "EN",
+        ? "Booking infrastructure will later be connected to Bokun.io and virtual POS."
+        : "Rezervasyon altyapısı daha sonra Bokun.io ve sanal POS ile bağlanacaktır.",
+  };
+
+  const styles = {
+    page: {
+      backgroundColor: t.pageBg,
+      color: t.text,
+      minHeight: "100vh",
+      fontFamily: "Arial, sans-serif",
+    } as React.CSSProperties,
+    wrap: {
+      maxWidth: "1200px",
+      margin: "0 auto",
+      padding: "24px",
+    } as React.CSSProperties,
+    topBar: {
+      display: "flex",
+      justifyContent: "flex-end",
+      marginBottom: "20px",
+    } as React.CSSProperties,
+    langBtn: {
+      border: `1px solid ${t.border}`,
+      backgroundColor: "#fff",
+      color: t.text,
+      borderRadius: "999px",
+      padding: "10px 16px",
+      cursor: "pointer",
+      fontWeight: 700,
+    } as React.CSSProperties,
+    section: {
+      backgroundColor: "transparent",
+      padding: "48px 0",
+      borderBottom: `1px solid ${t.border}`,
+    } as React.CSSProperties,
+    softSection: {
+      backgroundColor: t.softBg,
+      padding: "48px 24px",
+      borderRadius: "28px",
+      margin: "24px 0",
+    } as React.CSSProperties,
+    title: {
+      fontSize: "52px",
+      lineHeight: 1.1,
+      margin: "0 0 12px 0",
+      fontWeight: 800,
+    } as React.CSSProperties,
+    slogan: {
+      fontSize: "22px",
+      color: t.muted,
+      fontStyle: "italic",
+      margin: "0 0 16px 0",
+      fontWeight: 600,
+    } as React.CSSProperties,
+    subtitle: {
+      fontSize: "28px",
+      lineHeight: 1.35,
+      margin: "0 0 18px 0",
+      fontWeight: 500,
+    } as React.CSSProperties,
+    text: {
+      fontSize: "18px",
+      lineHeight: 1.7,
+      color: t.muted,
+      marginBottom: "28px",
+      maxWidth: "980px",
+    } as React.CSSProperties,
+    label: {
+      fontSize: "13px",
+      letterSpacing: "2px",
+      textTransform: "uppercase" as const,
+      color: t.muted,
+      fontWeight: 700,
+      marginBottom: "14px",
+    } as React.CSSProperties,
+    gallery: {
+      display: "grid",
+      gridTemplateColumns: "repeat(5, 1fr)",
+      gap: "16px",
+      marginBottom: "28px",
+    } as React.CSSProperties,
+    photoBox: {
+      aspectRatio: "4 / 5",
+      borderRadius: "22px",
+      border: `1px solid ${t.border}`,
+      backgroundColor: "#efe9e1",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center" as const,
+      padding: "12px",
+      color: t.muted,
+      fontWeight: 600,
+      fontSize: "15px",
+    } as React.CSSProperties,
+    button: {
+      display: "inline-block",
+      backgroundColor: t.dark,
+      color: "#fff",
+      borderRadius: "999px",
+      padding: "16px 24px",
+      textDecoration: "none",
+      fontWeight: 700,
+      marginBottom: "28px",
+    } as React.CSSProperties,
+    grid: {
+      display: "grid",
+      gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+      gap: "18px",
+      marginTop: "12px",
+    } as React.CSSProperties,
+    card: {
+      backgroundColor: t.cardBg,
+      border: `1px solid ${t.border}`,
+      borderRadius: "24px",
+      padding: "22px",
+    } as React.CSSProperties,
+    cardTitle: {
+      margin: "0 0 14px 0",
+      fontSize: "22px",
+      fontWeight: 800,
+    } as React.CSSProperties,
+    ul: {
+      margin: 0,
+      paddingLeft: "20px",
+      color: t.muted,
+      lineHeight: 1.8,
+      fontSize: "17px",
+    } as React.CSSProperties,
+    note: {
+      backgroundColor: "#fff",
+      border: `1px solid ${t.border}`,
+      borderRadius: "24px",
+      padding: "24px",
+      marginTop: "24px",
+      color: t.muted,
+      fontSize: "17px",
+    } as React.CSSProperties,
+    whatsapp: {
+      position: "fixed" as const,
+      right: "20px",
+      bottom: "20px",
+      backgroundColor: t.green,
+      color: "#fff",
+      textDecoration: "none",
+      padding: "16px 22px",
+      borderRadius: "999px",
+      fontWeight: 800,
+      boxShadow: "0 10px 24px rgba(0,0,0,0.15)",
+    } as React.CSSProperties,
   };
 
   return (
-    <main className="min-h-screen bg-[#f5f2ec] text-stone-900">
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <div className="flex justify-end">
-          <button
-            onClick={() => setLang(lang === "en" ? "tr" : "en")}
-            className="rounded-full bg-stone-900 px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
-          >
-            {t.languageButton}
+    <main style={styles.page}>
+      <div style={styles.wrap}>
+        <div style={styles.topBar}>
+          <button style={styles.langBtn} onClick={() => setLang(lang === "en" ? "tr" : "en")}>
+            {t.switchLang}
           </button>
         </div>
+
+        <section style={styles.section}>
+          <h1 style={styles.title}>{t.halfTitle}</h1>
+          <p style={styles.slogan}>{t.halfSlogan}</p>
+          <p style={styles.subtitle}>{t.halfSubtitle}</p>
+          <p style={styles.text}>{t.halfText}</p>
+
+          <p style={styles.label}>{t.halfGallery}</p>
+          <div style={styles.gallery}>
+            {[1, 2, 3, 4, 5].map((n) => (
+              <div key={n} style={styles.photoBox}>
+                {lang === "en" ? `Half Day Photo ${n}` : `Yarım Gün Fotoğraf ${n}`}
+              </div>
+            ))}
+          </div>
+
+          <a href="#booking-half-day" style={styles.button}>
+            {t.halfButton}
+          </a>
+
+          <div style={styles.grid}>
+            <InfoCard title={t.halfDetails} items={t.halfDetailsItems} styles={styles} />
+            <InfoCard title={t.halfIncluded} items={t.halfIncludedItems} styles={styles} />
+            <InfoCard title={t.halfExtra} items={t.halfExtraItems} styles={styles} />
+            <InfoCard title={t.halfBring} items={t.halfBringItems} styles={styles} />
+          </div>
+
+          <div style={{ marginTop: "18px", maxWidth: "580px" }}>
+            <InfoCard title={t.halfRules} items={t.halfRulesItems} styles={styles} />
+          </div>
+        </section>
+
+        <section style={styles.section}>
+          <h1 style={styles.title}>{t.fullTitle}</h1>
+          <p style={styles.slogan}>{t.fullSlogan}</p>
+          <p style={styles.subtitle}>{t.fullSubtitle}</p>
+          <p style={styles.text}>{t.fullText}</p>
+
+          <p style={styles.label}>{t.fullGallery}</p>
+          <div style={styles.gallery}>
+            {[1, 2, 3, 4, 5].map((n) => (
+              <div key={n} style={styles.photoBox}>
+                {lang === "en" ? `Full Day Photo ${n}` : `Tam Gün Fotoğraf ${n}`}
+              </div>
+            ))}
+          </div>
+
+          <a href="#booking-full-day" style={styles.button}>
+            {t.fullButton}
+          </a>
+
+          <div style={styles.grid}>
+            <InfoCard title={t.fullDetails} items={t.fullDetailsItems} styles={styles} />
+            <InfoCard title={t.fullIncluded} items={t.fullIncludedItems} styles={styles} />
+            <InfoCard title={t.fullBring} items={t.fullBringItems} styles={styles} />
+            <InfoCard title={t.fullRules} items={t.fullRulesItems} styles={styles} />
+          </div>
+        </section>
+
+        <section style={styles.softSection}>
+          <h1 style={styles.title}>{t.kidsTitle}</h1>
+          <p style={styles.slogan}>{t.kidsSlogan}</p>
+          <p style={styles.subtitle}>{t.kidsSubtitle}</p>
+          <p style={styles.text}>{t.kidsText}</p>
+
+          <p style={styles.label}>{t.kidsGallery}</p>
+          <div style={styles.gallery}>
+            {[1, 2, 3, 4, 5].map((n) => (
+              <div key={n} style={styles.photoBox}>
+                {lang === "en" ? `Kids Quad Photo ${n}` : `Kids Quad Fotoğraf ${n}`}
+              </div>
+            ))}
+          </div>
+
+          <a href="#booking-kids-quad" style={styles.button}>
+            {t.kidsButton}
+          </a>
+
+          <div style={styles.grid}>
+            <InfoCard title={t.kidsDetails} items={t.kidsDetailsItems} styles={styles} />
+            <InfoCard title={t.kidsSchedule} items={t.kidsScheduleItems} styles={styles} />
+          </div>
+
+          <div style={{ marginTop: "18px", maxWidth: "580px" }}>
+            <InfoCard title={t.kidsRules} items={t.kidsRulesItems} styles={styles} />
+          </div>
+        </section>
+
+        <div style={styles.note}>{t.reserveNote}</div>
       </div>
 
-      <section className="mx-auto max-w-7xl px-6 py-10">
-        <div className="max-w-3xl">
-          <h2 className="text-5xl font-bold tracking-tight">{t.halfDayTitle}</h2>
-          <p className="mt-3 text-lg font-medium italic text-stone-600">{t.halfDaySlogan}</p>
-          <p className="mt-5 max-w-2xl text-2xl leading-snug text-stone-700">{t.halfDaySubtitle}</p>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-stone-700">{t.halfDayDesc}</p>
-
-          <div className="mt-10">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-stone-500">
-              {t.halfDayGalleryLabel}
-            </p>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-              {[1, 2, 3, 4, 5].map((item) => (
-                <div
-                  key={`halfday-${item}`}
-                  className="flex aspect-[4/5] items-center justify-center rounded-[1.5rem] border border-stone-300 bg-stone-100 text-center text-sm text-stone-500"
-                >
-                  {lang === "en" ? `Half Day Photo ${item}` : `Yarım Gün Fotoğraf ${item}`}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <a
-              href="#booking-half-day"
-              className="inline-flex rounded-full bg-stone-900 px-6 py-4 text-lg font-medium text-white transition hover:opacity-90"
-            >
-              {t.halfDayBook}
-            </a>
-          </div>
-
-          <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            <InfoBlock title={t.halfDayDetailsTitle} items={t.halfDayDetails} />
-            <InfoBlock title={t.halfDayIncludedTitle} items={t.halfDayIncluded} />
-            <InfoBlock title={t.halfDayExtraTitle} items={t.halfDayExtra} />
-            <InfoBlock title={t.halfDayBringTitle} items={t.halfDayBring} />
-          </div>
-
-          <div className="mt-8 max-w-2xl">
-            <InfoBlock title={t.halfDayRulesTitle} items={t.halfDayRules} />
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#faf9f7]">
-        <div className="mx-auto max-w-7xl px-6 py-20">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl font-bold tracking-tight">{t.fullDayTitle}</h2>
-            <p className="mt-3 text-lg font-medium italic text-stone-600">{t.fullDaySlogan}</p>
-            <p className="mt-5 max-w-2xl text-2xl leading-snug text-stone-700">{t.fullDaySubtitle}</p>
-            <p className="mt-6 max-w-4xl text-lg leading-8 text-stone-700">{t.fullDayDesc}</p>
-
-            <div className="mt-10">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-stone-500">
-                {t.fullDayGalleryLabel}
-              </p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-                {[1, 2, 3, 4, 5].map((item) => (
-                  <div
-                    key={`fullday-${item}`}
-                    className="flex aspect-[4/5] items-center justify-center rounded-[1.5rem] border border-stone-300 bg-stone-100 text-center text-sm text-stone-500"
-                  >
-                    {lang === "en" ? `Full Day Photo ${item}` : `Tam Gün Fotoğraf ${item}`}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mt-10">
-              <a
-                href="#booking-full-day"
-                className="inline-flex rounded-full bg-stone-900 px-6 py-4 text-lg font-medium text-white transition hover:opacity-90"
-              >
-                {t.fullDayBook}
-              </a>
-            </div>
-
-            <div className="mt-12 grid gap-8 lg:grid-cols-2">
-              <InfoBlock title={t.fullDayDetailsTitle} items={t.fullDayDetails} />
-              <InfoBlock title={t.fullDayIncludedTitle} items={t.fullDayIncluded} />
-              <InfoBlock title={t.fullDayBringTitle} items={t.fullDayBring} />
-              <InfoBlock title={t.fullDayRulesTitle} items={t.fullDayRules} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="rounded-[2rem] bg-white p-10 shadow-sm">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl font-bold tracking-tight">{t.kidsTitle}</h2>
-            <p className="mt-3 text-lg font-medium italic text-stone-600">{t.kidsSlogan}</p>
-            <p className="mt-5 max-w-2xl text-2xl leading-snug text-stone-700">{t.kidsSubtitle}</p>
-            <p className="mt-6 max-w-4xl text-lg leading-8 text-stone-700">{t.kidsDesc}</p>
-
-            <div className="mt-10">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-stone-500">
-                {t.kidsGalleryLabel}
-              </p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-                {[1, 2, 3, 4, 5].map((item) => (
-                  <div
-                    key={`kids-${item}`}
-                    className="flex aspect-[4/5] items-center justify-center rounded-[1.5rem] border border-stone-300 bg-stone-100 text-center text-sm text-stone-500"
-                  >
-                    {lang === "en" ? `Kids Quad Photo ${item}` : `Kids Quad Fotoğraf ${item}`}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mt-10">
-              <a
-                href="#booking-kids-quad"
-                className="inline-flex rounded-full bg-stone-900 px-6 py-4 text-lg font-medium text-white transition hover:opacity-90"
-              >
-                {t.kidsBook}
-              </a>
-            </div>
-
-            <div className="mt-12 grid gap-8 lg:grid-cols-2">
-              <InfoBlock title={t.kidsDetailsTitle} items={t.kidsDetails} />
-              <InfoBlock title={t.kidsScheduleTitle} items={t.kidsSchedule} />
-            </div>
-
-            <div className="mt-8 max-w-2xl">
-              <InfoBlock title={t.kidsRulesTitle} items={t.kidsRules} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="rounded-[2rem] border border-stone-300 bg-stone-100 p-8 text-stone-700">
-          <p className="text-base">{t.reservationNote}</p>
-        </div>
-      </section>
-
-      <a
-        href="https://wa.me/"
-        target="_blank"
-        rel="noreferrer"
-        className="fixed bottom-5 right-5 rounded-full bg-[#25D366] px-6 py-4 text-xl font-bold text-white shadow-lg"
-      >
+      <a href="https://wa.me/" target="_blank" rel="noreferrer" style={styles.whatsapp}>
         WhatsApp
       </a>
     </main>
   );
 }
 
-function InfoBlock({ title, items }: { title: string; items: string[] }) {
+function InfoCard({
+  title,
+  items,
+  styles,
+}: {
+  title: string;
+  items: string[];
+  styles: any;
+}) {
   return (
-    <div className="rounded-[1.5rem] bg-white p-6 shadow-sm">
-      <h3 className="text-xl font-bold">{title}</h3>
-      <ul className="mt-4 space-y-3 text-base leading-7 text-stone-700">
+    <div style={styles.card}>
+      <h3 style={styles.cardTitle}>{title}</h3>
+      <ul style={styles.ul}>
         {items.map((item) => (
-          <li key={item} className="flex gap-3">
-            <span className="mt-2 h-2 w-2 rounded-full bg-stone-900" />
-            <span>{item}</span>
-          </li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>
