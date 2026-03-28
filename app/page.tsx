@@ -343,7 +343,118 @@ export default function HomePage() {
     </a>
   </div>
 </section>
-    
-    </main>
+      <section
+  id="contact"
+  style={{
+    background: "#1f1a17",
+    color: "#fff",
+    padding: "80px 20px",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+      gap: "40px",
+    }}
+  >
+    <div>
+      <h2 style={{ marginTop: 0 }}>COME & DRIVE</h2>
+      <p style={{ opacity: 0.85, lineHeight: 1.7 }}>
+        Official travel agency in Fethiye / Ölüdeniz.
+        Buggy safari, kids ATV and unforgettable off-road experiences.
+      </p>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+
+      <p>
+        <a
+          href="https://wa.me/905446358280"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          WhatsApp: +90 544 635 82 80
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="mailto:comendrive@gmail.com"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          comendrive@gmail.com
+        </a>
+      </p>
+
+      <p style={{ marginTop: "20px", opacity: 0.7 }}>
+        TÜRSAB A-Group Travel Agency — License No: 11387
+      </p>
+    </div>
+
+    <div>
+      <h3>Follow Us</h3>
+
+      <p>
+        <a
+          href="https://www.instagram.com/comeanddrive"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          Instagram
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://www.facebook.com/comendrivetravel"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          Facebook
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          Tripadvisor
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<a
+  href="https://wa.me/905446358280"
+  target="_blank"
+  rel="noreferrer"
+  style={{
+    position: "fixed",
+    right: "18px",
+    bottom: "18px",
+    background: "#25D366",
+    color: "#fff",
+    textDecoration: "none",
+    padding: "14px 18px",
+    borderRadius: "999px",
+    fontWeight: 700,
+    boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
+    zIndex: 50,
+  }}
+>
+  WhatsApp
+</a>
+     </main>
   );
 }
