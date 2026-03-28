@@ -1,4 +1,48 @@
+import React from "react";
+
 export default function HomePage() {
+  const [lang, setLang] = React.useState("en");
+
+   return (
+    <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
+  
+  <div
+  style={{
+    display: "flex",
+    gap: "8px",
+    alignItems: "center",
+  }}
+>
+  <button
+    onClick={() => setLang("en")}
+    style={{
+      background: "transparent",
+      border: "1px solid rgba(255,255,255,0.4)",
+      color: "#fff",
+      padding: "4px 10px",
+      borderRadius: "999px",
+      cursor: "pointer",
+      fontSize: "12px",
+    }}
+  >
+    EN
+  </button>
+
+  <button
+    onClick={() => setLang("tr")}
+    style={{
+      background: "transparent",
+      border: "1px solid rgba(255,255,255,0.4)",
+      color: "#fff",
+      padding: "4px 10px",
+      borderRadius: "999px",
+      cursor: "pointer",
+      fontSize: "12px",
+    }}
+  >
+    TR
+  </button>
+</div>
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
       <section
@@ -64,6 +108,43 @@ export default function HomePage() {
               TRAVEL AGENCY
             </div>
           </div>
+          <div
+  style={{
+    display: "flex",
+    gap: "8px",
+    alignItems: "center",
+  }}
+>
+  <button
+    onClick={() => setLang("en")}
+    style={{
+      background: "transparent",
+      border: "1px solid rgba(255,255,255,0.4)",
+      color: "#fff",
+      padding: "4px 10px",
+      borderRadius: "999px",
+      cursor: "pointer",
+      fontSize: "12px",
+    }}
+  >
+    EN
+  </button>
+
+  <button
+    onClick={() => setLang("tr")}
+    style={{
+      background: "transparent",
+      border: "1px solid rgba(255,255,255,0.4)",
+      color: "#fff",
+      padding: "4px 10px",
+      borderRadius: "999px",
+      cursor: "pointer",
+      fontSize: "12px",
+    }}
+  >
+    TR
+  </button>
+</div>
           <nav
   style={{
     display: "flex",
@@ -137,11 +218,23 @@ export default function HomePage() {
               fontWeight: 700,
             }}
           >
-            Life Begins
-            <br />
-            Where the Road
-            <br />
-            Ends
+           {lang === "en" ? (
+  <>
+    Life Begins
+    <br />
+    Where the Road
+    <br />
+    Ends
+  </>
+) : (
+  <>
+    Hayat Başlar
+    <br />
+    Yolun Bittiği
+    <br />
+    Yerde
+  </>
+)}
           </h1>
 
           <p
