@@ -506,38 +506,7 @@ halfDayWhy6:
           <div style={{ flex: 1, minWidth: "220px" }}>🌊 {t.swim}</div>
         </div>
       </section>
-
-      <section
-        id="half-day"
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "80px 20px",
-        }}
-      >
-        <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>{t.halfDayTitle}</h2>
-
-        <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
-          {t.halfDayText}
-        </p>
-
-        <a
-          href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Half%20Day%20Buggy%20Safari"
-          style={{
-            display: "inline-block",
-            marginTop: "20px",
-            background: "#1f1a17",
-            color: "#fff",
-            padding: "12px 22px",
-            borderRadius: "999px",
-            textDecoration: "none",
-          }}
-        >
-          {t.bookHalf}
-        </a>
-      </section>
-
-      <section
+  <section
         id="full-day"
         style={{
           background: "#fff",
