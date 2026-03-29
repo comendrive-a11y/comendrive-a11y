@@ -657,20 +657,28 @@ export default function HomePage() {
                   {tour}
                 </h3>
 
-                <a
-                  href={`https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
-                    tour
-                  )}`}
-                  style={{
-                    display: "inline-block",
-                    marginTop: "8px",
-                    color: "#1f1a17",
-                    fontWeight: 600,
-                    textDecoration: "none",
-                  }}
-                >
-                  {t.askWhatsapp}
-                </a>
+             <a
+  href={
+    tour === "Airport Transfer" || tour === "Havalimanı Transferi"
+      ? "/airport-transfer"
+      : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
+          tour
+        )}`
+  }
+  style={{
+    display: "inline-block",
+    marginTop: "8px",
+    color: "#1f1a17",
+    fontWeight: 600,
+    textDecoration: "none",
+  }}
+>
+  {tour === "Airport Transfer" || tour === "Havalimanı Transferi"
+    ? isEn
+      ? "View Details"
+      : "Detayları Gör"
+    : t.askWhatsapp}
+</a>
               </div>
             ))}
           </div>
