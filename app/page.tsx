@@ -235,13 +235,14 @@ halfDayWhy6:
     contact: lang === "en" ? "Contact" : "İletişim",
     followUs: lang === "en" ? "Follow Us" : "Bizi Takip Et",
 
-    navHalf: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
+      navHalf: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
     navFull: lang === "en" ? "Buggy Safari Full Day" : "Buggy Safari Tam Gün",
     navKids: lang === "en" ? "Kids Quad Bike" : "Çocuk Quad Bike",
     navReserve: lang === "en" ? "Reserve" : "Rezervasyon",
     navOther: lang === "en" ? "Other Tours" : "Diğer Turlar",
     navContact: lang === "en" ? "Contact" : "İletişim",
-    };
+  };
+
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
       <section
