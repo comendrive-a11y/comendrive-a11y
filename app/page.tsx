@@ -717,185 +717,44 @@ halfDayWhy6:
  <section
   id="full-day"
   style={{
-    background: "#fff",
+    maxWidth: "1200px",
+    margin: "0 auto",
     padding: "80px 20px",
   }}
 >
-  <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-    <div style={{ marginBottom: "30px" }}>
-      <h2 style={{ fontSize: "42px", marginBottom: "10px", color: "#1f1a17" }}>
-        {t.fullDayTitle}
-      </h2>
+  <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>
+    {t.fullDayTitle}
+  </h2>
 
-      <div
-        style={{
-          fontSize: "20px",
-          fontStyle: "italic",
-          opacity: 0.8,
-          marginBottom: "20px",
-          color: "#5f554d",
-        }}
-      >
-        {lang === "en"
-          ? "Half day for fun. Full day for discovery."
-          : "Yarım gün eğlence için. Tam gün keşif için."}
-      </div>
-
-      <p style={{ fontSize: "20px", maxWidth: "760px", color: "#1f1a17" }}>
-        {lang === "en"
-          ? "75 km of mountain adventure, hidden roads, ancient history, premium lunch and a beach swim stop."
-          : "75 km dağ macerası, gizli yollar, antik tarih, premium öğle yemeği ve plaj yüzme molası."}
-      </p>
-
-      <p
-        style={{
-          fontSize: "16px",
-          opacity: 0.8,
-          marginTop: "20px",
-          maxWidth: "780px",
-          lineHeight: "1.7",
-          color: "#5f554d",
-        }}
-      >
-        {lang === "en"
-          ? "This exclusive full-day route starts from our truck and climbs up to 1500 metres on Babadağ with breathtaking views. The journey includes the ancient Lycian city of Pınara, a photo break above Hidden Canyon, an exclusive lunch with Butterfly Valley view and a 1-hour swim stop at Kıdrak Beach. This experience is designed for guests who want to explore off-road routes that almost nobody else drives."
-          : "Bu özel tam günlük rota truck çıkışıyla başlar ve Babadağ’da 1500 metreye kadar muhteşem manzaralar eşliğinde yükselir. Yolculuk; antik Likya kenti Pınara, Hidden Canyon üzerinde fotoğraf molası, Butterfly Valley manzaralı özel öğle yemeği ve Kıdrak Beach’te 1 saatlik yüzme molasını içerir. Bu deneyim, neredeyse kimsenin sürmediği off-road yolları keşfetmek isteyen misafirler için tasarlanmıştır."}
-      </p>
-    </div>
-
-    <div
-      style={{
-        display: "flex",
-        gap: "20px",
-        flexWrap: "wrap",
-        marginTop: "40px",
-        marginBottom: "40px",
-      }}
-    >
-      {["1", "2", "3", "4", "5"].map((i) => (
-        <div
-          key={i}
-          style={{
-            width: "180px",
-            height: "140px",
-            borderRadius: "18px",
-            background: "#efe7dc",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: "14px",
-            color: "#7a6f65",
-            opacity: 0.8,
-          }}
-        >
-          {lang === "en" ? `Full Day Photo ${i}` : `Tam Gün Fotoğraf ${i}`}
-        </div>
-      ))}
-    </div>
-
-    <a
-      href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Full%20Day%20Buggy%20Safari"
-      style={{
-        display: "inline-block",
-        background: "#1f1a17",
-        color: "#fff",
-        padding: "14px 26px",
-        borderRadius: "999px",
-        textDecoration: "none",
-        fontSize: "16px",
-        fontWeight: 600,
-        marginBottom: "34px",
-      }}
-    >
-      {t.bookFull}
-    </a>
-
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-        gap: "20px",
-      }}
-    >
-      <div
-        style={{
-          background: "#f7f4ee",
-          borderRadius: "24px",
-          padding: "24px",
-        }}
-      >
-        <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
-          {lang === "en" ? "Tour Details" : "Tur Detayları"}
-        </h3>
-        <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
-          <li>{lang === "en" ? "Saturday & Sunday only" : "Sadece Cumartesi & Pazar"}</li>
-          <li>09:00 – 17:00</li>
-          <li>{lang === "en" ? "Total route: 75 km" : "Toplam rota: 75 km"}</li>
-          <li>{lang === "en" ? "Babadağ climb up to 1500 metres" : "Babadağ’da 1500 metreye kadar çıkış"}</li>
-          <li>{lang === "en" ? "Visit to ancient city of Pınara" : "Pınara antik kenti ziyareti"}</li>
-          <li>{lang === "en" ? "Hidden Canyon photo break" : "Hidden Canyon fotoğraf molası"}</li>
-          <li>{lang === "en" ? "1-hour swim stop at Kıdrak Beach" : "Kıdrak Beach’te 1 saat yüzme molası"}</li>
-        </ul>
-      </div>
-
-      <div
-        style={{
-          background: "#f7f4ee",
-          borderRadius: "24px",
-          padding: "24px",
-        }}
-      >
-        <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
-          {lang === "en" ? "Included in Price" : "Fiyata Dahil Olanlar"}
-        </h3>
-        <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
-          <li>{lang === "en" ? "Premium lunch" : "Premium öğle yemeği"}</li>
-          <li>{lang === "en" ? "All day water" : "Gün boyu su"}</li>
-          <li>{lang === "en" ? "Beach entrance fee" : "Plaj giriş ücreti"}</li>
-          <li>{lang === "en" ? "Photos included" : "Fotoğraflar dahil"}</li>
-          <li>{lang === "en" ? "Guide service" : "Rehberlik hizmeti"}</li>
-          <li>{lang === "en" ? "Activity insurance" : "Aktivite sigortası"}</li>
-        </ul>
-      </div>
-
-      <div
-        style={{
-          background: "#f7f4ee",
-          borderRadius: "24px",
-          padding: "24px",
-        }}
-      >
-        <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
-          {lang === "en" ? "What to Bring" : "Yanınızda Getirmeniz Gerekenler"}
-        </h3>
-        <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
-          <li>{lang === "en" ? "Driving licence" : "Ehliyet"}</li>
-          <li>{lang === "en" ? "Sunglasses" : "Güneş gözlüğü"}</li>
-          <li>{lang === "en" ? "Towel" : "Havlu"}</li>
-          <li>Swimwear</li>
-        </ul>
-      </div>
-
-      <div
-        style={{
-          background: "#f7f4ee",
-          borderRadius: "24px",
-          padding: "24px",
-        }}
-      >
-        <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
-          {lang === "en" ? "Participation Rules" : "Katılım Şartları"}
-        </h3>
-        <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
-          <li>{lang === "en" ? "Minimum driver age: 20" : "Minimum sürücü yaşı: 20"}</li>
-          <li>{lang === "en" ? "Driving licence required" : "Ehliyet zorunlu"}</li>
-          <li>{lang === "en" ? "Minimum passenger age: 6" : "Minimum yolcu yaşı: 6"}</li>
-          <li>{lang === "en" ? "Recommended for experienced drivers" : "Deneyimli sürücüler için tavsiye edilir"}</li>
-          <li>{lang === "en" ? "Not suitable for guests with fear of heights" : "Yükseklik korkusu olanlar için uygun değildir"}</li>
-        </ul>
-      </div>
-    </div>
+  <div
+    style={{
+      fontSize: "20px",
+      fontStyle: "italic",
+      opacity: 0.8,
+      marginBottom: "20px",
+    }}
+  >
+    {t.fullDaySlogan}
   </div>
+
+  <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
+    {t.fullDayText}
+  </p>
+
+  <a
+    href="/buggy-full-day"
+    style={{
+      display: "inline-block",
+      marginTop: "20px",
+      background: "#1f1a17",
+      color: "#fff",
+      padding: "12px 22px",
+      borderRadius: "999px",
+      textDecoration: "none",
+    }}
+  >
+    {t.bookFull}
+  </a>
 </section>
 
       <section
