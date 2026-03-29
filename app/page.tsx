@@ -134,8 +134,8 @@ export default function HomePage() {
       <section
         style={{
           minHeight: "100vh",
-      background:
-"linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+     background:
+  "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg') center/cover no-repeat",
           color: "#fff",
           padding: "24px 20px 60px",
           display: "flex",
