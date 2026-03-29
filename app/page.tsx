@@ -1,496 +1,1075 @@
-// trigger deploy
 "use client";
-// commit test
-// test commit 1
 
 import React from "react";
 
 export default function HomePage() {
-  const [lang, setLang] = React.useState<"en" | "tr">("en");
+  const [lang, setLang] = React.useState("en");
 
   const t = {
-    pageBg: "#f5f1eb",
-    cardBg: "#ffffff",
-    softBg: "#f8f6f2",
-    text: "#1f1a17",
-    muted: "#6b625c",
-    border: "#ddd4ca",
-    dark: "#1f1a17",
-    green: "#25D366",
+    halfGalleryTop: lang === "en" ? "Half Day Experience" : "Yarım Gün Deneyimi",
 
-    switchLang: lang === "en" ? "EN" : "TR",
+halfGalleryTitle:
+  lang === "en"
+    ? "Buggy Safari Half Day Adventure"
+    : "Buggy Safari Yarım Gün Macerası",
 
-    halfTitle: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
-    halfSlogan:
-      lang === "en"
-        ? "More than a tour. A real drive."
-        : "Bir turdan fazlası. Gerçek bir sürüş deneyimi.",
-    halfSubtitle:
-      lang === "en"
-        ? "35 km of real off-road driving, forest trails and a 1-hour swim break at Gemiler Beach."
-        : "35 km gerçek off-road sürüş, orman parkurları ve Gemiler Beach’te 1 saat yüzme molası.",
-    halfText:
-      lang === "en"
-        ? "This premium small-group experience starts from Hisarönü and runs on weekdays with two daily departures. You drive a 550 cc automatic Mud Monster buggy through real off-road terrain. Each slot is limited to maximum 8 buggies, giving the tour a more private and comfortable feeling. We are the only company in the city combining buggy safari with a beach swim break."
-        : "Bu premium küçük grup deneyimi Hisarönü çıkışlıdır ve hafta içi her gün iki farklı saatte yapılır. Gerçek off-road arazisinde 550 cc otomatik Mud Monster buggy ile sürüş yaparsınız. Her slot maksimum 8 buggy ile sınırlıdır, bu da daha özel ve konforlu bir his verir. Şehirde buggy safariyi plaj yüzme molasıyla birleştiren tek firmayız.",
+halfGallerySubtitle:
+  lang === "en"
+    ? "35 km of real forest off-road driving + 1-hour swim stop at Gemiler Beach."
+    : "35 km gerçek orman off-road sürüşü + Gemiler Beach’te 1 saat yüzme molası.",
 
-    halfGallery: lang === "en" ? "Tour Gallery" : "Tur Galerisi",
-    halfButton: lang === "en" ? "Book Half Day" : "Yarım Gün Rezervasyon",
-    halfDetails: lang === "en" ? "Tour Details" : "Tur Detayları",
-    halfIncluded: lang === "en" ? "Included" : "Dahil Olanlar",
-    halfExtra: lang === "en" ? "Extra / Optional" : "Ekstra / Opsiyonel",
-    halfBring: lang === "en" ? "What to Bring" : "Yanınızda Getirmeniz Gerekenler",
-    halfRules: lang === "en" ? "Driver Rules" : "Sürücü Kuralları",
+halfGallerySlogan:
+  lang === "en"
+    ? "More than a tour. A real drive."
+    : "Bir turdan fazlası. Gerçek bir sürüş deneyimi.",
 
-    halfDetailsItems:
-      lang === "en"
-        ? [
-            "Location: Hisarönü, Fethiye",
-            "Weekdays only",
-            "Two departures daily: 09:00–12:30 / 14:00–17:30",
-            "35 km off-road driving",
-            "1-hour swim break at Gemiler Beach",
-            "550 cc automatic Mud Monster buggy",
-            "Maximum 8 buggies per slot",
-          ]
-        : [
-            "Lokasyon: Hisarönü, Fethiye",
-            "Sadece hafta içi",
-            "Günde 2 çıkış: 09:00–12:30 / 14:00–17:30",
-            "35 km off-road sürüş",
-            "Gemiler Beach’te 1 saat yüzme molası",
-            "550 cc otomatik Mud Monster buggy",
-            "Her slotta maksimum 8 buggy",
-          ],
+halfDayDetailsTitle: lang === "en" ? "Tour Details" : "Tur Detayları",
+halfDayDaysTitle: lang === "en" ? "Tour Days & Times" : "Tur Günleri ve Saatleri",
+halfDayIncludedTitle: lang === "en" ? "Included in Price" : "Fiyata Dahil Olanlar",
+halfDayExtraTitle: lang === "en" ? "Extra Charges" : "Ekstra Ücretli Olanlar",
+halfDayRulesTitle: lang === "en" ? "Participation Rules" : "Katılım Şartları",
+halfDayWhyTitle:
+  lang === "en" ? "Why Choose This Tour?" : "Bu Turu Neden Seçmelisiniz?",
 
-    halfIncludedItems:
-      lang === "en"
-        ? [
-            "Protective goggles",
-            "1 bottle of water",
-            "Holiday activity insurance",
-            "Professional guide service",
-            "Transfer",
-            "Gemiler Beach entrance",
-          ]
-        : [
-            "Koruyucu gözlük",
-            "1 şişe su",
-            "Tatil aktivite sigortası",
-            "Rehberlik hizmeti",
-            "Transfer",
-            "Gemiler Beach giriş ücreti",
-          ],
+halfDayLocation:
+  lang === "en" ? "Start point: Hisarönü – Fethiye" : "Başlangıç: Hisarönü – Fethiye",
+halfDayDuration:
+  lang === "en" ? "Duration: 3.5 hours" : "Süre: 3,5 saat",
+halfDayDistance:
+  lang === "en" ? "Total route: 35 km off-road" : "Toplam rota: 35 km off-road",
+halfDaySwim:
+  lang === "en"
+    ? "Swim stop: Gemiler Beach (entry included)"
+    : "Yüzme molası: Gemiler Beach (giriş dahil)",
+halfDayVehicle:
+  lang === "en"
+    ? "Vehicle: 550cc automatic Mud Monster buggy"
+    : "Araç: 550cc otomatik Mud Monster buggy",
+halfDaySeats:
+  lang === "en"
+    ? "2 people can ride together in the same buggy"
+    : "Aynı araçta 2 kişi birlikte sürüş yapabilir",
 
-    halfExtraItems:
-      lang === "en" ? ["Photos", "Drinks at the beach"] : ["Fotoğraflar", "Plajdaki içecekler"],
+halfDayEasy:
+  lang === "en"
+    ? "Easy to drive. No previous experience needed."
+    : "Sürmesi kolaydır. Önceden deneyim gerektirmez.",
 
-    halfBringItems:
-      lang === "en"
-        ? ["Driving licence", "Sunglasses", "Towel", "Swimwear", "Some money for drinks"]
-        : ["Ehliyet", "Güneş gözlüğü", "Havlu", "Swimwear", "İçecekler için bir miktar para"],
+halfDaySchedule1:
+  lang === "en"
+    ? "Monday – Friday (every weekday)"
+    : "Pazartesi – Cuma (hafta içi her gün)",
+halfDaySchedule2:
+  lang === "en"
+    ? "Morning tour: 09:00 – 12:30"
+    : "Sabah turu: 09:00 – 12:30",
+halfDaySchedule3:
+  lang === "en"
+    ? "Afternoon tour: 14:00 – 17:30"
+    : "Öğleden sonra turu: 14:00 – 17:30",
+halfDaySchedule4:
+  lang === "en"
+    ? "Weekend is reserved for Babadağ Exclusive Full Day."
+    : "Hafta sonları Babadağ Exclusive Full Day turu yapılmaktadır.",
 
-    halfRulesItems:
-      lang === "en"
-        ? ["Minimum driving age: 18", "Not suitable for children under 4", "Driving licence required"]
-        : ["Minimum sürüş yaşı: 18", "4 yaş altı çocuklar için uygun değildir", "Ehliyet zorunludur"],
+halfDayInc1:
+  lang === "en" ? "550cc buggy vehicle" : "550cc buggy aracı",
+halfDayInc2:
+  lang === "en" ? "Guiding service" : "Rehberlik hizmeti",
+halfDayInc3:
+  lang === "en" ? "Activity insurance" : "Aktivite sigortası",
+halfDayInc4:
+  lang === "en" ? "Protective goggles" : "Koruyucu gözlük",
+halfDayInc5:
+  lang === "en" ? "1 bottle of water" : "1 şişe su",
+halfDayInc6:
+  lang === "en" ? "Gemiler Beach entrance fee" : "Gemiler Beach giriş ücreti",
+halfDayInc7:
+  lang === "en" ? "1-hour swim stop" : "1 saat yüzme molası",
 
-    fullTitle: lang === "en" ? "Buggy Safari Full Day" : "Buggy Safari Tam Gün",
-    fullSlogan:
-      lang === "en"
-        ? "Half day for fun. Full day for discovery."
-        : "Yarım gün eğlence için. Tam gün keşif için.",
-    fullSubtitle:
-      lang === "en"
-        ? "75 km of mountain adventure, hidden roads, ancient history, premium lunch and a beach swim stop."
-        : "75 km dağ macerası, gizli yollar, antik tarih, premium öğle yemeği ve plaj yüzme molası.",
-    fullText:
-      lang === "en"
-        ? "This full-day experience begins from our truck and climbs up to 1500 metres on Babadağ. The route includes the ancient city of Pınara, a photo stop at Hidden Canyon, an exclusive lunch with Butterfly Valley view and a 1-hour swim break at Kıdrak Beach. It is recommended for experienced drivers and guests without fear of heights. The biggest difference of this tour is discovering off-road routes that almost nobody else drives."
-        : "Bu tam günlük deneyim truck çıkışıyla başlar ve Babadağ’da 1500 metreye kadar çıkar. Rota; Pınara antik kenti, Hidden Canyon’da fotoğraf molası, Butterfly Valley manzaralı özel öğle yemeği ve Kıdrak Beach’te 1 saat yüzme molasını içerir. Deneyimli sürücüler ve yükseklik korkusu olmayan misafirler için tavsiye edilir. Bu turun en büyük farkı, neredeyse kimsenin sürmediği off-road yolları keşfetmektir.",
+halfDayEx1:
+  lang === "en" ? "Bandana (optional)" : "Bandana (isteğe bağlı)",
+halfDayEx2:
+  lang === "en" ? "Personal beach expenses" : "Plaj harcamaları",
+halfDayEx3:
+  lang === "en" ? "Tour photos" : "Tur fotoğrafları",
+halfDayEx4:
+  lang === "en"
+    ? "Around 80% of our guests choose the photo package."
+    : "Misafirlerimizin yaklaşık %80’i tur fotoğraflarını tercih etmektedir.",
 
-    fullGallery: lang === "en" ? "Tour Gallery" : "Tur Galerisi",
-    fullButton: lang === "en" ? "Book Full Day" : "Tam Gün Rezervasyon",
-    fullDetails: lang === "en" ? "Tour Details" : "Tur Detayları",
-    fullIncluded: lang === "en" ? "Included" : "Dahil Olanlar",
-    fullBring: lang === "en" ? "What to Bring" : "Yanınızda Getirmeniz Gerekenler",
-    fullRules: lang === "en" ? "Driver & Passenger Rules" : "Sürücü & Yolcu Kuralları",
+halfDayRule1:
+  lang === "en" ? "Minimum driver age: 18" : "Minimum sürücü yaşı: 18",
+halfDayRule2:
+  lang === "en" ? "Driving licence required" : "Ehliyet zorunlu",
+halfDayRule3:
+  lang === "en"
+    ? "Not suitable for children under 4"
+    : "4 yaş altı çocuklar katılamaz",
 
-    fullDetailsItems:
+halfDayWhy1:
+  lang === "en"
+    ? "35 km of real off-road route"
+    : "35 km uzun gerçek off-road rota",
+halfDayWhy2:
+  lang === "en"
+    ? "Forest driving experience"
+    : "Orman içi sürüş deneyimi",
+halfDayWhy3:
+  lang === "en"
+    ? "Swim break at Gemiler Beach"
+    : "Gemiler Beach’te yüzme molası",
+halfDayWhy4:
+  lang === "en"
+    ? "Side-by-side buggy vehicles"
+    : "Side-by-side buggy araçlar",
+halfDayWhy5:
+  lang === "en"
+    ? "Small group concept"
+    : "Küçük grup konsepti",
+halfDayWhy6:
+  lang === "en"
+    ? "Easy to drive for both women and men"
+    : "Kadın ve erkek sürücüler için kolay kullanım",
+    otherToursList:
+  lang === "en"
+    ? [
+        "Airport Transfer",
+        "Saklikent Canyon Safari",
+        "Ölüdeniz Boat Trip",
+        "Horse Riding",
+        "Private Boat Tour",
+        "Paragliding",
+      ]
+    : [
+        "Havalimanı Transferi",
+        "Saklıkent Kanyon Safari",
+        "Ölüdeniz Tekne Turu",
+        "At Turu",
+        "Özel Tekne Turu",
+        "Yamaç Paraşütü",
+      ],
+    heroTop:
       lang === "en"
-        ? [
-            "Saturday & Sunday only",
-            "09:00–17:00",
-            "75 km total route",
-            "Babadağ climb up to 1500 metres",
-            "Visit to ancient city of Pınara",
-            "Photo break at Hidden Canyon",
-            "Premium lunch with Butterfly Valley view",
-            "1-hour swim stop at Kıdrak Beach",
-          ]
-        : [
-            "Sadece Cumartesi & Pazar",
-            "09:00–17:00",
-            "Toplam 75 km rota",
-            "Babadağ’da 1500 metreye kadar çıkış",
-            "Pınara antik kenti ziyareti",
-            "Hidden Canyon’da fotoğraf molası",
-            "Butterfly Valley manzaralı premium öğle yemeği",
-            "Kıdrak Beach’te 1 saat yüzme molası",
-          ],
+        ? "5-STAR GUEST SATISFACTION · ÖLÜDENİZ / FETHİYE"
+        : "5 YILDIZLI MİSAFİR MEMNUNİYETİ · ÖLÜDENİZ / FETHİYE",
 
-    fullIncludedItems:
-      lang === "en"
-        ? ["All day water", "Premium lunch", "Beach entrance fee", "Photos included", "Guide service", "Insurance"]
-        : ["Gün boyu su", "Premium öğle yemeği", "Plaj giriş ücreti", "Fotoğraflar dahil", "Rehberlik hizmeti", "Sigorta"],
+    heroTitle1: lang === "en" ? "Life Begins" : "Hayat Başlar",
+    heroTitle2: lang === "en" ? "Where the Road" : "Yolun Bittiği",
+    heroTitle3: lang === "en" ? "Ends" : "Yerde",
 
-    fullBringItems:
+    heroText:
       lang === "en"
-        ? ["Driving licence", "Sunglasses", "Towel", "Swimwear"]
-        : ["Ehliyet", "Güneş gözlüğü", "Havlu", "Swimwear"],
+        ? "Real off-road fun, forest adventure and unforgettable holiday memories. From buggy safari to kids ATV, we turn dust into stories worth telling."
+        : "Gerçek off-road eğlencesi, orman macerası ve unutulmaz tatil anıları. Buggy safari ve çocuk ATV deneyimiyle tozu hikâyeye dönüştürüyoruz.",
 
-    fullRulesItems:
-      lang === "en"
-        ? [
-            "Minimum driver age: 20",
-            "Driving licence required",
-            "Minimum passenger age: 6",
-            "Recommended for experienced drivers",
-            "Not suitable for guests with fear of heights",
-          ]
-        : [
-            "Minimum sürücü yaşı: 20",
-            "Ehliyet zorunludur",
-            "Minimum yolcu yaşı: 6",
-            "Deneyimli sürücüler için tavsiye edilir",
-            "Yükseklik korkusu olanlar için uygun değildir",
-          ],
+    viewMainTour: lang === "en" ? "View Main Tour" : "Ana Turu Gör",
+    whatsappUs: lang === "en" ? "WhatsApp Us" : "WhatsApp Yaz",
 
-    kidsTitle: lang === "en" ? "Kids Quad Bike" : "Kids Quad Bike",
-    kidsSlogan:
+    licence: lang === "en" ? "Driving licence required" : "Ehliyet gereklidir",
+    forest: lang === "en" ? "Forest off-road route" : "Orman off-road rotası",
+    swim: lang === "en" ? "1-hour beach swim stop" : "1 saat plaj yüzme molası",
+
+    halfDayTitle: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
+    halfDayText:
       lang === "en"
-        ? "Little riders. Big smiles."
-        : "Küçük sürücüler. Büyük gülümsemeler.",
-    kidsSubtitle:
+        ? "Forest off-road driving, dust, adrenaline and a refreshing swim stop. Perfect balance between adventure and comfort."
+        : "Orman off-road sürüşü, toz, adrenalin ve ferahlatıcı bir yüzme molası. Macera ile konforun ideal dengesi.",
+    bookHalf: lang === "en" ? "Book Half Day" : "Yarım Gün Rezervasyon",
+
+    fullDayTitle: lang === "en" ? "Buggy Safari Full Day" : "Buggy Safari Tam Gün",
+    fullDayText:
       lang === "en"
-        ? "A safe first off-road adventure for children on the city’s biggest closed track."
-        : "Çocuklar için şehrin en büyük kapalı parkurunda güvenli ilk off-road macerası.",
+        ? "Mountains, hidden roads, Saklıkent canyon line and long adventure route. A real expedition day for explorers."
+        : "Dağlar, gizli yollar, Saklıkent kanyon hattı ve uzun macera rotası. Keşfetmeyi sevenler için gerçek bir tam gün deneyimi.",
+    bookFull: lang === "en" ? "Book Full Day" : "Tam Gün Rezervasyon",
+
+    kidsTitle: lang === "en" ? "Kids Quad Bike" : "Çocuk Quad Bike",
     kidsText:
       lang === "en"
-        ? "Children ride brand-new Yamaha 50 cc ATVs on a 1.2 km closed track under guide supervision. The activity lasts 50 minutes and is designed for children aged 6 to 14 with a maximum weight of 60 kg. Helmets are included, rear safety limiters are installed and parents can relax in the chilling zone while children enjoy a fun activity that also builds confidence and coordination."
-        : "Çocuklar, rehber eşliğinde 1.2 km kapalı parkurda yepyeni Yamaha 50 cc ATV’lerle sürüş yapar. Aktivite 50 dakika sürer ve 6–14 yaş arası, maksimum 60 kg çocuklar için tasarlanmıştır. Kask dahildir, arka emniyet kilitleri vardır ve aileler chilling zone alanında dinlenirken çocuklar hem eğlenir hem de özgüven ve koordinasyon kazanır.",
+        ? "A safe and exciting first off-road experience for children. 50 minutes on a closed track, full of fun, smiles and real adventure feeling."
+        : "Çocuklar için güvenli ve heyecan verici ilk off-road deneyimi. Kapalı parkurda 50 dakika; eğlence, gülümseme ve gerçek macera hissi dolu.",
+    kidsTag1: lang === "en" ? "50 minutes" : "50 dakika",
+    kidsTag2: lang === "en" ? "Closed track" : "Kapalı parkur",
+    kidsTag3: lang === "en" ? "For children" : "Çocuklar için",
+    kidsBook: lang === "en" ? "Book Kids Quad Bike" : "Çocuk Quad Rezervasyon",
 
-    kidsGallery: lang === "en" ? "Activity Gallery" : "Aktivite Galerisi",
-    kidsButton: lang === "en" ? "Book Kids Quad" : "Kids Quad Rezervasyon",
-    kidsDetails: lang === "en" ? "Activity Details" : "Aktivite Detayları",
-    kidsSchedule: lang === "en" ? "Daily Hours" : "Günlük Saatler",
-    kidsRules: lang === "en" ? "Requirements" : "Kurallar",
-
-    kidsDetailsItems:
+    reservationTop: lang === "en" ? "Reservation" : "Rezervasyon",
+    reservationTitle:
+      lang === "en" ? "Check Availability & Reserve" : "Müsaitliği Kontrol Et ve Rezerve Et",
+    reservationText:
       lang === "en"
-        ? [
-            "Brand-new Yamaha 50 cc ATVs",
-            "1.2 km closed track",
-            "Guided riding",
-            "50-minute activity",
-            "City’s biggest kids track",
-            "Parent chilling zone",
-            "Helmet included",
-          ]
-        : [
-            "Yepyeni Yamaha 50 cc ATV’ler",
-            "1.2 km kapalı parkur",
-            "Rehberli sürüş",
-            "50 dakikalık aktivite",
-            "Şehrin en büyük çocuk parkuru",
-            "Aileler için chilling zone",
-            "Kask dahil",
-          ],
-
-    kidsScheduleItems: ["10:00", "11:30", "15:00", "18:00"],
-
-    kidsRulesItems:
+        ? "Our online booking area will appear here soon. Until then, you can reserve your place directly via WhatsApp and get quick confirmation from our team."
+        : "Online rezervasyon alanımız çok yakında burada olacak. O zamana kadar WhatsApp üzerinden yerinizi ayırtabilir ve ekibimizden hızlı onay alabilirsiniz.",
+    reservationPlaceholder:
       lang === "en"
-        ? ["Age: 6–14", "Maximum weight: 60 kg", "Designed only for children"]
-        : ["Yaş: 6–14", "Maksimum kilo: 60 kg", "Sadece çocuklar için tasarlanmıştır"],
+        ? "Bókun booking widget will be integrated here"
+        : "Bókun rezervasyon bileşeni buraya entegre edilecek",
+    askAvailability:
+      lang === "en" ? "Ask Availability on WhatsApp" : "WhatsApp’tan Müsaitlik Sor",
 
-    reserveNote:
+    otherTop: lang === "en" ? "Other Tours" : "Diğer Turlar",
+    otherTitle:
+      lang === "en" ? "More Ways to Explore Fethiye" : "Fethiye’yi Keşfetmenin Daha Fazla Yolu",
+    otherText:
       lang === "en"
-        ? "Booking infrastructure will later be connected to Bokun.io and virtual POS."
-        : "Rezervasyon altyapısı daha sonra Bokun.io ve sanal POS ile bağlanacaktır.",
-  };
+        ? "Beyond buggy safari, we also help our guests enjoy the best of Fethiye and Ölüdeniz. Choose from our most popular extra experiences."
+        : "Buggy safarinin yanında, misafirlerimizin Fethiye ve Ölüdeniz’in en güzel deneyimlerini yaşamasına da yardımcı oluyoruz. En popüler ek turlarımızı keşfedin.",
+    askWhatsapp: lang === "en" ? "Ask on WhatsApp →" : "WhatsApp’tan Sor →",
 
-  const styles = {
-    page: {
-      backgroundColor: t.pageBg,
-      color: t.text,
-      minHeight: "100vh",
-      fontFamily: "Arial, sans-serif",
-    } as React.CSSProperties,
-    wrap: {
-      maxWidth: "1200px",
-      margin: "0 auto",
-      padding: "24px",
-    } as React.CSSProperties,
-    topBar: {
-      display: "flex",
-      justifyContent: "flex-end",
-      marginBottom: "20px",
-    } as React.CSSProperties,
-    langBtn: {
-      border: `1px solid ${t.border}`,
-      backgroundColor: "#fff",
-      color: t.text,
-      borderRadius: "999px",
-      padding: "10px 16px",
-      cursor: "pointer",
-      fontWeight: 700,
-    } as React.CSSProperties,
-    section: {
-      backgroundColor: "transparent",
-      padding: "48px 0",
-      borderBottom: `1px solid ${t.border}`,
-    } as React.CSSProperties,
-    softSection: {
-      backgroundColor: t.softBg,
-      padding: "48px 24px",
-      borderRadius: "28px",
-      margin: "24px 0",
-    } as React.CSSProperties,
-    title: {
-      fontSize: "52px",
-      lineHeight: 1.1,
-      margin: "0 0 12px 0",
-      fontWeight: 800,
-    } as React.CSSProperties,
-    slogan: {
-      fontSize: "22px",
-      color: t.muted,
-      fontStyle: "italic",
-      margin: "0 0 16px 0",
-      fontWeight: 600,
-    } as React.CSSProperties,
-    subtitle: {
-      fontSize: "28px",
-      lineHeight: 1.35,
-      margin: "0 0 18px 0",
-      fontWeight: 500,
-    } as React.CSSProperties,
-    text: {
-      fontSize: "18px",
-      lineHeight: 1.7,
-      color: t.muted,
-      marginBottom: "28px",
-      maxWidth: "980px",
-    } as React.CSSProperties,
-    label: {
-      fontSize: "13px",
-      letterSpacing: "2px",
-      textTransform: "uppercase" as const,
-      color: t.muted,
-      fontWeight: 700,
-      marginBottom: "14px",
-    } as React.CSSProperties,
-    gallery: {
-      display: "grid",
-      gridTemplateColumns: "repeat(5, 1fr)",
-      gap: "16px",
-      marginBottom: "28px",
-    } as React.CSSProperties,
-    photoBox: {
-      aspectRatio: "4 / 5",
-      borderRadius: "22px",
-      border: `1px solid ${t.border}`,
-      backgroundColor: "#efe9e1",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      textAlign: "center" as const,
-      padding: "12px",
-      color: t.muted,
-      fontWeight: 600,
-      fontSize: "15px",
-    } as React.CSSProperties,
-    button: {
-      display: "inline-block",
-      backgroundColor: t.dark,
-      color: "#fff",
-      borderRadius: "999px",
-      padding: "16px 24px",
-      textDecoration: "none",
-      fontWeight: 700,
-      marginBottom: "28px",
-    } as React.CSSProperties,
-    grid: {
-      display: "grid",
-      gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-      gap: "18px",
-      marginTop: "12px",
-    } as React.CSSProperties,
-    card: {
-      backgroundColor: t.cardBg,
-      border: `1px solid ${t.border}`,
-      borderRadius: "24px",
-      padding: "22px",
-    } as React.CSSProperties,
-    cardTitle: {
-      margin: "0 0 14px 0",
-      fontSize: "22px",
-      fontWeight: 800,
-    } as React.CSSProperties,
-    ul: {
-      margin: 0,
-      paddingLeft: "20px",
-      color: t.muted,
-      lineHeight: 1.8,
-      fontSize: "17px",
-    } as React.CSSProperties,
-    note: {
-      backgroundColor: "#fff",
-      border: `1px solid ${t.border}`,
-      borderRadius: "24px",
-      padding: "24px",
-      marginTop: "24px",
-      color: t.muted,
-      fontSize: "17px",
-    } as React.CSSProperties,
-    whatsapp: {
-      position: "fixed" as const,
-      right: "20px",
-      bottom: "20px",
-      backgroundColor: t.green,
-      color: "#fff",
-      textDecoration: "none",
-      padding: "16px 22px",
-      borderRadius: "999px",
-      fontWeight: 800,
-      boxShadow: "0 10px 24px rgba(0,0,0,0.15)",
-    } as React.CSSProperties,
+    reviewsTop: lang === "en" ? "Guest Reviews" : "Misafir Yorumları",
+    reviewsTitle:
+      lang === "en" ? "Rated 5 Stars by Happy Guests" : "Mutlu Misafirlerden 5 Yıldız",
+    reviewsText:
+      lang === "en"
+        ? "Real reviews. Real tours. Real dust. See why our guests love the Come and Drive experience."
+        : "Gerçek yorumlar. Gerçek turlar. Gerçek toz. Misafirlerimizin Come and Drive deneyimini neden sevdiğini görün.",
+    readReviews: lang === "en" ? "Read Reviews" : "Yorumları Oku",
+
+    contactTitle: "COME & DRIVE",
+    contactText:
+      lang === "en"
+        ? "Official travel agency in Fethiye / Ölüdeniz. Buggy safari, kids ATV and unforgettable off-road experiences."
+        : "Fethiye / Ölüdeniz’de resmi seyahat acentası. Buggy safari, çocuk ATV ve unutulmaz off-road deneyimleri.",
+
+    contact: lang === "en" ? "Contact" : "İletişim",
+    followUs: lang === "en" ? "Follow Us" : "Bizi Takip Et",
+
+    navHalf: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
+    navFull: lang === "en" ? "Buggy Safari Full Day" : "Buggy Safari Tam Gün",
+    navKids: lang === "en" ? "Kids Quad Bike" : "Çocuk Quad Bike",
+    navReserve: lang === "en" ? "Reserve" : "Rezervasyon",
+    navOther: lang === "en" ? "Other Tours" : "Diğer Turlar",
+    navContact: lang === "en" ? "Contact" : "İletişim",
   };
 
   return (
-    <main style={styles.page}>
-      <div style={styles.wrap}>
-        <div style={styles.topBar}>
-          <button style={styles.langBtn} onClick={() => setLang(lang === "en" ? "tr" : "en")}>
-            {t.switchLang}
-          </button>
+    <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
+      <section
+        style={{
+          minHeight: "100vh",
+          background:
+            "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg') center/cover no-repeat",
+          color: "#fff",
+          padding: "24px 20px 60px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <header
+          style={{
+            position: "sticky",
+            top: "12px",
+            zIndex: 100,
+            maxWidth: "1200px",
+            width: "100%",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: "16px",
+            flexWrap: "wrap",
+            padding: "14px 18px",
+            borderRadius: "18px",
+            background: "rgba(20,18,15,0.45)",
+            backdropFilter: "blur(8px)",
+          }}
+        >
+          <div
+            style={{
+              color: "#ffffff",
+              fontFamily: "system-ui, sans-serif",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "center",
+              lineHeight: 1,
+            }}
+          >
+            <div
+              style={{
+                fontSize: "26px",
+                fontWeight: 500,
+                letterSpacing: "2px",
+              }}
+            >
+              COME & DRIVE
+            </div>
+
+            <div
+              style={{
+                fontSize: "11px",
+                letterSpacing: "3px",
+                opacity: 0.85,
+                marginTop: "4px",
+              }}
+            >
+              TRAVEL AGENCY
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "8px",
+              alignItems: "center",
+            }}
+          >
+            <button
+              onClick={() => setLang("en")}
+              style={{
+                background: lang === "en" ? "#fff" : "transparent",
+                border: "1px solid rgba(255,255,255,0.45)",
+                color: lang === "en" ? "#1f1a17" : "#fff",
+                padding: "4px 10px",
+                borderRadius: "999px",
+                cursor: "pointer",
+                fontSize: "12px",
+                fontWeight: 600,
+              }}
+            >
+              EN
+            </button>
+
+            <button
+              onClick={() => setLang("tr")}
+              style={{
+                background: lang === "tr" ? "#fff" : "transparent",
+                border: "1px solid rgba(255,255,255,0.45)",
+                color: lang === "tr" ? "#1f1a17" : "#fff",
+                padding: "4px 10px",
+                borderRadius: "999px",
+                cursor: "pointer",
+                fontSize: "12px",
+                fontWeight: 600,
+              }}
+            >
+              TR
+            </button>
+          </div>
+
+          <nav
+            style={{
+              display: "flex",
+              gap: "14px",
+              flexWrap: "wrap",
+              fontSize: "13px",
+              alignItems: "center",
+            }}
+          >
+            <a href="#half-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+              {t.navHalf}
+            </a>
+
+            <a href="#full-day" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+              {t.navFull}
+            </a>
+
+            <a href="#kids-quad" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+              {t.navKids}
+            </a>
+
+            <a href="#reservation" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+              {t.navReserve}
+            </a>
+
+            <a href="#other-tours" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+              {t.navOther}
+            </a>
+
+            <a href="#contact" style={{ color: "rgba(255,255,255,0.9)", textDecoration: "none" }}>
+              {t.navContact}
+            </a>
+          </nav>
+
+          <a
+            href="https://wa.me/905446358280"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              background: "#25D366",
+              color: "#fff",
+              padding: "10px 18px",
+              borderRadius: "999px",
+              fontWeight: 600,
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            WhatsApp
+          </a>
+        </header>
+
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "13px",
+              letterSpacing: "2px",
+              opacity: 0.9,
+              marginBottom: "14px",
+            }}
+          >
+            {t.heroTop}
+          </div>
+
+          <h1
+            style={{
+              fontSize: "64px",
+              lineHeight: 1.05,
+              margin: "0 0 20px",
+              fontWeight: 700,
+            }}
+          >
+            {t.heroTitle1}
+            <br />
+            {t.heroTitle2}
+            <br />
+            {t.heroTitle3}
+          </h1>
+
+          <p
+            style={{
+              maxWidth: "520px",
+              fontSize: "18px",
+              opacity: 0.95,
+              marginBottom: "28px",
+            }}
+          >
+            {t.heroText}
+          </p>
+
+          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
+            <a
+              href="#half-day"
+              style={{
+                background: "#fff",
+                color: "#000",
+                padding: "12px 22px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                fontWeight: 500,
+              }}
+            >
+              {t.viewMainTour}
+            </a>
+
+            <a
+              href="https://wa.me/905446358280"
+              style={{
+                border: "1px solid #fff",
+                color: "#fff",
+                padding: "12px 22px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                fontWeight: 500,
+              }}
+            >
+              {t.whatsappUs}
+            </a>
+          </div>
         </div>
+      </section>
 
-        <section style={styles.section}>
-          <h1 style={styles.title}>{t.halfTitle}</h1>
-          <p style={styles.slogan}>{t.halfSlogan}</p>
-          <p style={styles.subtitle}>{t.halfSubtitle}</p>
-          <p style={styles.text}>{t.halfText}</p>
+      <section
+        style={{
+          background: "#ffffff",
+          padding: "32px 20px",
+          display: "flex",
+          justifyContent: "center",
+          borderBottom: "1px solid #eee",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            gap: "20px",
+            flexWrap: "wrap",
+            fontSize: "15px",
+            fontWeight: 600,
+            color: "#1f1a17",
+            textAlign: "center",
+          }}
+        >
+          <div style={{ flex: 1, minWidth: "220px" }}>🚗 {t.licence}</div>
+          <div style={{ flex: 1, minWidth: "220px" }}>🌲 {t.forest}</div>
+          <div style={{ flex: 1, minWidth: "220px" }}>🌊 {t.swim}</div>
+        </div>
+      </section>
 
-          <p style={styles.label}>{t.halfGallery}</p>
-          <div style={styles.gallery}>
-            {[1, 2, 3, 4, 5].map((n) => (
-              <div key={n} style={styles.photoBox}>
-                {lang === "en" ? `Half Day Photo ${n}` : `Yarım Gün Fotoğraf ${n}`}
+      <section
+        id="half-day"
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          padding: "80px 20px",
+        }}
+      >
+        <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>{t.halfDayTitle}</h2>
+
+        <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
+          {t.halfDayText}
+        </p>
+
+        <a
+          href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Half%20Day%20Buggy%20Safari"
+          style={{
+            display: "inline-block",
+            marginTop: "20px",
+            background: "#1f1a17",
+            color: "#fff",
+            padding: "12px 22px",
+            borderRadius: "999px",
+            textDecoration: "none",
+          }}
+        >
+          {t.bookHalf}
+        </a>
+      </section>
+
+      <section
+        id="full-day"
+        style={{
+          background: "#fff",
+          padding: "80px 20px",
+        }}
+      >
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>{t.fullDayTitle}</h2>
+
+          <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
+            {t.fullDayText}
+          </p>
+
+          <a
+            href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Full%20Day%20Buggy%20Safari"
+            style={{
+              display: "inline-block",
+              marginTop: "20px",
+              background: "#1f1a17",
+              color: "#fff",
+              padding: "12px 22px",
+              borderRadius: "999px",
+              textDecoration: "none",
+            }}
+          >
+            {t.bookFull}
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="kids-quad"
+        style={{
+          padding: "80px 20px",
+          background: "#f7f4ee",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            background: "#fff",
+            borderRadius: "24px",
+            padding: "40px",
+            boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "36px",
+              marginBottom: "14px",
+              color: "#1f1a17",
+            }}
+          >
+            {t.kidsTitle}
+          </h2>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#5f554d",
+              maxWidth: "700px",
+              marginBottom: "24px",
+            }}
+          >
+            {t.kidsText}
+          </p>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "14px",
+              flexWrap: "wrap",
+              marginBottom: "20px",
+            }}
+          >
+            <span
+              style={{
+                background: "#efe7dc",
+                padding: "10px 16px",
+                borderRadius: "999px",
+                fontWeight: 500,
+              }}
+            >
+              {t.kidsTag1}
+            </span>
+
+            <span
+              style={{
+                background: "#efe7dc",
+                padding: "10px 16px",
+                borderRadius: "999px",
+                fontWeight: 500,
+              }}
+            >
+              {t.kidsTag2}
+            </span>
+
+            <span
+              style={{
+                background: "#efe7dc",
+                padding: "10px 16px",
+                borderRadius: "999px",
+                fontWeight: 500,
+              }}
+            >
+              {t.kidsTag3}
+            </span>
+          </div>
+
+          <a
+            href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Kids%20Quad%20Bike"
+            style={{
+              display: "inline-block",
+              background: "#25D366",
+              color: "#fff",
+              padding: "14px 24px",
+              borderRadius: "999px",
+              textDecoration: "none",
+              fontWeight: 600,
+            }}
+          >
+            {t.kidsBook}
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="reservation"
+        style={{
+          padding: "80px 20px",
+          background: "#ffffff",
+          borderTop: "1px solid #eee",
+          borderBottom: "1px solid #eee",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "14px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              color: "#6b625b",
+              marginBottom: "12px",
+            }}
+          >
+            {t.reservationTop}
+          </p>
+
+          <h2
+            style={{
+              fontSize: "40px",
+              marginBottom: "16px",
+              color: "#1f1a17",
+            }}
+          >
+            {t.reservationTitle}
+          </h2>
+
+          <p
+            style={{
+              maxWidth: "760px",
+              margin: "0 auto 30px",
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#5f554d",
+            }}
+          >
+            {t.reservationText}
+          </p>
+
+          <div
+            style={{
+              maxWidth: "760px",
+              margin: "0 auto",
+              padding: "36px 24px",
+              border: "2px dashed #d8d0c6",
+              borderRadius: "24px",
+              background: "#f7f4ee",
+            }}
+          >
+            <p
+              style={{
+                margin: "0 0 18px",
+                fontSize: "18px",
+                color: "#7a6f65",
+              }}
+            >
+              {t.reservationPlaceholder}
+            </p>
+
+            <a
+              href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20check%20availability%20for%20a%20tour"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                background: "#25D366",
+                color: "#fff",
+                padding: "14px 24px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                fontWeight: 600,
+              }}
+            >
+              {t.askAvailability}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="other-tours"
+        style={{
+          padding: "80px 20px",
+          background: "#efe7dc",
+        }}
+      >
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <p
+            style={{
+              fontSize: "14px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              color: "#6b625b",
+              marginBottom: "12px",
+            }}
+          >
+            {t.otherTop}
+          </p>
+
+          <h2
+            style={{
+              fontSize: "40px",
+              marginBottom: "16px",
+              color: "#1f1a17",
+            }}
+          >
+            {t.otherTitle}
+          </h2>
+
+          <p
+            style={{
+              maxWidth: "720px",
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#5f554d",
+              marginBottom: "32px",
+            }}
+          >
+            {t.otherText}
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+              gap: "20px",
+            }}
+          >
+           {t.otherToursList.map((tour) => (
+              <div
+                key={tour}
+                style={{
+                  background: "#fff",
+                  borderRadius: "20px",
+                  padding: "24px",
+                  boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+                }}
+              >
+                <h3
+                  style={{
+                    marginTop: 0,
+                    marginBottom: "12px",
+                    fontSize: "22px",
+                    color: "#1f1a17",
+                  }}
+                >
+                  {tour}
+                </h3>
+
+                <a
+                  href={`https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
+                    tour
+                  )}`}
+                  style={{
+                    display: "inline-block",
+                    marginTop: "8px",
+                    color: "#1f1a17",
+                    fontWeight: 600,
+                    textDecoration: "none",
+                  }}
+                >
+                  {t.askWhatsapp}
+                </a>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <a href="#booking-half-day" style={styles.button}>
-            {t.halfButton}
-          </a>
+      <section
+        style={{
+          padding: "60px 20px",
+          background: "#ffffff",
+          display: "flex",
+          justifyContent: "center",
+          borderTop: "1px solid #eee",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "900px",
+            width: "100%",
+            textAlign: "center",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "14px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              color: "#6b625b",
+              marginBottom: "12px",
+            }}
+          >
+            {t.reviewsTop}
+          </p>
 
-          <div style={styles.grid}>
-            <InfoCard title={t.halfDetails} items={t.halfDetailsItems} styles={styles} />
-            <InfoCard title={t.halfIncluded} items={t.halfIncludedItems} styles={styles} />
-            <InfoCard title={t.halfExtra} items={t.halfExtraItems} styles={styles} />
-            <InfoCard title={t.halfBring} items={t.halfBringItems} styles={styles} />
+          <h2
+            style={{
+              fontSize: "34px",
+              marginBottom: "14px",
+              color: "#1f1a17",
+            }}
+          >
+            {t.reviewsTitle}
+          </h2>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#5f554d",
+              maxWidth: "720px",
+              margin: "0 auto 26px",
+            }}
+          >
+            {t.reviewsText}
+          </p>
+
+          <div style={{ marginTop: "20px" }}>
+            <a
+              href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "12px",
+                background: "#34E0A1",
+                color: "#000",
+                padding: "14px 22px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                fontWeight: 700,
+                fontSize: "16px",
+              }}
+            >
+              <img
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                alt="Tripadvisor"
+                style={{ height: "20px" }}
+              />
+              {t.readReviews}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        style={{
+          background: "#1f1a17",
+          color: "#fff",
+          padding: "80px 20px",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+            gap: "40px",
+          }}
+        >
+          <div>
+            <h2 style={{ marginTop: 0 }}>{t.contactTitle}</h2>
+            <p style={{ opacity: 0.85, lineHeight: 1.7 }}>{t.contactText}</p>
           </div>
 
-          <div style={{ marginTop: "18px", maxWidth: "580px" }}>
-            <InfoCard title={t.halfRules} items={t.halfRulesItems} styles={styles} />
-          </div>
-        </section>
+          <div>
+            <h3>{t.contact}</h3>
 
-        <section style={styles.section}>
-          <h1 style={styles.title}>{t.fullTitle}</h1>
-          <p style={styles.slogan}>{t.fullSlogan}</p>
-          <p style={styles.subtitle}>{t.fullSubtitle}</p>
-          <p style={styles.text}>{t.fullText}</p>
+            <p>
+              <a
+                href="https://wa.me/905446358280"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                WhatsApp: +90 544 635 82 80
+              </a>
+            </p>
 
-          <p style={styles.label}>{t.fullGallery}</p>
-          <div style={styles.gallery}>
-            {[1, 2, 3, 4, 5].map((n) => (
-              <div key={n} style={styles.photoBox}>
-                {lang === "en" ? `Full Day Photo ${n}` : `Tam Gün Fotoğraf ${n}`}
-              </div>
-            ))}
-          </div>
+            <p>
+              <a
+                href="mailto:comendrive@gmail.com"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                comendrive@gmail.com
+              </a>
+            </p>
 
-          <a href="#booking-full-day" style={styles.button}>
-            {t.fullButton}
-          </a>
-
-          <div style={styles.grid}>
-            <InfoCard title={t.fullDetails} items={t.fullDetailsItems} styles={styles} />
-            <InfoCard title={t.fullIncluded} items={t.fullIncludedItems} styles={styles} />
-            <InfoCard title={t.fullBring} items={t.fullBringItems} styles={styles} />
-            <InfoCard title={t.fullRules} items={t.fullRulesItems} styles={styles} />
-          </div>
-        </section>
-
-        <section style={styles.softSection}>
-          <h1 style={styles.title}>{t.kidsTitle}</h1>
-          <p style={styles.slogan}>{t.kidsSlogan}</p>
-          <p style={styles.subtitle}>{t.kidsSubtitle}</p>
-          <p style={styles.text}>{t.kidsText}</p>
-
-          <p style={styles.label}>{t.kidsGallery}</p>
-          <div style={styles.gallery}>
-            {[1, 2, 3, 4, 5].map((n) => (
-              <div key={n} style={styles.photoBox}>
-                {lang === "en" ? `Kids Quad Photo ${n}` : `Kids Quad Fotoğraf ${n}`}
-              </div>
-            ))}
+            <p style={{ marginTop: "20px", opacity: 0.7 }}>
+              TÜRSAB A-Group Travel Agency — License No: 11387
+            </p>
           </div>
 
-          <a href="#booking-kids-quad" style={styles.button}>
-            {t.kidsButton}
-          </a>
+          <div>
+            <h3>{t.followUs}</h3>
 
-          <div style={styles.grid}>
-            <InfoCard title={t.kidsDetails} items={t.kidsDetailsItems} styles={styles} />
-            <InfoCard title={t.kidsSchedule} items={t.kidsScheduleItems} styles={styles} />
+            <p>
+              <a
+                href="https://www.instagram.com/comeanddrive"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: "#E4405F",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <img
+                  src="https://cdn.simpleicons.org/instagram/E4405F"
+                  alt="Instagram"
+                  style={{ width: "20px", height: "20px" }}
+                />
+                Instagram
+              </a>
+            </p>
+
+            <p>
+              <a
+                href="https://www.facebook.com/comendrivetravel"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: "#1877F2",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <img
+                  src="https://cdn.simpleicons.org/facebook/1877F2"
+                  alt="Facebook"
+                  style={{ width: "20px", height: "20px" }}
+                />
+                Facebook
+              </a>
+            </p>
+
+            <p>
+              <a
+                href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: "#34E0A1",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <img
+                  src="https://cdn.simpleicons.org/tripadvisor/34E0A1"
+                  alt="Tripadvisor"
+                  style={{ width: "20px", height: "20px" }}
+                />
+                Tripadvisor
+              </a>
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div style={{ marginTop: "18px", maxWidth: "580px" }}>
-            <InfoCard title={t.kidsRules} items={t.kidsRulesItems} styles={styles} />
-          </div>
-        </section>
-
-        <div style={styles.note}>{t.reserveNote}</div>
-      </div>
-
-      <a href="https://wa.me/" target="_blank" rel="noreferrer" style={styles.whatsapp}>
+      <a
+        href="https://wa.me/905446358280"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          position: "fixed",
+          right: "18px",
+          bottom: "18px",
+          background: "#25D366",
+          color: "#fff",
+          textDecoration: "none",
+          padding: "14px 18px",
+          borderRadius: "999px",
+          fontWeight: 700,
+          boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
+          zIndex: 50,
+        }}
+      >
         WhatsApp
       </a>
     </main>
-  );
-}
-
-function InfoCard({
-  title,
-  items,
-  styles,
-}: {
-  title: string;
-  items: string[];
-  styles: any;
-}) {
-  return (
-    <div style={styles.card}>
-      <h3 style={styles.cardTitle}>{title}</h3>
-      <ul style={styles.ul}>
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-    </div>
   );
 }
