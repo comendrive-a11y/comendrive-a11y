@@ -782,6 +782,110 @@ halfDayWhy6:
     {t.bookFull}
   </a>
 </section>
+          <section
+        id="kids-quad"
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          padding: "0 20px 80px",
+        }}
+      >
+        <div style={cardStyle}>
+          <h2
+            style={{
+              fontSize: "36px",
+              marginBottom: "14px",
+              color: "#1f1a17",
+            }}
+          >
+            {t.kidsTitle}
+          </h2>
+
+          <div
+            style={{
+              fontSize: "20px",
+              fontStyle: "italic",
+              opacity: 0.8,
+              marginBottom: "20px",
+              color: "#5f554d",
+            }}
+          >
+            {lang === "en"
+              ? "Little riders. Big smiles."
+              : "Küçük sürücüler. Büyük gülümsemeler."}
+          </div>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "#5f554d",
+              maxWidth: "700px",
+              marginBottom: "24px",
+            }}
+          >
+            {t.kidsText}
+          </p>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "14px",
+              flexWrap: "wrap",
+              marginBottom: "20px",
+            }}
+          >
+            <span
+              style={{
+                background: "#efe7dc",
+                padding: "10px 16px",
+                borderRadius: "999px",
+                fontWeight: 500,
+              }}
+            >
+              {t.kidsTag1}
+            </span>
+
+            <span
+              style={{
+                background: "#efe7dc",
+                padding: "10px 16px",
+                borderRadius: "999px",
+                fontWeight: 500,
+              }}
+            >
+              {t.kidsTag2}
+            </span>
+
+            <span
+              style={{
+                background: "#efe7dc",
+                padding: "10px 16px",
+                borderRadius: "999px",
+                fontWeight: 500,
+              }}
+            >
+              {t.kidsTag3}
+            </span>
+          </div>
+
+          <a
+            href="/kids-quad-bike"
+            style={{
+              display: "inline-block",
+              background: "#25D366",
+              color: "#fff",
+              padding: "14px 24px",
+              borderRadius: "999px",
+              textDecoration: "none",
+              fontWeight: 600,
+            }}
+          >
+            {t.kidsBook}
+          </a>
+        </div>
+      </section>
+    
 
       <section
         id="reservation"
