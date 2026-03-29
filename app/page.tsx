@@ -841,6 +841,7 @@ halfDayWhy6:
     </div>
 
     <a
+      {/* kids detail link fixed */}
       href="/kids-quad-bike"
       style={{
         display: "inline-block",
