@@ -666,6 +666,8 @@ backgroundRepeat: "no-repeat",
       ? "/airport-transfer"
       : tour === "Saklikent Canyon Safari" || tour === "Saklıkent Kanyon Safari"
       ? "/saklikent-canyon-safari"
+      : tour === "Oludeniz Boat Trip" || tour === "Ölüdeniz Tekne Turu"
+      ? "/oludeniz-boat-trip"
       : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
           tour
         )}`
@@ -681,7 +683,9 @@ backgroundRepeat: "no-repeat",
   {tour === "Airport Transfer" ||
   tour === "Havalimanı Transferi" ||
   tour === "Saklikent Canyon Safari" ||
-  tour === "Saklıkent Kanyon Safari"
+  tour === "Saklıkent Kanyon Safari" ||
+  tour === "Oludeniz Boat Trip" ||
+  tour === "Ölüdeniz Tekne Turu"
     ? isEn
       ? "View Details"
       : "Detayları Gör"
