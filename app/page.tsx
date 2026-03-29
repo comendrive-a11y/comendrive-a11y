@@ -714,7 +714,7 @@ halfDayWhy6:
   </div>
 </div>
 </section>
- <section
+<section
   id="full-day"
   style={{
     maxWidth: "1200px",
@@ -734,7 +734,9 @@ halfDayWhy6:
       marginBottom: "20px",
     }}
   >
-    {t.fullDaySlogan}
+    {lang === "en"
+      ? "Half day for fun. Full day for discovery."
+      : "Yarım gün eğlence için. Tam gün keşif için."}
   </div>
 
   <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
