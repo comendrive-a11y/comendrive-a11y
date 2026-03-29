@@ -243,7 +243,7 @@ halfDayWhy6:
     navContact: lang === "en" ? "Contact" : "İletişim",
   };
 
-  return (
+  return(
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
       <section
         style={{
