@@ -235,7 +235,7 @@ halfDayWhy6:
     contact: lang === "en" ? "Contact" : "İletişim",
     followUs: lang === "en" ? "Follow Us" : "Bizi Takip Et",
 
-      navHalf: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
+    navHalf: lang === "en" ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
     navFull: lang === "en" ? "Buggy Safari Full Day" : "Buggy Safari Tam Gün",
     navKids: lang === "en" ? "Kids Quad Bike" : "Çocuk Quad Bike",
     navReserve: lang === "en" ? "Reserve" : "Rezervasyon",
@@ -243,7 +243,7 @@ halfDayWhy6:
     navContact: lang === "en" ? "Contact" : "İletişim",
   };
 
-  return(
+  return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
       <section
         style={{
@@ -841,8 +841,7 @@ halfDayWhy6:
     </div>
 
     <a
-      {/* kids detail link fixed */}
-      href="/kids-quad-bike"
+      href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Kids%20Quad%20Bike"
       style={{
         display: "inline-block",
         background: "#1f1a17",
