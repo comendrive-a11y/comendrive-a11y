@@ -758,6 +758,39 @@ halfDayWhy6:
     {t.bookFull}
   </a>
 </section>
+          {lang === "en"
+      ? "Half day for fun. Full day for discovery."
+      : "Yarım gün eğlence için. Tam gün keşif için."}
+  </div>
+
+  <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
+    {t.fullDayText}
+  </p>
+
+  <a
+    href="/buggy-full-day"
+    style={{
+      display: "inline-block",
+      marginTop: "20px",
+      background: "#1f1a17",
+      color: "#fff",
+      padding: "12px 22px",
+      borderRadius: "999px",
+      textDecoration: "none",
+    }}
+  >
+    {t.bookFull}
+  </a>
+</section>
+
+      <section
+        id="reservation"
+        style={{
+          padding: "80px 20px",
+          background: "#ffffff",
+          borderTop: "1px solid #eee",
+          borderBottom: "1px solid #eee",
+        }}
 
      
 
