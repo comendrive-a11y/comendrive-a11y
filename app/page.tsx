@@ -527,11 +527,11 @@ halfDayWhy6:
         marginBottom: "20px",
       }}
     >
-      {t.halfDaySlogan}
+      {t.halfGallerySlogan}
     </div>
 
     <p style={{ fontSize: "20px", maxWidth: "720px" }}>
-      {t.halfDaySubtitle}
+      {t.halfGallerySubtitle}
     </p>
 
     <p
@@ -543,7 +543,7 @@ halfDayWhy6:
         lineHeight: "1.6",
       }}
     >
-      {t.halfDayDescription}
+      {t.halfDayText}
     </p>
   </div>
 
