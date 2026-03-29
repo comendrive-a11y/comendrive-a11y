@@ -496,47 +496,7 @@ export default function HomePage() {
             {t.kidsText}
           </p>
 
-          <div
-            style={{
-              display: "flex",
-              gap: "14px",
-              flexWrap: "wrap",
-              marginBottom: "20px",
-            }}
-          >
-            <span
-              style={{
-                background: "#efe7dc",
-                padding: "10px 16px",
-                borderRadius: "999px",
-                fontWeight: 500,
-              }}
-            >
-              {t.kidsTag1}
-            </span>
-
-            <span
-              style={{
-                background: "#efe7dc",
-                padding: "10px 16px",
-                borderRadius: "999px",
-                fontWeight: 500,
-              }}
-            >
-              {t.kidsTag2}
-            </span>
-
-            <span
-              style={{
-                background: "#efe7dc",
-                padding: "10px 16px",
-                borderRadius: "999px",
-                fontWeight: 500,
-              }}
-            >
-              {t.kidsTag3}
-            </span>
-          </div>
+          
 
           <a
             href="/kids-quad-bike"
