@@ -660,10 +660,12 @@ backgroundRepeat: "no-repeat",
                   {tour}
                 </h3>
 
-             <a
+<a
   href={
     tour === "Airport Transfer" || tour === "Havalimanı Transferi"
       ? "/airport-transfer"
+      : tour === "Saklikent Canyon Safari" || tour === "Saklıkent Kanyon Safari"
+      ? "/saklikent-canyon-safari"
       : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
           tour
         )}`
@@ -676,7 +678,10 @@ backgroundRepeat: "no-repeat",
     textDecoration: "none",
   }}
 >
-  {tour === "Airport Transfer" || tour === "Havalimanı Transferi"
+  {tour === "Airport Transfer" ||
+  tour === "Havalimanı Transferi" ||
+  tour === "Saklikent Canyon Safari" ||
+  tour === "Saklıkent Kanyon Safari"
     ? isEn
       ? "View Details"
       : "Detayları Gör"
