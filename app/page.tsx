@@ -590,6 +590,129 @@ halfDayWhy6:
   >
     {t.bookHalf}
   </a>
+        <div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+    gap: "20px",
+    marginTop: "34px",
+  }}
+>
+  <div
+    style={{
+      background: "#ffffff",
+      borderRadius: "24px",
+      padding: "24px",
+    }}
+  >
+    <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
+      {t.halfDayDetailsTitle}
+    </h3>
+    <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
+      <li>{t.halfDayLocation}</li>
+      <li>{t.halfDayDuration}</li>
+      <li>{t.halfDayDistance}</li>
+      <li>{t.halfDaySwim}</li>
+      <li>{t.halfDayVehicle}</li>
+      <li>{t.halfDaySeats}</li>
+      <li>{t.halfDayEasy}</li>
+    </ul>
+  </div>
+
+  <div
+    style={{
+      background: "#ffffff",
+      borderRadius: "24px",
+      padding: "24px",
+    }}
+  >
+    <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
+      {t.halfDayDaysTitle}
+    </h3>
+    <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
+      <li>{t.halfDaySchedule1}</li>
+      <li>{t.halfDaySchedule2}</li>
+      <li>{t.halfDaySchedule3}</li>
+      <li>{t.halfDaySchedule4}</li>
+    </ul>
+  </div>
+
+  <div
+    style={{
+      background: "#ffffff",
+      borderRadius: "24px",
+      padding: "24px",
+    }}
+  >
+    <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
+      {t.halfDayIncludedTitle}
+    </h3>
+    <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
+      <li>{t.halfDayInc1}</li>
+      <li>{t.halfDayInc2}</li>
+      <li>{t.halfDayInc3}</li>
+      <li>{t.halfDayInc4}</li>
+      <li>{t.halfDayInc5}</li>
+      <li>{t.halfDayInc6}</li>
+      <li>{t.halfDayInc7}</li>
+    </ul>
+  </div>
+
+  <div
+    style={{
+      background: "#ffffff",
+      borderRadius: "24px",
+      padding: "24px",
+    }}
+  >
+    <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
+      {t.halfDayExtraTitle}
+    </h3>
+    <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
+      <li>{t.halfDayEx1}</li>
+      <li>{t.halfDayEx2}</li>
+      <li>{t.halfDayEx3}</li>
+      <li>{t.halfDayEx4}</li>
+    </ul>
+  </div>
+
+  <div
+    style={{
+      background: "#ffffff",
+      borderRadius: "24px",
+      padding: "24px",
+    }}
+  >
+    <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
+      {t.halfDayRulesTitle}
+    </h3>
+    <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
+      <li>{t.halfDayRule1}</li>
+      <li>{t.halfDayRule2}</li>
+      <li>{t.halfDayRule3}</li>
+    </ul>
+  </div>
+
+  <div
+    style={{
+      background: "#ffffff",
+      borderRadius: "24px",
+      padding: "24px",
+    }}
+  >
+    <h3 style={{ marginTop: 0, marginBottom: "14px", fontSize: "24px" }}>
+      {t.halfDayWhyTitle}
+    </h3>
+    <ul style={{ margin: 0, paddingLeft: "18px", lineHeight: 1.8, color: "#5f554d" }}>
+      <li>{t.halfDayWhy1}</li>
+      <li>{t.halfDayWhy2}</li>
+      <li>{t.halfDayWhy3}</li>
+      <li>{t.halfDayWhy4}</li>
+      <li>{t.halfDayWhy5}</li>
+      <li>{t.halfDayWhy6}</li>
+    </ul>
+  </div>
+</div>
 </section>
  <section
   id="full-day"
