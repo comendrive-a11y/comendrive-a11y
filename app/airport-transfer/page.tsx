@@ -120,7 +120,7 @@ export default function AirportTransferPage() {
       <section
         style={{
           background:
-            "linear-gradient(180deg, rgba(20,18,15,0.65) 0%, rgba(20,18,15,0.45) 60%, rgba(20,18,15,0.78) 100%), url('/hero.jpg') center/cover no-repeat",
+  "linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
           color: "#fff",
           padding: "24px 20px 80px",
         }}
