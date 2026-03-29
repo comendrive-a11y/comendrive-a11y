@@ -782,6 +782,8 @@ halfDayWhy6:
     {t.bookFull}
   </a>
 </section>
+
+    {/* kids section final restore */}
           <section
         id="kids-quad"
         style={{
