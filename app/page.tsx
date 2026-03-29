@@ -241,8 +241,7 @@ halfDayWhy6:
     navReserve: lang === "en" ? "Reserve" : "Rezervasyon",
     navOther: lang === "en" ? "Other Tours" : "Diğer Turlar",
     navContact: lang === "en" ? "Contact" : "İletişim",
-  };
-
+    };
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
       <section
