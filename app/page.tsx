@@ -759,10 +759,19 @@ halfDayWhy6:
     {t.bookFull}
   </a>
 </section>
-          {lang === "en"
-      ? "Half day for fun. Full day for discovery."
-      : "Yarım gün eğlence için. Tam gün keşif için."}
-  </div>
+         <div
+  style={{
+    fontSize: "20px",
+    fontStyle: "italic",
+    opacity: 0.8,
+    marginBottom: "20px",
+  }}
+>
+  {lang === "en"
+    ? "Half day for fun. Full day for discovery."
+    : "Yarım gün eğlence için. Tam gün keşif için."
+  }
+</div>
 
   <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
     {t.fullDayText}
