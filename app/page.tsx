@@ -841,7 +841,7 @@ halfDayWhy6:
     </div>
 
     <a
-      href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Kids%20Quad%20Bike"
+      href="/kids-quad-bike"
       style={{
         display: "inline-block",
         background: "#1f1a17",
