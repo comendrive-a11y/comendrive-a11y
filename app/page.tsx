@@ -506,6 +506,91 @@ halfDayWhy6:
           <div style={{ flex: 1, minWidth: "220px" }}>🌊 {t.swim}</div>
         </div>
       </section>
+      <section
+  id="half-day"
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "80px 20px",
+  }}
+>
+  <div style={{ marginBottom: "30px" }}>
+    <h2 style={{ fontSize: "42px", marginBottom: "10px" }}>
+      {t.halfDayTitle}
+    </h2>
+
+    <div
+      style={{
+        fontSize: "20px",
+        fontStyle: "italic",
+        opacity: 0.8,
+        marginBottom: "20px",
+      }}
+    >
+      {t.halfDaySlogan}
+    </div>
+
+    <p style={{ fontSize: "20px", maxWidth: "720px" }}>
+      {t.halfDaySubtitle}
+    </p>
+
+    <p
+      style={{
+        fontSize: "16px",
+        opacity: 0.75,
+        marginTop: "20px",
+        maxWidth: "720px",
+        lineHeight: "1.6",
+      }}
+    >
+      {t.halfDayDescription}
+    </p>
+  </div>
+
+  <div
+    style={{
+      display: "flex",
+      gap: "20px",
+      flexWrap: "wrap",
+      marginTop: "40px",
+      marginBottom: "40px",
+    }}
+  >
+    {["1", "2", "3", "4", "5"].map((i) => (
+      <div
+        key={i}
+        style={{
+          width: "180px",
+          height: "140px",
+          borderRadius: "18px",
+          background: "#e9e4dd",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "14px",
+          opacity: 0.6,
+        }}
+      >
+        Half Day Photo {i}
+      </div>
+    ))}
+  </div>
+
+  <a
+    href="https://wa.me/905446358280"
+    style={{
+      display: "inline-block",
+      background: "#1f1a17",
+      color: "#fff",
+      padding: "14px 26px",
+      borderRadius: "999px",
+      textDecoration: "none",
+      fontSize: "16px",
+    }}
+  >
+    {t.bookHalf}
+  </a>
+</section>
   <section
         id="full-day"
         style={{
