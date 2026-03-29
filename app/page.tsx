@@ -870,7 +870,7 @@ halfDayWhy6:
         marginBottom: "34px",
       }}
     >
-      {t.bookKids}
+      {t.kidsBook}
     </a>
 
     <div
