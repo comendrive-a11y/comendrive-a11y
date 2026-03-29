@@ -735,8 +735,9 @@ halfDayWhy6:
     }}
   >
     {lang === "en"
-      ? "Half day for fun. Full day for discovery."
-      : "Yarım gün eğlence için. Tam gün keşif için."}
+  ? "Half day for fun. Full day for discovery."
+  : "Yarım gün eğlence için. Tam gün keşif için."
+}
   </div>
 
   <p style={{ maxWidth: "520px", fontSize: "18px", opacity: 0.8 }}>
