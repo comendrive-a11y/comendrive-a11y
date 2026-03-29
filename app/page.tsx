@@ -577,7 +577,7 @@ halfDayWhy6:
   </div>
 
   <a
-    href="https://wa.me/905446358280"
+    href="/buggy-half-day"
     style={{
       display: "inline-block",
       background: "#1f1a17",
