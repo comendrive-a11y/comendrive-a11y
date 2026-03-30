@@ -227,14 +227,14 @@ export default function HomePage() {
           </div>
 
           <nav
-            style={{
-              display: "flex",
-              gap: "14px",
-              flexWrap: "wrap",
-              fontSize: "13px",
-              alignItems: "center",
-            }}
-          >
+  style={{
+    display: "flex",
+    gap: "14px",
+    flexWrap: "wrap",
+    fontSize: "clamp(11px, 2.5vw, 13px)",
+    alignItems: "center",
+  }}
+>
             <a href="#half-day" style={{ color: "#fff", textDecoration: "none" }}>
               {t.navHalf}
             </a>
