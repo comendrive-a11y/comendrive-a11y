@@ -249,7 +249,7 @@ export default function OludenizBoatTripPage() {
               style={{
                 fontSize: "16px",
                 lineHeight: 1.7,
-                maxWidth: "720px",
+                maxWidth: "min(720px, 100%)",
                 marginBottom: "28px",
                 opacity: 0.88,
               }}
