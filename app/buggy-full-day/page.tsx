@@ -193,8 +193,9 @@ export default function BuggyFullDayPage() {
         </div>
 
         <div style={{ marginBottom: "30px" }}>
-          <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>{t.title}</h1>
-
+          <h1 style={{ fontSize: "clamp(32px, 6vw, 56px)", marginBottom: "10px" }}>
+  {t.title}
+</h1>
           <div
             style={{
               fontSize: "20px",
