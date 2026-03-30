@@ -165,7 +165,7 @@ export default function BuggyHalfDayPage() {
             gap: "14px",
             alignItems: "center",
             flexWrap: "wrap",
-            marginBottom: "30px",
+            marginBottom: "clamp(30px, 6vw, 60px)",
           }}
         >
           <Link
