@@ -172,7 +172,7 @@ export default function HomePage() {
           >
             <div
               style={{
-                fontSize: "26px",
+                fontSize: "clamp(18px, 4vw, 26px)",
                 fontWeight: 500,
                 letterSpacing: "2px",
               }}
