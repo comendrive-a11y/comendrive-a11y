@@ -289,7 +289,7 @@ backgroundRepeat: "no-repeat",
 
           <h1
             style={{
-              fontSize: "64px",
+              fontSize: "clamp(32px, 6vw, 56px)",
               lineHeight: 1.05,
               margin: "0 0 20px",
               fontWeight: 700,
