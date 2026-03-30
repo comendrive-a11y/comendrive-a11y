@@ -670,6 +670,8 @@ backgroundRepeat: "no-repeat",
       ? "/oludeniz-boat-trip"
       : tour === "Horse Riding" || tour === "At Turu"
       ? "/horse-riding"
+      : tour === "Private Boat Tour" || tour === "Özel Tekne Turu"
+      ? "/private-boat-tour"
       : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
           tour
         )}`
@@ -689,7 +691,9 @@ backgroundRepeat: "no-repeat",
   tour === "Ölüdeniz Boat Trip" ||
   tour === "Ölüdeniz Tekne Turu" ||
   tour === "Horse Riding" ||
-  tour === "At Turu"
+  tour === "At Turu" ||
+  tour === "Private Boat Tour" ||
+  tour === "Özel Tekne Turu"
     ? isEn
       ? "View Details"
       : "Detayları Gör"
