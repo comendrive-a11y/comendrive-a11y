@@ -265,7 +265,7 @@ backgroundRepeat: "no-repeat",
             style={{
               background: "#25D366",
               color: "#fff",
-              padding: "10px 18px",
+              padding: "14px 26px"
               borderRadius: "999px",
               fontWeight: 600,
               textDecoration: "none",
