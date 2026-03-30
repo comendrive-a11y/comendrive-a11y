@@ -822,54 +822,94 @@ backgroundRepeat: "no-repeat",
             </p>
           </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-  <a
-    href="https://instagram.com"
-    target="_blank"
-    rel="noreferrer"
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      color: "#E1306C",
-      textDecoration: "none",
-      fontWeight: 600,
-    }}
-  >
-    <span>📸</span> Instagram
-  </a>
+       <div>
+  <h3>{t.followUs}</h3>
 
-  <a
-    href="https://facebook.com"
-    target="_blank"
-    rel="noreferrer"
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      color: "#1877F2",
-      textDecoration: "none",
-      fontWeight: 600,
-    }}
-  >
-    <span>📘</span> Facebook
-  </a>
+  <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+    <a
+      href="https://www.instagram.com/comeanddrive"
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        color: "#E4405F",
+        textDecoration: "none",
+        fontWeight: 600,
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+      <span>Instagram</span>
+    </a>
 
-  <a
-    href="https://tripadvisor.com"
-    target="_blank"
-    rel="noreferrer"
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      color: "#34E0A1",
-      textDecoration: "none",
-      fontWeight: 600,
-    }}
-  >
-    <span>🦉</span Tripadvisor
-  </a>
+    <a
+      href="https://www.facebook.com/comendrivetravel"
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        color: "#1877F2",
+        textDecoration: "none",
+        fontWeight: 600,
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z" />
+      </svg>
+      <span>Facebook</span>
+    </a>
+
+    <a
+      href="https://www.tripadvisor.com/Attraction_Review-g298031-d17689087-Reviews-COME_DRIVE-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        color: "#34E0A1",
+        textDecoration: "none",
+        fontWeight: 600,
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 64 64"
+        fill="currentColor"
+      >
+        <path d="M32 20c-6.2 0-11.3 4.2-12.8 9.8-1.5-5.6-6.6-9.8-12.8-9.8C2.9 20 0 22.9 0 26.4c0 3.2 2.4 5.9 5.5 6.3C7 38.3 12.4 42 18.7 42c6.2 0 11.6-3.7 13.3-9 1.7 5.3 7.1 9 13.3 9 6.3 0 11.7-3.7 13.2-9.3 3.2-.4 5.5-3.1 5.5-6.3 0-3.5-2.9-6.4-6.4-6.4-6.2 0-11.3 4.2-12.8 9.8C43.3 24.2 38.2 20 32 20zm-13.3 16c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9zm26.6 0c-3.8 0-6.9-3.1-6.9-6.9s3.1-6.9 6.9-6.9 6.9 3.1 6.9 6.9-3.1 6.9-6.9 6.9z"></path>
+        <circle cx="18.7" cy="29.1" r="2.5" fill="#1f1a17"></circle>
+        <circle cx="45.3" cy="29.1" r="2.5" fill="#1f1a17"></circle>
+        <path d="M32 38c-3.6 0-6.5 2.4-7.4 5.7h14.8C38.5 40.4 35.6 38 32 38z"></path>
+      </svg>
+      <span>Tripadvisor</span>
+    </a>
+  </div>
 </div>
         </div>
       </section>
