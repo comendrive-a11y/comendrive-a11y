@@ -146,7 +146,7 @@ export default function HomePage() {
         <header
           style={{
             position: "sticky",
-            top: "12px",
+top: "8px",
             zIndex: 100,
             maxWidth: "1200px",
             width: "100%",
