@@ -148,7 +148,7 @@ export default function HorseRidingPage() {
               alignItems: "center",
               gap: "16px",
               flexWrap: "wrap",
-              marginBottom: "60px",
+              marginBottom: "clamp(30px, 6vw, 60px)",
             }}
           >
             <a
