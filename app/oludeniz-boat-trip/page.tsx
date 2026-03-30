@@ -35,7 +35,6 @@ export default function OludenizBoatTripPage() {
       : "Bu tekne turu yaklaşık 6 saat sürer ve öğle yemeği dahildir. Gün boyunca misafirler Ölüdeniz çevresindeki en sevilen duraklardan bazılarını ziyaret eder; bunlar arasında Kelebekler Vadisi, Soğuk Su, St Nicholas Adası, Akvaryum Koyu ve Deve Plajı yer alır. Her durakta genellikle 30 ile 60 dakika arasında yüzme ve dinlenme molası verilir. Duraklardan birinde isteyen misafirler ekstra ücret karşılığında Ringo, Banana ve Parasailing gibi su sporlarına katılabilir. Rota, duraklar ve süreler hava ve deniz şartlarına göre değişebilir.",
 
     imageTitle: isEn ? "Tour Preview" : "Tur Görseli",
-    imagePlaceholder: isEn ? "Boat Trip Photo" : "Tekne Turu Fotoğrafı",
 
     detailsTitle: isEn ? "Tour Details" : "Tur Bilgileri",
     detailsList: isEn
@@ -56,14 +55,8 @@ export default function OludenizBoatTripPage() {
 
     includedTitle: isEn ? "Included in Tour" : "Tura Dahil Olanlar",
     includedList: isEn
-      ? [
-          "Boat trip",
-          "Lunch",
-        ]
-      : [
-          "Tekne turu",
-          "Öğle yemeği",
-        ],
+      ? ["Boat trip", "Lunch"]
+      : ["Tekne turu", "Öğle yemeği"],
 
     extrasTitle: isEn ? "Extra Activities & Charges" : "Ekstra Aktiviteler ve Ücretler",
     extrasList: isEn
@@ -126,8 +119,11 @@ export default function OludenizBoatTripPage() {
       <section
         style={{
           minHeight: "70vh",
-          background:
-            "linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+          backgroundImage:
+            "linear-gradient(180deg, rgba(20,18,15,0.78) 0%, rgba(20,18,15,0.48) 45%, rgba(20,18,15,0.80) 100%), url('/boattrip-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           color: "#fff",
           padding: "24px 20px 80px",
           display: "flex",
@@ -213,7 +209,7 @@ export default function OludenizBoatTripPage() {
 
             <h1
               style={{
-               fontSize: "clamp(32px, 6vw, 56px)",
+                fontSize: "clamp(32px, 6vw, 56px)",
                 lineHeight: 1.05,
                 margin: "0 0 14px",
                 fontWeight: 700,
@@ -303,20 +299,24 @@ export default function OludenizBoatTripPage() {
 
           <div
             style={{
-              background: "#e9e1d6",
               borderRadius: "24px",
+              overflow: "hidden",
               minHeight: "360px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#7a6f65",
-              fontWeight: 600,
-              fontSize: "20px",
-              textAlign: "center",
-              padding: "20px",
+              boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+              background: "#e9e1d6",
             }}
           >
-            {t.imagePlaceholder}
+            <img
+              src="/boattrip-preview.jpg"
+              alt="Oludeniz Boat Trip Preview"
+              style={{
+                width: "100%",
+                height: "100%",
+                minHeight: "360px",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
         </div>
       </section>
