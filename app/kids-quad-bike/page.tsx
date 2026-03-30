@@ -103,11 +103,11 @@ export default function KidsQuadBikePage() {
   };
 
   const galleryImages = [
-    "/kids-1.jpg",
-    "/kids-2.jpg",
-    "/kids-3.jpg",
-    "/kids-4.jpg",
-  ];
+  "/kids1.jpg",
+  "/kids2.jpg",
+  "/kids3.jpg",
+  "/kids4.jpg",
+];
 
   const sectionTitleStyle: React.CSSProperties = {
     fontSize: "14px",
