@@ -672,6 +672,8 @@ backgroundRepeat: "no-repeat",
       ? "/horse-riding"
       : tour === "Private Boat Tour" || tour === "Özel Tekne Turu"
       ? "/private-boat-tour"
+      : tour === "Paragliding" || tour === "Yamaç Paraşütü"
+      ? "/paragliding"
       : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
           tour
         )}`
@@ -693,7 +695,9 @@ backgroundRepeat: "no-repeat",
   tour === "Horse Riding" ||
   tour === "At Turu" ||
   tour === "Private Boat Tour" ||
-  tour === "Özel Tekne Turu"
+  tour === "Özel Tekne Turu" ||
+  tour === "Paragliding" ||
+  tour === "Yamaç Paraşütü"
     ? isEn
       ? "View Details"
       : "Detayları Gör"
