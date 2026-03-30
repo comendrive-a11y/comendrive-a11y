@@ -35,7 +35,6 @@ export default function ParaglidingPage() {
       : "Yamaç paraşütü deneyimi dünyanın en ünlü uçuş noktalarından biri olan Babadağ’dan yapılmaktadır. Rüzgar durumuna göre kalkış 1200 m, 1700 m veya öncelikli olarak 1900 m pistlerinden gerçekleştirilir. İniş, Ölüdeniz plajı iniş alanına yani ofisimizin hemen yanına yapılır; bu da uçuş sonrası misafirler için ekstra konfor sağlar. Tüm uçuşlar deneyimli yerel profesyonel pilotlar eşliğinde yapılır. Hava şartları uçuş için uygun değilse uçuş aynı günün başka bir saatine veya başka bir güne alınabilir. Misafirin zamanı uygun değilse ve hava şartları nedeniyle uçuş yapılamazsa tam ücret iadesi yapılır.",
 
     imageTitle: isEn ? "Tour Preview" : "Tur Görseli",
-    imagePlaceholder: isEn ? "Paragliding Photo" : "Yamaç Paraşütü Fotoğrafı",
 
     detailsTitle: isEn ? "Flight Details" : "Uçuş Bilgileri",
     detailsList: isEn
@@ -72,13 +71,7 @@ export default function ParaglidingPage() {
         ],
 
     extrasTitle: isEn ? "Extra Services" : "Ekstra Hizmetler",
-    extrasList: isEn
-      ? [
-          "360° photo & video shooting",
-        ]
-      : [
-          "360° fotoğraf ve video çekimi",
-        ],
+    extrasList: isEn ? ["360° photo & video shooting"] : ["360° fotoğraf ve video çekimi"],
 
     notesTitle: isEn ? "Important Notes" : "Önemli Notlar",
     notesList: isEn
@@ -99,16 +92,8 @@ export default function ParaglidingPage() {
 
     bringTitle: isEn ? "What to Bring" : "Yanınızda Bulundurmanız Gerekenler",
     bringList: isEn
-      ? [
-          "Sports shoes",
-          "Sunglasses",
-          "Mobile phone",
-        ]
-      : [
-          "Spor ayakkabı",
-          "Güneş gözlüğü",
-          "Telefon",
-        ],
+      ? ["Sports shoes", "Sunglasses", "Mobile phone"]
+      : ["Spor ayakkabı", "Güneş gözlüğü", "Telefon"],
 
     bottomTitle: isEn
       ? "Ready to fly over Ölüdeniz?"
@@ -135,8 +120,11 @@ export default function ParaglidingPage() {
       <section
         style={{
           minHeight: "70vh",
-          background:
-            "linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+          backgroundImage:
+            "linear-gradient(180deg, rgba(20,18,15,0.78) 0%, rgba(20,18,15,0.48) 45%, rgba(20,18,15,0.80) 100%), url('/paragliding-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           color: "#fff",
           padding: "24px 20px 80px",
           display: "flex",
@@ -312,20 +300,24 @@ export default function ParaglidingPage() {
 
           <div
             style={{
-              background: "#e9e1d6",
               borderRadius: "24px",
+              overflow: "hidden",
               minHeight: "360px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#7a6f65",
-              fontWeight: 600,
-              fontSize: "20px",
-              textAlign: "center",
-              padding: "20px",
+              boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+              background: "#e9e1d6",
             }}
           >
-            {t.imagePlaceholder}
+            <img
+              src="/paragliding-preview.jpg"
+              alt="Paragliding Preview"
+              style={{
+                width: "100%",
+                height: "100%",
+                minHeight: "360px",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
         </div>
       </section>
