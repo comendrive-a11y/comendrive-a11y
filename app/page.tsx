@@ -335,7 +335,7 @@ backgroundRepeat: "no-repeat",
               style={{
                 border: "1px solid #fff",
                 color: "#fff",
-                padding: "12px 22px",
+                padding: "14px 26px"
                 borderRadius: "999px",
                 textDecoration: "none",
                 fontWeight: 500,
@@ -584,7 +584,7 @@ backgroundRepeat: "no-repeat",
                 display: "inline-block",
                 background: "#25D366",
                 color: "#fff",
-                padding: "14px 24px",
+                padding: "14px 26px"
                 borderRadius: "999px",
                 textDecoration: "none",
                 fontWeight: 600,
