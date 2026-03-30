@@ -126,7 +126,7 @@ export default function KidsQuadBikePage() {
       <section
         style={{
          background:
-"linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)"
+"linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
           color: "#fff",
           padding: "24px 20px 80px",
         }}
