@@ -226,7 +226,7 @@ export default function AirportTransferPage() {
               style={{
                 fontSize: "18px",
                 lineHeight: 1.7,
-                maxWidth: "720px",
+               maxWidth: "min(720px, 100%)",
                 marginBottom: "14px",
                 opacity: 0.96,
               }}
