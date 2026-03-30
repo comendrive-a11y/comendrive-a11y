@@ -206,8 +206,8 @@ export default function KidsQuadBikePage() {
               {t.heroTop}
             </p>
 
-            <h1 style={{ fontSize: "clamp(32px, 6vw, 56px)", marginBottom: "10px" }}>
-  {t.title}
+           <h1 style={{ fontSize: "clamp(32px, 6vw, 56px)", marginBottom: "10px" }}>
+  {t.heroTitle}
 </h1>
 
             <div
