@@ -274,7 +274,7 @@ export default function ParaglidingPage() {
                 display: "inline-block",
                 background: "#25D366",
                 color: "#fff",
-                padding: "12px 22px",
+                padding: "14px 26px",
                 borderRadius: "999px",
                 textDecoration: "none",
                 fontWeight: 600,
