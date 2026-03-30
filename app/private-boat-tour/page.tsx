@@ -35,7 +35,6 @@ export default function PrivateBoatTourPage() {
       : "Özel teknemiz Fethiye Limanı’ndan hareket eder ve maksimum 12 kişiye kadar misafir ağırlayabilir. Denizde daha kişisel ve rahat bir gün geçirmek isteyen aileler ve küçük gruplar için idealdir. Teknede güneşlenme alanları, gölgede oturma bölümleri ve panoramik manzara sunan flybridge bulunmaktadır. Tur boyunca Fethiye Yarımadası çevresindeki en güzel koylarda yüzme molaları verilir; bunlar arasında Rüzgarlı Koyu, Hillside Koyu, Tarzan Koyu ve Akvaryum Koyu yer alır. Öğle yemeği teknede taze hazırlanır; tavuk veya köfte mangal, yanında 5–6 çeşit ev yapımı meze ve salata ile servis edilir, ardından meyve ve kek sunulur. Teknemiz aile işletmesidir ve gün boyunca samimi, sıcak ve misafir odaklı bir atmosfer sunar.",
 
     imageTitle: isEn ? "Tour Preview" : "Tur Görseli",
-    imagePlaceholder: isEn ? "Private Boat Photo" : "Özel Tekne Fotoğrafı",
 
     detailsTitle: isEn ? "Tour Details" : "Tur Bilgileri",
     detailsList: isEn
@@ -126,8 +125,11 @@ export default function PrivateBoatTourPage() {
       <section
         style={{
           minHeight: "70vh",
-          background:
-            "linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+          backgroundImage:
+            "linear-gradient(180deg, rgba(20,18,15,0.78) 0%, rgba(20,18,15,0.48) 45%, rgba(20,18,15,0.80) 100%), url('/privateboat-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           color: "#fff",
           padding: "24px 20px 80px",
           display: "flex",
@@ -213,7 +215,7 @@ export default function PrivateBoatTourPage() {
 
             <h1
               style={{
-               fontSize: "clamp(32px, 6vw, 56px)",
+                fontSize: "clamp(32px, 6vw, 56px)",
                 lineHeight: 1.05,
                 margin: "0 0 14px",
                 fontWeight: 700,
@@ -303,20 +305,24 @@ export default function PrivateBoatTourPage() {
 
           <div
             style={{
-              background: "#e9e1d6",
               borderRadius: "24px",
+              overflow: "hidden",
               minHeight: "360px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#7a6f65",
-              fontWeight: 600,
-              fontSize: "20px",
-              textAlign: "center",
-              padding: "20px",
+              boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+              background: "#e9e1d6",
             }}
           >
-            {t.imagePlaceholder}
+            <img
+              src="/privateboat-preview.jpg"
+              alt="Private Boat Tour Preview"
+              style={{
+                width: "100%",
+                height: "100%",
+                minHeight: "360px",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
         </div>
       </section>
