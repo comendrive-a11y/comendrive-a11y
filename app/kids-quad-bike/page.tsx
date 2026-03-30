@@ -269,7 +269,7 @@ export default function KidsQuadBikePage() {
                 style={{
                   border: "1px solid #fff",
                   color: "#fff",
-                  padding: "12px 22px",
+                  padding: "14px 26px",
                   borderRadius: "999px",
                   textDecoration: "none",
                   fontWeight: 500,
