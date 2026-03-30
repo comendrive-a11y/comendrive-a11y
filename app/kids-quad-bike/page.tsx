@@ -36,10 +36,6 @@ export default function KidsQuadBikePage() {
       : "Çocuklar, rehber gözetiminde 1.2 km uzunluğundaki kapalı off-road parkurunda çocuklara özel tasarlanmış Yamaha 50cc ATV’lerle sürüş yapar. Her seans 50 dakika sürer ve eğlenceli, güvenli ve özgüven kazandıran bir ilk sürüş deneyimi sunar.",
 
     galleryTitle: isEn ? "Tour Gallery" : "Tur Galerisi",
-    photo1: isEn ? "Photo 1" : "Fotoğraf 1",
-    photo2: isEn ? "Photo 2" : "Fotoğraf 2",
-    photo3: isEn ? "Photo 3" : "Fotoğraf 3",
-    photo4: isEn ? "Photo 4" : "Fotoğraf 4",
 
     detailsTitle: isEn ? "Tour Details" : "Tur Bilgileri",
     detailsList: isEn
@@ -106,6 +102,13 @@ export default function KidsQuadBikePage() {
         ],
   };
 
+  const galleryImages = [
+    "/kids-1.jpg",
+    "/kids-2.jpg",
+    "/kids-3.jpg",
+    "/kids-4.jpg",
+  ];
+
   const sectionTitleStyle: React.CSSProperties = {
     fontSize: "14px",
     letterSpacing: "2px",
@@ -125,8 +128,11 @@ export default function KidsQuadBikePage() {
     <main style={{ background: "#f7f4ee", color: "#1f1a17", minHeight: "100vh" }}>
       <section
         style={{
-         background:
-"linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+          backgroundImage:
+            "linear-gradient(180deg, rgba(20,18,15,0.78) 0%, rgba(20,18,15,0.52) 45%, rgba(20,18,15,0.78) 100%), url('/kids-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           color: "#fff",
           padding: "24px 20px 80px",
         }}
@@ -144,7 +150,7 @@ export default function KidsQuadBikePage() {
               alignItems: "center",
               gap: "16px",
               flexWrap: "wrap",
-             marginBottom: "clamp(30px, 6vw, 60px)",
+              marginBottom: "clamp(30px, 6vw, 60px)",
             }}
           >
             <a
@@ -206,9 +212,9 @@ export default function KidsQuadBikePage() {
               {t.heroTop}
             </p>
 
-           <h1 style={{ fontSize: "clamp(32px, 6vw, 56px)", marginBottom: "10px" }}>
-  {t.heroTitle}
-</h1>
+            <h1 style={{ fontSize: "clamp(32px, 6vw, 56px)", marginBottom: "10px" }}>
+              {t.heroTitle}
+            </h1>
 
             <div
               style={{
@@ -237,7 +243,7 @@ export default function KidsQuadBikePage() {
               style={{
                 fontSize: "16px",
                 lineHeight: 1.7,
-               maxWidth: "min(720px, 100%)",
+                maxWidth: "min(720px, 100%)",
                 marginBottom: "28px",
                 opacity: 0.88,
               }}
@@ -247,9 +253,7 @@ export default function KidsQuadBikePage() {
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
               <a
-                href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Kids%20Quad%20Bike"
-                target="_blank"
-                rel="noreferrer"
+                href="/reservation"
                 style={{
                   background: "#25D366",
                   color: "#fff",
@@ -312,22 +316,28 @@ export default function KidsQuadBikePage() {
               gap: "20px",
             }}
           >
-            {[t.photo1, t.photo2, t.photo3, t.photo4].map((item) => (
+            {galleryImages.map((src, index) => (
               <div
-                key={item}
+                key={index}
                 style={{
-                  background: "#e9e1d6",
                   borderRadius: "24px",
+                  overflow: "hidden",
                   minHeight: "220px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#7a6f65",
-                  fontWeight: 600,
-                  fontSize: "18px",
+                  boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+                  background: "#e9e1d6",
                 }}
               >
-                {item}
+                <img
+                  src={src}
+                  alt={`Kids Quad Bike ${index + 1}`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    minHeight: "220px",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
               </div>
             ))}
           </div>
@@ -406,26 +416,43 @@ export default function KidsQuadBikePage() {
             boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
           }}
         >
-          <h2 style={{ fontSize: "34px", marginTop: 0, marginBottom: "16px" }}>
+          <h2 style={{ fontSize: "34px", marginTop: 0, marginBottom: "20px" }}>
             {t.bookNow}
           </h2>
 
-          <a
-            href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20book%20Kids%20Quad%20Bike"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              display: "inline-block",
-              background: "#25D366",
-              color: "#fff",
-              padding: "14px 24px",
-              borderRadius: "999px",
-              textDecoration: "none",
-              fontWeight: 700,
-            }}
-          >
-            {t.whatsappAsk}
-          </a>
+          <div style={{ display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap" }}>
+            <a
+              href="/reservation"
+              style={{
+                display: "inline-block",
+                background: "#25D366",
+                color: "#fff",
+                padding: "14px 24px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
+            >
+              {t.bookNow}
+            </a>
+
+            <a
+              href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20ask%20about%20Kids%20Quad%20Bike"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-block",
+                border: "1px solid #1f1a17",
+                color: "#1f1a17",
+                padding: "14px 24px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                fontWeight: 600,
+              }}
+            >
+              {t.whatsappAsk}
+            </a>
+          </div>
         </div>
       </section>
     </main>
