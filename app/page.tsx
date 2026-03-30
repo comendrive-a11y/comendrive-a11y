@@ -668,6 +668,8 @@ backgroundRepeat: "no-repeat",
       ? "/saklikent-canyon-safari"
       : tour === "Ölüdeniz Boat Trip" || tour === "Ölüdeniz Tekne Turu"
       ? "/oludeniz-boat-trip"
+      : tour === "Horse Riding" || tour === "At Turu"
+      ? "/horse-riding"
       : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
           tour
         )}`
@@ -685,7 +687,9 @@ backgroundRepeat: "no-repeat",
   tour === "Saklikent Canyon Safari" ||
   tour === "Saklıkent Kanyon Safari" ||
   tour === "Ölüdeniz Boat Trip" ||
-  tour === "Ölüdeniz Tekne Turu"
+  tour === "Ölüdeniz Tekne Turu" ||
+  tour === "Horse Riding" ||
+  tour === "At Turu"
     ? isEn
       ? "View Details"
       : "Detayları Gör"
