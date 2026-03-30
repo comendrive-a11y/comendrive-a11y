@@ -221,7 +221,7 @@ export default function SaklikentCanyonSafariPage() {
 
             <h1
               style={{
-                fontSize: "56px",
+                fontSize: "clamp(32px, 6vw, 56px)",
                 lineHeight: 1.05,
                 margin: "0 0 14px",
                 fontWeight: 700,
