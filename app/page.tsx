@@ -714,12 +714,16 @@ justifyContent: "center",
             {t.otherToursList.map((tour) => (
               <div
                 key={tour}
+                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-4px)")}
+onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
                 style={{
-                  background: "#fff",
-                  borderRadius: "20px",
-                  padding: "28px",
-                  boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
-                }}
+  background: "#fff",
+  borderRadius: "20px",
+  padding: "28px",
+  boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+  transition: "all 0.25s ease",
+  cursor: "pointer",
+}}
               >
                 <h3
                   style={{
