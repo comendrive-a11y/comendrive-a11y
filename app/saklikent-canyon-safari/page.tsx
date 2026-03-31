@@ -15,9 +15,9 @@ export default function SaklikentCanyonSafariPage() {
 
     heroTitle: isEn ? "Saklikent Canyon Safari" : "Saklıkent Kanyon Safari",
 
-    heroSlogan: isEn
-      ? "We can’t promise you’ll stay dry. We can promise you’ll have fun."
-      : "Kuru kalacağınıza söz veremeyiz. Ama çok eğleneceğinize ederiz.",
+   heroSlogan: isEn
+  ? "Not just a tour. A water battle."
+  : "Sadece bir tur değil. Bir su savaşı.",
 
     heroText: isEn
       ? "A full-day group safari with waterfall, canyon walk, mud bath and the famous water fight along the route."
