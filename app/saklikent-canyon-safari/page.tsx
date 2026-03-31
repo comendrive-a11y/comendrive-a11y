@@ -35,7 +35,6 @@ export default function SaklikentCanyonSafariPage() {
       : "Tur sabah otelden alınışla başlar ve üstü açık Land Rover Defender veya üstü açık Mercedes Sprinter ile safari deneyimiyle devam eder. Toplanma noktasında buluşmanın ardından ilk durak Gizlikent Şelalesi’dir; burada kısa bir yürüyüş ve fotoğraf molası verilir. Dileyen misafirler ekstra ücretle zipline aktivitesine katılabilir. Ardından tavuk veya balık seçeneğiyle, yanında makarna ve salatadan oluşan öğle yemeği servis edilir. Yemekten sonra Saklıkent Kanyonu’nda yaklaşık bir saatlik serbest zaman ve yürüyüş molası verilir. Dileyenler ekstra ücret karşılığında rafting yapabilir. Gün, eğlenceli çamur banyosu molasıyla devam eder ve ardından dönüşe geçilir. Otoyol dışındaki bölümlerde araçlar konvoy halinde ilerler ve misafirler yol boyunca meşhur su savaşının tadını çıkarır.",
 
     imageTitle: isEn ? "Tour Preview" : "Tur Görseli",
-    imagePlaceholder: isEn ? "Safari Tour Photo" : "Safari Tur Fotoğrafı",
 
     detailsTitle: isEn ? "Tour Details" : "Tur Bilgileri",
     detailsList: isEn
@@ -56,16 +55,8 @@ export default function SaklikentCanyonSafariPage() {
 
     includedTitle: isEn ? "Included in Tour" : "Tura Dahil Olanlar",
     includedList: isEn
-      ? [
-          "Hotel pick-up and drop-off",
-          "Safari tour",
-          "Lunch",
-        ]
-      : [
-          "Otelden alma ve bırakma",
-          "Safari turu",
-          "Öğle yemeği",
-        ],
+      ? ["Hotel pick-up and drop-off", "Safari tour", "Lunch"]
+      : ["Otelden alma ve bırakma", "Safari turu", "Öğle yemeği"],
 
     extrasTitle: isEn ? "Extra Activities & Charges" : "Ekstra Aktiviteler ve Ücretler",
     extrasList: isEn
@@ -134,8 +125,11 @@ export default function SaklikentCanyonSafariPage() {
       <section
         style={{
           minHeight: "70vh",
-          background:
-            "linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+          backgroundImage:
+            "linear-gradient(180deg, rgba(20,18,15,0.78) 0%, rgba(20,18,15,0.48) 45%, rgba(20,18,15,0.80) 100%), url('/saklikent-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           color: "#fff",
           padding: "24px 20px 80px",
           display: "flex",
@@ -311,20 +305,24 @@ export default function SaklikentCanyonSafariPage() {
 
           <div
             style={{
-              background: "#e9e1d6",
               borderRadius: "24px",
+              overflow: "hidden",
               minHeight: "360px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#7a6f65",
-              fontWeight: 600,
-              fontSize: "20px",
-              textAlign: "center",
-              padding: "20px",
+              boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+              background: "#e9e1d6",
             }}
           >
-            {t.imagePlaceholder}
+            <img
+              src="/saklikent-preview.jpg"
+              alt="Saklikent Canyon Safari Preview"
+              style={{
+                width: "100%",
+                height: "100%",
+                minHeight: "360px",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
         </div>
       </section>
