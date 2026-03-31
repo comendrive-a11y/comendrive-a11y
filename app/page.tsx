@@ -9,10 +9,9 @@ export default function HomePage() {
   const isEn = lang === "en";
 
   const t = {
-    heroTop: isEn
-      heroTop: isEn
-? "5-STAR OFF-ROAD EXPERIENCE · FETHİYE"
-      : "5 YILDIZLI OFF-ROAD DENEYİMİ · FETHİYE",
+   heroTop: isEn
+  ? "5-STAR OFF-ROAD EXPERIENCE · FETHİYE"
+  : "5 YILDIZLI OFF-ROAD DENEYİMİ · FETHİYE",
 
     heroTitle1: isEn ? "Life Begins" : "Hayat Başlar",
     heroTitle2: isEn ? "Where the Road" : "Yolun Bittiği",
