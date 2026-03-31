@@ -138,6 +138,7 @@ export default function HomePage() {
 
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
+      <div id="top"></div>
       <section
         style={{
           minHeight: "min(100vh, 900px)",
@@ -998,6 +999,25 @@ textDecoration: "none",
           </div>
         </div>
       </section>
+      <a
+  href="#top"
+  style={{
+    position: "fixed",
+    left: "12px",
+    bottom: "12px",
+    background: "#ffffff",
+    color: "#1f1a17",
+    textDecoration: "none",
+    padding: "10px 14px",
+    borderRadius: "999px",
+    fontWeight: 700,
+    fontSize: "13px",
+    boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
+    zIndex: 50,
+  }}
+>
+  {isEn ? "↑ Top" : "↑ Başa dön"}
+</a>
 
       <a
         href="https://wa.me/905446358280"
