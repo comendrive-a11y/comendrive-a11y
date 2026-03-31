@@ -13,11 +13,11 @@ export default function HorseRidingPage() {
       ? "NATURE EXPERIENCE · HISARONU"
       : "DOĞA DENEYİMİ · HİSARÖNÜ",
 
-    heroTitle: isEn ? "Horse Riding" : "At Turu",
+    heroTitle: isEn ? "Horse Riding" : "At Biniciliği",
 
     heroSlogan: isEn
       ? "Calm horses. Forest views. A different side of Fethiye."
-      : "Sakin atlar. Orman manzarası. Fethiye’nin başka bir yüzü.",
+      : "Sakin atlar. Orman manzaraları. Fethiye’nin farklı bir yüzü.",
 
     heroText: isEn
       ? "A peaceful horse riding experience through the pine forest of Hisaronu, with panoramic views of Babadağ, Mendos Mountain and Kayaköy."
@@ -25,17 +25,16 @@ export default function HorseRidingPage() {
 
     heroNote: isEn
       ? "Suitable for beginners, families and children. No previous riding experience required."
-      : "Başlangıç seviyesi, aileler ve çocuklar için uygundur. Önceden binicilik deneyimi gerekmez.",
+      : "Yeni başlayanlar, aileler ve çocuklar için uygundur. Önceden binicilik deneyimi gerekmez.",
 
     askWhatsapp: isEn ? "Ask on WhatsApp" : "WhatsApp’tan Sor",
 
     experienceTitle: isEn ? "The Experience" : "Deneyim",
     experienceText: isEn
       ? "Our horse riding tours take place in Hisaronu and usually last between 45 minutes and 1 hour. Guests ride through the pine forest while enjoying beautiful panoramic views of Hisaronu, Babadağ, Mendos Mountain and Kayaköy along the route. The activity is usually organized as a group tour, but private tours can also be arranged on request. Our horses are calm, friendly and suitable for guests with no previous experience. During each tour, at least two professional riding guides accompany the group. Safety and guest comfort are always our priority."
-      : "At turlarımız Hisarönü bölgesinde gerçekleşir ve genellikle 45 dakika ile 1 saat arasında sürer. Misafirler çam ormanı içinde sürüş yaparken Hisarönü, Babadağ, Mendos Dağı ve Kayaköy manzaralarını panoramik açıdan izleme fırsatı bulur. Aktivite genellikle grup turu olarak düzenlenir, ancak istenirse özel tur olarak da organize edilebilir. Atlarımız sakin, uysal ve deneyimsiz misafirler için uygundur. Her turda gruba en az iki profesyonel binici rehber eşlik eder. Güvenlik ve misafir konforu her zaman önceliğimizdir.",
+      : "At binme turlarımız Hisarönü bölgesinde yapılır ve genellikle 45 dakika ile 1 saat arasında sürer. Misafirler rota boyunca Hisarönü, Babadağ, Mendos Dağı ve Kayaköy manzaralarının keyfini çıkararak çam ormanı içinde sürüş yapar. Aktivite genellikle grup turu olarak düzenlenir, ancak talep üzerine özel turlar da ayarlanabilir. Atlarımız sakin, uyumlu ve daha önce deneyimi olmayan misafirler için uygundur. Her tur sırasında gruba en az iki profesyonel rehber eşlik eder. Güvenlik ve misafir konforu her zaman önceliğimizdir.",
 
     imageTitle: isEn ? "Tour Preview" : "Tur Görseli",
-    imagePlaceholder: isEn ? "Horse Riding Photo" : "At Turu Fotoğrafı",
 
     detailsTitle: isEn ? "Tour Details" : "Tur Bilgileri",
     detailsList: isEn
@@ -51,21 +50,13 @@ export default function HorseRidingPage() {
           "Süre: 45 dakika ile 1 saat",
           "Tur tipi: Grup turu / Talep üzerine özel tur",
           "Manzaralar: Hisarönü, Babadağ, Mendos Dağı, Kayaköy",
-          "Başlangıç seviyesi ve aileler için uygundur",
+          "Yeni başlayanlar ve aileler için uygundur",
         ],
 
     includedTitle: isEn ? "Included in Tour" : "Tura Dahil Olanlar",
     includedList: isEn
-      ? [
-          "Transfer",
-          "Helmet",
-          "Guided horse riding experience",
-        ]
-      : [
-          "Transfer",
-          "Kask",
-          "Rehber eşliğinde at turu",
-        ],
+      ? ["Transfer", "Helmet", "Guided horse riding experience"]
+      : ["Transfer", "Kask", "Rehberli at binme deneyimi"],
 
     extrasTitle: isEn ? "Extra Services" : "Ekstra Hizmetler",
     extrasList: isEn
@@ -77,7 +68,7 @@ export default function HorseRidingPage() {
       : [
           "Fotoğraf",
           "Video",
-          "Fotoğraf veya video satın alma zorunluluğu yoktur",
+          "Ekstra medya hizmetlerini satın alma zorunluluğu yoktur",
         ],
 
     notesTitle: isEn ? "Important Notes" : "Önemli Notlar",
@@ -91,14 +82,14 @@ export default function HorseRidingPage() {
         ]
       : [
           "Çocuklar için uygundur",
-          "90 kg üzeri misafirler tura katılamaz",
+          "90 kg üzerindeki misafirler sürüşe katılamaz",
           "20 kg altındaki ve 4 yaş üzeri çocuklar ebeveyn ile birlikte binebilir",
-          "Çiftlikte rahat bekleme alanı ve kafe bulunmaktadır",
-          "Transfer hizmeti konforlu klimalı araçlarla sağlanır",
+          "Tesiste konforlu kafe ve bekleme alanı vardır",
+          "Transfer konforlu klimalı araçlarla sağlanır",
         ],
 
     timesTitle: isEn ? "Tour Times" : "Tur Saatleri",
-    timesList: ["09:00", "11:00", "14:00", "16:00", "18:00"],
+    tourTimes: ["09:00", "11:00", "14:00", "16:00", "18:00"],
 
     bottomTitle: isEn
       ? "Ready for a peaceful ride in nature?"
@@ -125,8 +116,11 @@ export default function HorseRidingPage() {
       <section
         style={{
           minHeight: "70vh",
-          background:
-            "linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+          backgroundImage:
+            "linear-gradient(180deg, rgba(20,18,15,0.78) 0%, rgba(20,18,15,0.48) 45%, rgba(20,18,15,0.80) 100%), url('/horse-riding-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           color: "#fff",
           padding: "24px 20px 80px",
           display: "flex",
@@ -212,7 +206,7 @@ export default function HorseRidingPage() {
 
             <h1
               style={{
-               fontSize: "clamp(32px, 6vw, 56px)",
+                fontSize: "clamp(32px, 6vw, 56px)",
                 lineHeight: 1.05,
                 margin: "0 0 14px",
                 fontWeight: 700,
@@ -265,6 +259,7 @@ export default function HorseRidingPage() {
                 background: "#25D366",
                 color: "#fff",
                 padding: "14px 26px",
+                borderRadius: "999px",
                 textDecoration: "none",
                 fontWeight: 600,
               }}
@@ -301,20 +296,24 @@ export default function HorseRidingPage() {
 
           <div
             style={{
-              background: "#e9e1d6",
               borderRadius: "24px",
+              overflow: "hidden",
               minHeight: "360px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#7a6f65",
-              fontWeight: 600,
-              fontSize: "20px",
-              textAlign: "center",
-              padding: "20px",
+              boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+              background: "#e9e1d6",
             }}
           >
-            {t.imagePlaceholder}
+            <img
+              src="/horse-riding-preview.jpg"
+              alt="Horse Riding Preview"
+              style={{
+                width: "100%",
+                height: "100%",
+                minHeight: "360px",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
         </div>
       </section>
@@ -386,9 +385,9 @@ export default function HorseRidingPage() {
               flexWrap: "wrap",
             }}
           >
-            {t.timesList.map((time) => (
+            {t.tourTimes.map((item) => (
               <div
-                key={time}
+                key={item}
                 style={{
                   background: "#ffffff",
                   borderRadius: "999px",
@@ -397,7 +396,7 @@ export default function HorseRidingPage() {
                   fontWeight: 600,
                 }}
               >
-                {time}
+                {item}
               </div>
             ))}
           </div>
