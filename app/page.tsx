@@ -717,7 +717,7 @@ justifyContent: "center",
                 style={{
                   background: "#fff",
                   borderRadius: "20px",
-                  padding: "24px",
+                  padding: "28px",
                   boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
                 }}
               >
@@ -725,7 +725,7 @@ justifyContent: "center",
                   style={{
                     marginTop: 0,
                     marginBottom: "12px",
-                    fontSize: "22px",
+                    fontSize: "clamp(20px, 5vw, 22px)",
                     color: "#1f1a17",
                   }}
                 >
@@ -752,10 +752,13 @@ justifyContent: "center",
                   }
                   style={{
                     display: "inline-block",
-                    marginTop: "8px",
-                    color: "#1f1a17",
-                    fontWeight: 600,
-                    textDecoration: "none",
+marginTop: "10px",
+padding: "10px 14px",
+borderRadius: "999px",
+background: "#f3eee6",
+color: "#1f1a17",
+fontWeight: 600,
+textDecoration: "none",
                   }}
                 >
                   {tour === "Airport Transfer" ||
