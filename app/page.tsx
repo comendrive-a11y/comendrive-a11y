@@ -149,8 +149,8 @@ export default function HomePage() {
           color: "#fff",
           padding: "24px 20px 60px",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
+flexDirection: "column",
+justifyContent: "center",
         }}
       >
         <header
@@ -312,7 +312,7 @@ export default function HomePage() {
           )}
         </header>
 
-        <div style={{ maxWidth: "1200px", margin: "0 auto", width: "100%" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", width: "100%", marginTop: "40px" }}>
           <div
             style={{
               fontSize: "13px",
