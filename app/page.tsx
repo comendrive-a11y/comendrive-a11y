@@ -10,8 +10,9 @@ export default function HomePage() {
 
   const t = {
     heroTop: isEn
-      ? "5-STAR GUEST SATISFACTION · ÖLÜDENİZ / FETHİYE"
-      : "5 YILDIZLI MİSAFİR MEMNUNİYETİ · ÖLÜDENİZ / FETHİYE",
+      heroTop: isEn
+? "5-STAR OFF-ROAD EXPERIENCE · FETHİYE"
+      : "5 YILDIZLI OFF-ROAD DENEYİMİ · FETHİYE",
 
     heroTitle1: isEn ? "Life Begins" : "Hayat Başlar",
     heroTitle2: isEn ? "Where the Road" : "Yolun Bittiği",
