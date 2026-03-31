@@ -101,8 +101,8 @@ export default function SaklikentCanyonSafariPage() {
         ],
 
     bottomTitle: isEn
-      ? "Ready for a wet and wild safari day?"
-      : "Islak ve bol eğlenceli bir safari gününe hazır mısınız?",
+      ? "Not just a tour. A water battle."
+  : "Sadece bir tur değil. Bir su savaşı.",
   };
 
   const sectionTitleStyle: React.CSSProperties = {
