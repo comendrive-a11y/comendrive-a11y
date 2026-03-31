@@ -66,8 +66,8 @@ export default function HomePage() {
 
     reservationTop: isEn ? "Reservation" : "Rezervasyon",
     reservationTitle: isEn
-      ? "Check Availability & Reserve"
-      : "Müsaitliği Kontrol Et ve Rezerve Et",
+      ? <>Check Availability<br />& Reserve</>
+: <>Müsaitliği Kontrol Et<br />ve Rezerve Et</>,
     reservationText: isEn
       ? "Our online booking area will appear here soon. Until then, you can reserve your place directly via WhatsApp and get quick confirmation from our team."
       : "Online rezervasyon alanımız çok yakında burada olacak. O zamana kadar WhatsApp üzerinden yerinizi ayırtabilir ve ekibimizden hızlı onay alabilirsiniz.",
