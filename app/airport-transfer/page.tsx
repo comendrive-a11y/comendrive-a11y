@@ -35,7 +35,6 @@ export default function AirportTransferPage() {
       : "Özel havalimanı transfer hizmetimiz, tatiline rahat, konforlu ve sorunsuz başlamak isteyen misafirler için tasarlanmıştır. Dalaman Havalimanı ile Fethiye bölgesi arasında, aileler ve küçük gruplar için ideal olan VIP tasarımlı Mercedes Vito (9 kişiye kadar) ve Mercedes Sprinter (11 kişiye kadar) araçlarla hizmet veriyoruz.",
 
     imageTitle: isEn ? "Vehicle Preview" : "Araç Görseli",
-    imagePlaceholder: isEn ? "Transfer Vehicle Photo" : "Transfer Araç Fotoğrafı",
 
     detailsTitle: isEn ? "Transfer Details" : "Transfer Bilgileri",
     detailsList: isEn
@@ -119,8 +118,11 @@ export default function AirportTransferPage() {
     <main style={{ background: "#f7f4ee", color: "#1f1a17", minHeight: "100vh" }}>
       <section
         style={{
-          background:
-  "linear-gradient(180deg, rgba(20,18,15,0.85) 0%, rgba(20,18,15,0.75) 100%)",
+          backgroundImage:
+            "linear-gradient(180deg, rgba(20,18,15,0.78) 0%, rgba(20,18,15,0.48) 45%, rgba(20,18,15,0.80) 100%), url('/airport-transfer-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           color: "#fff",
           padding: "24px 20px 80px",
         }}
@@ -226,7 +228,7 @@ export default function AirportTransferPage() {
               style={{
                 fontSize: "18px",
                 lineHeight: 1.7,
-               maxWidth: "min(720px, 100%)",
+                maxWidth: "min(720px, 100%)",
                 marginBottom: "14px",
                 opacity: 0.96,
               }}
@@ -292,20 +294,24 @@ export default function AirportTransferPage() {
 
           <div
             style={{
-              background: "#e9e1d6",
               borderRadius: "24px",
+              overflow: "hidden",
               minHeight: "360px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#7a6f65",
-              fontWeight: 600,
-              fontSize: "20px",
-              textAlign: "center",
-              padding: "20px",
+              boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+              background: "#e9e1d6",
             }}
           >
-            {t.imagePlaceholder}
+            <img
+              src="/airport-transfer-preview.jpg"
+              alt="Airport Transfer Vehicle Preview"
+              style={{
+                width: "100%",
+                height: "100%",
+                minHeight: "360px",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
         </div>
       </section>
