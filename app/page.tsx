@@ -580,12 +580,12 @@ justifyContent: "center",
 
       <section
         id="reservation"
-        style={{
-          padding: "80px 20px",
-          background: "#ffffff",
-          borderTop: "1px solid #eee",
-          borderBottom: "1px solid #eee",
-        }}
+    style={{
+  padding: "60px 20px 80px",
+  background: "#ffffff",
+  borderTop: "1px solid #eee",
+  borderBottom: "1px solid #eee"
+}}
       >
         <div
           style={{
