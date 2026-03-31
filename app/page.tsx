@@ -4,6 +4,7 @@ import React from "react";
 
 export default function HomePage() {
   const [lang, setLang] = React.useState("en");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const isEn = lang === "en";
 
@@ -20,7 +21,7 @@ export default function HomePage() {
       ? "Real off-road fun, forest adventure and unforgettable holiday memories. From buggy safari to kids ATV, we turn dust into stories worth telling."
       : "Gerçek off-road eğlencesi, orman macerası ve unutulmaz tatil anıları. Buggy safari ve çocuk ATV deneyimiyle tozu hikâyeye dönüştürüyoruz.",
 
-    viewMainTour: isEn ? "View Main Tour" : "Ana Turu Gör",
+    viewMainTour: isEn ? "Explore Buggy Safari" : "Buggy Safariyi Keşfet",
     whatsappUs: isEn ? "WhatsApp Us" : "WhatsApp Yaz",
 
     licence: isEn ? "Driving licence required" : "Ehliyet gereklidir",
@@ -33,6 +34,8 @@ export default function HomePage() {
     navReserve: isEn ? "Reserve" : "Rezervasyon",
     navOther: isEn ? "Other Tours" : "Diğer Turlar",
     navContact: isEn ? "Contact" : "İletişim",
+    navMenu: isEn ? "Menu" : "Menü",
+    navClose: isEn ? "Close" : "Kapat",
 
     halfTitle: isEn ? "Buggy Safari Half Day" : "Buggy Safari Yarım Gün",
     halfSlogan: isEn
@@ -122,15 +125,22 @@ export default function HomePage() {
   const cardStyle: React.CSSProperties = {
     background: "#ffffff",
     borderRadius: "24px",
-    padding: "32px",
+    padding: "clamp(24px, 5vw, 32px)",
     boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
   };
+
+  const navLinkStyle: React.CSSProperties = {
+    color: "#fff",
+    textDecoration: "none",
+  };
+
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17" }}>
       <section
         style={{
-          minHeight: "100vh",
+          minHeight: "min(100vh, 900px)",
           backgroundImage:
             "linear-gradient(180deg, rgba(20,18,15,0.55) 0%, rgba(20,18,15,0.35) 60%, rgba(20,18,15,0.75) 100%), url('/hero.jpg')",
           backgroundPosition: "center",
@@ -146,16 +156,11 @@ export default function HomePage() {
         <header
           style={{
             position: "sticky",
-top: "8px",
+            top: "8px",
             zIndex: 100,
             maxWidth: "1200px",
             width: "100%",
             margin: "0 auto",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "clamp(8px, 2vw, 16px)",
-            flexWrap: "wrap",
             padding: "clamp(10px, 2vw, 14px) clamp(12px, 3vw, 18px)",
             borderRadius: "18px",
             background: "rgba(20,18,15,0.45)",
@@ -164,112 +169,147 @@ top: "8px",
         >
           <div
             style={{
-              color: "#ffffff",
-              display: "flex",
-              flexDirection: "column",
-              lineHeight: 1,
+              display: "grid",
+              gridTemplateColumns: "1fr auto auto",
+              alignItems: "center",
+              gap: "12px",
             }}
           >
             <div
               style={{
-                fontSize: "clamp(18px, 4vw, 26px)",
-                fontWeight: 500,
-                letterSpacing: "2px",
+                color: "#ffffff",
+                display: "flex",
+                flexDirection: "column",
+                lineHeight: 1,
+                minWidth: 0,
               }}
             >
-              COME & DRIVE
+              <div
+                style={{
+                  fontSize: "clamp(18px, 4vw, 26px)",
+                  fontWeight: 500,
+                  letterSpacing: "2px",
+                }}
+              >
+                COME & DRIVE
+              </div>
+
+              <div
+                style={{
+                  fontSize: "11px",
+                  letterSpacing: "3px",
+                  opacity: 0.85,
+                  marginTop: "4px",
+                }}
+              >
+                TRAVEL AGENCY
+              </div>
             </div>
 
+            <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+              <button
+                onClick={() => setLang("en")}
+                style={{
+                  background: isEn ? "#fff" : "transparent",
+                  border: "1px solid rgba(255,255,255,0.45)",
+                  color: isEn ? "#1f1a17" : "#fff",
+                  padding: "4px 10px",
+                  borderRadius: "999px",
+                  cursor: "pointer",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                }}
+              >
+                EN
+              </button>
+
+              <button
+                onClick={() => setLang("tr")}
+                style={{
+                  background: !isEn ? "#fff" : "transparent",
+                  border: "1px solid rgba(255,255,255,0.45)",
+                  color: !isEn ? "#1f1a17" : "#fff",
+                  padding: "4px 10px",
+                  borderRadius: "999px",
+                  cursor: "pointer",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                }}
+              >
+                TR
+              </button>
+            </div>
+
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? t.navClose : t.navMenu}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "42px",
+                height: "42px",
+                borderRadius: "999px",
+                border: "1px solid rgba(255,255,255,0.35)",
+                background: "transparent",
+                color: "#fff",
+                cursor: "pointer",
+                fontSize: "20px",
+                fontWeight: 700,
+              }}
+            >
+              {isMobileMenuOpen ? "×" : "☰"}
+            </button>
+          </div>
+
+          {isMobileMenuOpen && (
             <div
               style={{
-                fontSize: "11px",
-                letterSpacing: "3px",
-                opacity: 0.85,
-                marginTop: "4px",
+                marginTop: "14px",
+                paddingTop: "14px",
+                borderTop: "1px solid rgba(255,255,255,0.15)",
+                display: "flex",
+                flexDirection: "column",
+                gap: "14px",
               }}
             >
-              TRAVEL AGENCY
+              <a href="#half-day" onClick={closeMobileMenu} style={navLinkStyle}>
+                {t.navHalf}
+              </a>
+              <a href="#full-day" onClick={closeMobileMenu} style={navLinkStyle}>
+                {t.navFull}
+              </a>
+              <a href="#kids-quad" onClick={closeMobileMenu} style={navLinkStyle}>
+                {t.navKids}
+              </a>
+              <a href="#reservation" onClick={closeMobileMenu} style={navLinkStyle}>
+                {t.navReserve}
+              </a>
+              <a href="#other-tours" onClick={closeMobileMenu} style={navLinkStyle}>
+                {t.navOther}
+              </a>
+              <a href="#contact" onClick={closeMobileMenu} style={navLinkStyle}>
+                {t.navContact}
+              </a>
+
+              <a
+                href="https://wa.me/905446358280"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  background: "#25D366",
+                  color: "#fff",
+                  padding: "12px 18px",
+                  borderRadius: "999px",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  alignSelf: "flex-start",
+                }}
+              >
+                WhatsApp
+              </a>
             </div>
-          </div>
-
-          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-            <button
-              onClick={() => setLang("en")}
-              style={{
-                background: isEn ? "#fff" : "transparent",
-                border: "1px solid rgba(255,255,255,0.45)",
-                color: isEn ? "#1f1a17" : "#fff",
-                padding: "4px 10px",
-                borderRadius: "999px",
-                cursor: "pointer",
-                fontSize: "12px",
-                fontWeight: 600,
-              }}
-            >
-              EN
-            </button>
-
-            <button
-              onClick={() => setLang("tr")}
-              style={{
-                background: !isEn ? "#fff" : "transparent",
-                border: "1px solid rgba(255,255,255,0.45)",
-                color: !isEn ? "#1f1a17" : "#fff",
-                padding: "4px 10px",
-                borderRadius: "999px",
-                cursor: "pointer",
-                fontSize: "12px",
-                fontWeight: 600,
-              }}
-            >
-              TR
-            </button>
-          </div>
-
-          <nav
-  style={{
-    display: "flex",
-    gap: "14px",
-    flexWrap: "wrap",
-    fontSize: "clamp(11px, 2.5vw, 13px)",
-    alignItems: "center",
-  }}
->
-            <a href="#half-day" style={{ color: "#fff", textDecoration: "none" }}>
-              {t.navHalf}
-            </a>
-            <a href="#full-day" style={{ color: "#fff", textDecoration: "none" }}>
-              {t.navFull}
-            </a>
-            <a href="#kids-quad" style={{ color: "#fff", textDecoration: "none" }}>
-              {t.navKids}
-            </a>
-            <a href="#reservation" style={{ color: "#fff", textDecoration: "none" }}>
-              {t.navReserve}
-            </a>
-            <a href="#other-tours" style={{ color: "#fff", textDecoration: "none" }}>
-              {t.navOther}
-            </a>
-            <a href="#contact" style={{ color: "#fff", textDecoration: "none" }}>
-              {t.navContact}
-            </a>
-          </nav>
-
-          <a
-            href="https://wa.me/905446358280"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              background: "#25D366",
-              color: "#fff",
-              padding: "10px 18px",
-              borderRadius: "999px",
-              fontWeight: 600,
-              textDecoration: "none",
-            }}
-          >
-            WhatsApp
-          </a>
+          )}
         </header>
 
         <div style={{ maxWidth: "1200px", margin: "0 auto", width: "100%" }}>
@@ -286,7 +326,7 @@ top: "8px",
 
           <h1
             style={{
-              fontSize: "clamp(32px, 6vw, 64px)",
+              fontSize: "clamp(32px, 8vw, 64px)",
               lineHeight: 1.05,
               margin: "0 0 20px",
               fontWeight: 700,
@@ -302,7 +342,8 @@ top: "8px",
           <p
             style={{
               maxWidth: "520px",
-              fontSize: "18px",
+              fontSize: "clamp(16px, 3.7vw, 18px)",
+              lineHeight: 1.6,
               opacity: 0.95,
               marginBottom: "28px",
             }}
@@ -316,7 +357,7 @@ top: "8px",
               style={{
                 background: "#fff",
                 color: "#000",
-               padding: "14px 26px",
+                padding: "14px 26px",
                 borderRadius: "999px",
                 textDecoration: "none",
                 fontWeight: 500,
@@ -332,7 +373,7 @@ top: "8px",
               style={{
                 border: "1px solid #fff",
                 color: "#fff",
-               padding: "14px 26px",
+                padding: "14px 26px",
                 borderRadius: "999px",
                 textDecoration: "none",
                 fontWeight: 500,
@@ -382,11 +423,13 @@ top: "8px",
         }}
       >
         <div style={cardStyle}>
-          <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>{t.halfTitle}</h2>
+          <h2 style={{ fontSize: "clamp(28px, 8vw, 36px)", marginBottom: "12px" }}>
+            {t.halfTitle}
+          </h2>
 
           <div
             style={{
-              fontSize: "20px",
+              fontSize: "clamp(18px, 5vw, 20px)",
               fontStyle: "italic",
               opacity: 0.8,
               marginBottom: "20px",
@@ -395,7 +438,14 @@ top: "8px",
             {t.halfSlogan}
           </div>
 
-          <p style={{ maxWidth: "620px", fontSize: "18px", opacity: 0.8 }}>
+          <p
+            style={{
+              maxWidth: "620px",
+              fontSize: "clamp(16px, 4vw, 18px)",
+              lineHeight: 1.7,
+              opacity: 0.8,
+            }}
+          >
             {t.halfText}
           </p>
 
@@ -425,11 +475,13 @@ top: "8px",
         }}
       >
         <div style={cardStyle}>
-          <h2 style={{ fontSize: "36px", marginBottom: "12px" }}>{t.fullTitle}</h2>
+          <h2 style={{ fontSize: "clamp(28px, 8vw, 36px)", marginBottom: "12px" }}>
+            {t.fullTitle}
+          </h2>
 
           <div
             style={{
-              fontSize: "20px",
+              fontSize: "clamp(18px, 5vw, 20px)",
               fontStyle: "italic",
               opacity: 0.8,
               marginBottom: "20px",
@@ -438,7 +490,14 @@ top: "8px",
             {t.fullSlogan}
           </div>
 
-          <p style={{ maxWidth: "620px", fontSize: "18px", opacity: 0.8 }}>
+          <p
+            style={{
+              maxWidth: "620px",
+              fontSize: "clamp(16px, 4vw, 18px)",
+              lineHeight: 1.7,
+              opacity: 0.8,
+            }}
+          >
             {t.fullText}
           </p>
 
@@ -468,13 +527,19 @@ top: "8px",
         }}
       >
         <div style={cardStyle}>
-          <h2 style={{ fontSize: "36px", marginBottom: "14px", color: "#1f1a17" }}>
+          <h2
+            style={{
+              fontSize: "clamp(28px, 8vw, 36px)",
+              marginBottom: "14px",
+              color: "#1f1a17",
+            }}
+          >
             {t.kidsTitle}
           </h2>
 
           <div
             style={{
-              fontSize: "20px",
+              fontSize: "clamp(18px, 5vw, 20px)",
               fontStyle: "italic",
               opacity: 0.8,
               marginBottom: "20px",
@@ -486,7 +551,7 @@ top: "8px",
 
           <p
             style={{
-              fontSize: "18px",
+              fontSize: "clamp(16px, 4vw, 18px)",
               lineHeight: 1.7,
               color: "#5f554d",
               maxWidth: "700px",
@@ -541,7 +606,13 @@ top: "8px",
             {t.reservationTop}
           </p>
 
-          <h2 style={{ fontSize: "40px", marginBottom: "16px", color: "#1f1a17" }}>
+          <h2
+            style={{
+              fontSize: "clamp(32px, 8vw, 40px)",
+              marginBottom: "16px",
+              color: "#1f1a17",
+            }}
+          >
             {t.reservationTitle}
           </h2>
 
@@ -549,7 +620,7 @@ top: "8px",
             style={{
               maxWidth: "760px",
               margin: "0 auto 30px",
-              fontSize: "18px",
+              fontSize: "clamp(16px, 4vw, 18px)",
               lineHeight: 1.7,
               color: "#5f554d",
             }}
@@ -611,14 +682,20 @@ top: "8px",
             {t.otherTop}
           </p>
 
-          <h2 style={{ fontSize: "40px", marginBottom: "16px", color: "#1f1a17" }}>
+          <h2
+            style={{
+              fontSize: "clamp(32px, 8vw, 40px)",
+              marginBottom: "16px",
+              color: "#1f1a17",
+            }}
+          >
             {t.otherTitle}
           </h2>
 
           <p
             style={{
               maxWidth: "720px",
-              fontSize: "18px",
+              fontSize: "clamp(16px, 4vw, 18px)",
               lineHeight: 1.7,
               color: "#5f554d",
               marginBottom: "32px",
@@ -732,13 +809,19 @@ top: "8px",
             {t.reviewsTop}
           </p>
 
-          <h2 style={{ fontSize: "34px", marginBottom: "14px", color: "#1f1a17" }}>
+          <h2
+            style={{
+              fontSize: "clamp(28px, 8vw, 34px)",
+              marginBottom: "14px",
+              color: "#1f1a17",
+            }}
+          >
             {t.reviewsTitle}
           </h2>
 
           <p
             style={{
-              fontSize: "18px",
+              fontSize: "clamp(16px, 4vw, 18px)",
               lineHeight: 1.7,
               color: "#5f554d",
               maxWidth: "720px",
@@ -915,14 +998,15 @@ top: "8px",
         rel="noreferrer"
         style={{
           position: "fixed",
-          right: "18px",
-          bottom: "18px",
+          right: "14px",
+          bottom: "14px",
           background: "#25D366",
           color: "#fff",
           textDecoration: "none",
-          padding: "14px 18px",
+          padding: "12px 16px",
           borderRadius: "999px",
           fontWeight: 700,
+          fontSize: "14px",
           boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
           zIndex: 50,
         }}
