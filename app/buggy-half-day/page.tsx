@@ -551,19 +551,7 @@ export default function BuggyHalfDayPage() {
 
       <section
         id="booking"
-        <div
-  style={{
-    textAlign: "center",
-    marginBottom: "18px",
-    fontSize: "14px",
-    color: "#6b625b",
-    fontWeight: 500,
-  }}
->
-  Secure booking · Instant confirmation · Free cancellation up to 24h
-  <br />
-  Güvenli rezervasyon · Anında onay · Turdan 24 saat öncesine kadar ücretsiz iptal
-</div>
+        
         style={{
           padding: "40px 16px 90px",
           maxWidth: "1100px",
