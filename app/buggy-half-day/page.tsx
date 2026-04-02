@@ -550,25 +550,39 @@ export default function BuggyHalfDayPage() {
       </section>
 
       <section
-        id="booking"
-        
-        style={{
-          padding: "40px 16px 90px",
-          maxWidth: "1100px",
-          margin: "0 auto",
-        }}
-      >
-        <Script
-          src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4"
-          strategy="afterInteractive"
-        />
+  id="booking"
+  style={{
+    padding: "40px 16px 90px",
+    maxWidth: "1100px",
+    margin: "0 auto",
+  }}
+>
+  <div
+    style={{
+      textAlign: "center",
+      marginBottom: "18px",
+      fontSize: "14px",
+      color: "#6b625b",
+      fontWeight: 500,
+      lineHeight: 1.6,
+    }}
+  >
+    Free cancellation up to 24 hours before departure
+    <br />
+    Turdan 24 saat öncesine kadar ücretsiz iptal
+  </div>
 
-        <div
-          className="bokunWidget"
-          data-src="https://widgets.bokun.io/online-sales/449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4/experience-calendar/1190618"
-          style={{ marginTop: "20px" }}
-        />
-      </section>
+  <Script
+    src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4"
+    strategy="afterInteractive"
+  />
+
+  <div
+    className="bokunWidget"
+    data-src="https://widgets.bokun.io/online-sales/449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4/experience-calendar/1190618"
+    style={{ marginTop: "20px" }}
+  />
+</section>
     </main>
   );
 }
