@@ -317,7 +317,7 @@ export default function BuggyHalfDayPage() {
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
               <a
-                href="/reservation"
+               href="#booking"
                 style={{
                   background: "#25D366",
                   color: "#fff",
@@ -515,7 +515,7 @@ export default function BuggyHalfDayPage() {
             }}
           >
             <a
-              href="/reservation"
+              href="#booking"
               style={{
                 display: "inline-block",
                 background: "#25D366",
@@ -547,6 +547,18 @@ export default function BuggyHalfDayPage() {
             </a>
           </div>
         </div>
+        <section id="booking" style={{ padding: "0 20px 90px" }}>
+  <Script
+    src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4"
+    strategy="afterInteractive"
+  />
+
+  <div
+    className="bokunWidget"
+    data-src="https://widgets.bokun.io/online-sales/449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4/experience-calendar/1190618"
+    style={{ marginTop: "20px" }}
+  />
+</section>
       </section>
     </main>
   );
