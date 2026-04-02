@@ -547,7 +547,14 @@ export default function BuggyHalfDayPage() {
             </a>
           </div>
         </div>
-        <section id="booking" style={{ padding: "0 20px 90px" }}>
+<section
+  id="booking"
+  style={{
+    padding: "40px 16px 90px",
+    maxWidth: "1100px",
+    margin: "0 auto",
+  }}
+>
   <Script
     src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4"
     strategy="afterInteractive"
@@ -559,7 +566,6 @@ export default function BuggyHalfDayPage() {
     style={{ marginTop: "20px" }}
   />
 </section>
-      </section>
     </main>
   );
 }
