@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function BuggyHalfDayPage() {
   const [lang, setLang] = React.useState<"en" | "tr">("en");
