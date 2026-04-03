@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Script from "next/script";
 
 export default function KidsQuadBikePage() {
   const [lang, setLang] = React.useState("en");
@@ -252,19 +253,19 @@ export default function KidsQuadBikePage() {
             </p>
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
-              <a
-                href="/reservation"
-                style={{
-                  background: "#25D366",
-                  color: "#fff",
-                  padding: "12px 22px",
-                  borderRadius: "999px",
-                  textDecoration: "none",
-                  fontWeight: 600,
-                }}
-              >
-                {t.bookNow}
-              </a>
+             <a
+  href="#booking"
+  style={{
+    background: "#25D366",
+    color: "#fff",
+    padding: "12px 22px",
+    borderRadius: "999px",
+    textDecoration: "none",
+    fontWeight: 600,
+  }}
+>
+  {t.bookNow}
+</a>
 
               <a
                 href="https://wa.me/905446358280"
@@ -422,19 +423,19 @@ export default function KidsQuadBikePage() {
 
           <div style={{ display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap" }}>
             <a
-              href="/reservation"
-              style={{
-                display: "inline-block",
-                background: "#25D366",
-                color: "#fff",
-                padding: "14px 24px",
-                borderRadius: "999px",
-                textDecoration: "none",
-                fontWeight: 700,
-              }}
-            >
-              {t.bookNow}
-            </a>
+  href="#booking"
+  style={{
+    display: "inline-block",
+    background: "#25D366",
+    color: "#fff",
+    padding: "14px 24px",
+    borderRadius: "999px",
+    textDecoration: "none",
+    fontWeight: 700,
+  }}
+>
+  {t.bookNow}
+</a>
 
             <a
               href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20ask%20about%20Kids%20Quad%20Bike"
@@ -455,6 +456,40 @@ export default function KidsQuadBikePage() {
           </div>
         </div>
       </section>
+      <section
+  id="booking"
+  style={{
+    padding: "40px 16px 90px",
+    maxWidth: "1100px",
+    margin: "0 auto",
+  }}
+>
+  <div
+    style={{
+      textAlign: "center",
+      marginBottom: "18px",
+      fontSize: "14px",
+      color: "#6b625b",
+      fontWeight: 500,
+      lineHeight: 1.6,
+    }}
+  >
+    Free cancellation up to 24 hours before departure
+    <br />
+    Turdan 24 saat öncesine kadar ücretsiz iptal
+  </div>
+
+  <Script
+    src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4"
+    strategy="afterInteractive"
+  />
+
+  <div
+    className="bokunWidget"
+    data-src="https://widgets.bokun.io/online-sales/449d80f4-b0ba-4a8c-b87a-6e7dcb9930f4/experience-calendar/1190899"
+    style={{ marginTop: "20px" }}
+  />
+</section>
     </main>
   );
 }
