@@ -580,88 +580,290 @@ justifyContent: "center",
       </section>
 
       <section
-        id="reservation"
+  id="reservation"
+  style={{
+    padding: "60px 20px 80px",
+    background: "#ffffff",
+    borderTop: "1px solid #eee",
+    borderBottom: "1px solid #eee",
+  }}
+>
+  <div
     style={{
-  padding: "60px 20px 80px",
-  background: "#ffffff",
-  borderTop: "1px solid #eee",
-  borderBottom: "1px solid #eee"
-}}
+      maxWidth: "1100px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <p
+      style={{
+        fontSize: "14px",
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        color: "#6b625b",
+        marginBottom: "12px",
+      }}
+    >
+      {t.reservationTop}
+    </p>
+
+    <h2
+      style={{
+        fontSize: "clamp(32px, 8vw, 40px)",
+        marginBottom: "16px",
+        color: "#1f1a17",
+      }}
+    >
+      {isEn ? (
+        <>
+          Choose Your Tour
+          <br />& Reserve Online
+        </>
+      ) : (
+        <>
+          Turunu Seç
+          <br />ve Online Rezerve Et
+        </>
+      )}
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "760px",
+        margin: "0 auto 18px",
+        fontSize: "clamp(16px, 4vw, 18px)",
+        lineHeight: 1.7,
+        color: "#5f554d",
+      }}
+    >
+      {isEn
+        ? "Select the experience that fits your holiday best and continue to the secure online booking page."
+        : "Tatilinize en uygun deneyimi seçin ve güvenli online rezervasyon sayfasına devam edin."}
+    </p>
+
+    <div
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "10px",
+        padding: "10px 16px",
+        borderRadius: "999px",
+        background: "#f7f4ee",
+        border: "1px solid #e6ddd2",
+        marginBottom: "34px",
+        color: "#6b625b",
+        fontSize: "14px",
+        fontWeight: 600,
+      }}
+    >
+      <span style={{ fontSize: "16px" }}>✓</span>
+      <span>
+        {isEn
+          ? "Online booking powered by Bokun"
+          : "Online rezervasyon Bokun altyapısıyla çalışır"}
+      </span>
+    </div>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+        gap: "20px",
+        textAlign: "left",
+      }}
+    >
+      <div
+        style={{
+          background: "#f7f4ee",
+          border: "1px solid #e6ddd2",
+          borderRadius: "24px",
+          padding: "28px",
+          boxShadow: "0 10px 24px rgba(0,0,0,0.04)",
+        }}
       >
         <div
           style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-            textAlign: "center",
+            fontSize: "12px",
+            letterSpacing: "1.5px",
+            textTransform: "uppercase",
+            color: "#8a7f74",
+            marginBottom: "12px",
           }}
         >
-          <p
-            style={{
-              fontSize: "14px",
-              letterSpacing: "2px",
-              textTransform: "uppercase",
-              color: "#6b625b",
-              marginBottom: "12px",
-            }}
-          >
-            {t.reservationTop}
-          </p>
-
-          <h2
-            style={{
-              fontSize: "clamp(32px, 8vw, 40px)",
-              marginBottom: "16px",
-              color: "#1f1a17",
-            }}
-          >
-            {t.reservationTitle}
-          </h2>
-
-          <p
-            style={{
-              maxWidth: "760px",
-              margin: "0 auto 30px",
-              fontSize: "clamp(16px, 4vw, 18px)",
-              lineHeight: 1.7,
-              color: "#5f554d",
-            }}
-          >
-            {t.reservationText}
-          </p>
-
-          <div
-            style={{
-              maxWidth: "760px",
-              margin: "0 auto",
-              padding: "36px 24px",
-              border: "2px dashed #d8d0c6",
-              borderRadius: "24px",
-              background: "#f7f4ee",
-            }}
-          >
-            <p style={{ margin: "0 0 18px", fontSize: "18px", color: "#7a6f65" }}>
-              {t.reservationPlaceholder}
-            </p>
-
-            <a
-              href="https://wa.me/905446358280?text=Hello%20I%20want%20to%20check%20availability%20for%20a%20tour"
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                display: "inline-block",
-                background: "#25D366",
-                color: "#fff",
-                padding: "14px 24px",
-                borderRadius: "999px",
-                textDecoration: "none",
-                fontWeight: 600,
-              }}
-            >
-              {t.askAvailability}
-            </a>
-          </div>
+          {isEn ? "Most Popular" : "En Popüler"}
         </div>
-      </section>
+
+        <h3
+          style={{
+            marginTop: 0,
+            marginBottom: "10px",
+            fontSize: "24px",
+            color: "#1f1a17",
+          }}
+        >
+          {t.halfTitle}
+        </h3>
+
+        <p
+          style={{
+            margin: "0 0 18px",
+            color: "#5f554d",
+            lineHeight: 1.7,
+            fontSize: "16px",
+          }}
+        >
+          {t.halfText}
+        </p>
+
+        <a
+          href="/buggy-half-day"
+          style={{
+            display: "inline-block",
+            background: "#1f1a17",
+            color: "#fff",
+            padding: "12px 20px",
+            borderRadius: "999px",
+            textDecoration: "none",
+            fontWeight: 600,
+          }}
+        >
+          {isEn ? "Check Availability" : "Müsaitliği Kontrol Et"}
+        </a>
+      </div>
+
+      <div
+        style={{
+          background: "#f7f4ee",
+          border: "1px solid #e6ddd2",
+          borderRadius: "24px",
+          padding: "28px",
+          boxShadow: "0 10px 24px rgba(0,0,0,0.04)",
+        }}
+      >
+        <div
+          style={{
+            fontSize: "12px",
+            letterSpacing: "1.5px",
+            textTransform: "uppercase",
+            color: "#8a7f74",
+            marginBottom: "12px",
+          }}
+        >
+          {isEn ? "Weekend Experience" : "Hafta Sonu Deneyimi"}
+        </div>
+
+        <h3
+          style={{
+            marginTop: 0,
+            marginBottom: "10px",
+            fontSize: "24px",
+            color: "#1f1a17",
+          }}
+        >
+          {t.fullTitle}
+        </h3>
+
+        <p
+          style={{
+            margin: "0 0 18px",
+            color: "#5f554d",
+            lineHeight: 1.7,
+            fontSize: "16px",
+          }}
+        >
+          {t.fullText}
+        </p>
+
+        <a
+          href="/buggy-full-day"
+          style={{
+            display: "inline-block",
+            background: "#1f1a17",
+            color: "#fff",
+            padding: "12px 20px",
+            borderRadius: "999px",
+            textDecoration: "none",
+            fontWeight: 600,
+          }}
+        >
+          {isEn ? "Check Availability" : "Müsaitliği Kontrol Et"}
+        </a>
+      </div>
+
+      <div
+        style={{
+          background: "#f7f4ee",
+          border: "1px solid #e6ddd2",
+          borderRadius: "24px",
+          padding: "28px",
+          boxShadow: "0 10px 24px rgba(0,0,0,0.04)",
+        }}
+      >
+        <div
+          style={{
+            fontSize: "12px",
+            letterSpacing: "1.5px",
+            textTransform: "uppercase",
+            color: "#8a7f74",
+            marginBottom: "12px",
+          }}
+        >
+          {isEn ? "Family Favourite" : "Aile Favorisi"}
+        </div>
+
+        <h3
+          style={{
+            marginTop: 0,
+            marginBottom: "10px",
+            fontSize: "24px",
+            color: "#1f1a17",
+          }}
+        >
+          {t.kidsTitle}
+        </h3>
+
+        <p
+          style={{
+            margin: "0 0 18px",
+            color: "#5f554d",
+            lineHeight: 1.7,
+            fontSize: "16px",
+          }}
+        >
+          {t.kidsText}
+        </p>
+
+        <a
+          href="/kids-quad-bike"
+          style={{
+            display: "inline-block",
+            background: "#25D366",
+            color: "#fff",
+            padding: "12px 20px",
+            borderRadius: "999px",
+            textDecoration: "none",
+            fontWeight: 600,
+          }}
+        >
+          {isEn ? "Check Availability" : "Müsaitliği Kontrol Et"}
+        </a>
+      </div>
+    </div>
+
+    <p
+      style={{
+        marginTop: "28px",
+        fontSize: "14px",
+        color: "#7a6f65",
+        lineHeight: 1.7,
+      }}
+    >
+      {isEn
+        ? "Each tour opens its own live Bokun booking calendar on the detail page."
+        : "Her turun kendi canlı Bokun rezervasyon takvimi detay sayfasında açılır."}
+    </p>
+  </div>
+</section>
 
       <section
         id="other-tours"
