@@ -572,11 +572,16 @@ export default function BuggyHalfDayPage() {
     Turdan 24 saat öncesine kadar ücretsiz iptal
   </div>
 
-  <script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=fca6e52d-12e6-4208-a7b1-a9d40f366b36" async></script>
-     
-    <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience-calendar/1190618"></div>
-    <noscript>Please enable javascript in your browser to book</noscript>
+  <Script
+  src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=fca6e52d-12e6-4208-a7b1-a9d40f366b36"
+  strategy="afterInteractive"
+/>
 
+<div
+  className="bokunWidget"
+  data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience-calendar/1190618"
+  style={{ marginTop: "20px" }}
+/>
     </main>
   );
 }
