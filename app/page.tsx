@@ -1109,17 +1109,21 @@ textDecoration: "none",
               TÜRSAB A-Group Travel Agency — License No: 11387
             </p>
             <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
+<div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
   <a href="/cancellation-policy" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
     Cancellation Policy / İptal Politikası
   </a>
+
   <a href="/privacy-policy" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
     Privacy Policy / Gizlilik Politikası
   </a>
+
   <a href="/terms" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
     Terms & Conditions / Kullanım Şartları
-    <a href="/distance-sales-agreement" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
-  Distance Sales Agreement / Mesafeli Satış Sözleşmesi
-</a>
+  </a>
+
+  <a href="/distance-sales-agreement" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
+    Distance Sales Agreement / Mesafeli Satış Sözleşmesi
   </a>
 </div>
           </div>
