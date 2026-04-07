@@ -63,7 +63,7 @@ export async function GET() {
 
 export async function POST() {
   return NextResponse.json({
-    status: "next-step",
-    message: "POST kısmına gerçek reserve akışını bir sonraki adımda ekleyeceğiz",
+    status: "waiting-payment-provider",
+    message: "HalkÖde hazır olduğunda reserve akışı burada aktif edilecek",
   });
 }
