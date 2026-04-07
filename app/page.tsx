@@ -1117,6 +1117,9 @@ textDecoration: "none",
   </a>
   <a href="/terms" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
     Terms & Conditions / Kullanım Şartları
+    <a href="/distance-sales-agreement" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
+  Distance Sales Agreement / Mesafeli Satış Sözleşmesi
+</a>
   </a>
 </div>
           </div>
