@@ -1109,7 +1109,7 @@ textDecoration: "none",
               TÜRSAB A-Group Travel Agency — License No: 11387
             </p>
             <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
-<div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
+
   <a href="/cancellation-policy" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
     Cancellation Policy / İptal Politikası
   </a>
