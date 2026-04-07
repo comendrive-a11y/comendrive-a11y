@@ -170,7 +170,7 @@ export default function BuggyHalfDayPage() {
     padding: "28px",
     boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
   };
- 
+
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17", minHeight: "100vh" }}>
       <section
@@ -550,79 +550,39 @@ export default function BuggyHalfDayPage() {
       </section>
 
       <section
-  id="booking"
-  style={{
-    padding: "40px 16px 90px",
-    maxWidth: "1100px",
-    margin: "0 auto",
-  }}
->
-  <div
-    style={{
-      textAlign: "center",
-      marginBottom: "18px",
-      fontSize: "14px",
-      color: "#6b625b",
-      fontWeight: 500,
-      lineHeight: 1.6,
-    }}
-  >
-    Free cancellation up to 24 hours before departure
-    <br />
-    Turdan 24 saat öncesine kadar ücretsiz iptal
-  </div>
-        
-    style={{
-      fontSize: "12px",
-      letterSpacing: "1.5px",
-      textTransform: "uppercase",
-      color: "#8a7f74",
-      marginBottom: "10px",
-      fontWeight: 700,
-    }}
-  >
-    {isEn ? "Your Selection" : "Seçiminiz"}
-  </div>
+        id="booking"
+        style={{
+          padding: "40px 16px 90px",
+          maxWidth: "1100px",
+          margin: "0 auto",
+        }}
+      >
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "18px",
+            fontSize: "14px",
+            color: "#6b625b",
+            fontWeight: 500,
+            lineHeight: 1.6,
+          }}
+        >
+          Free cancellation up to 24 hours before departure
+          <br />
+          Turdan 24 saat öncesine kadar ücretsiz iptal
+        </div>
 
-  <h3
-    style={{
-      marginTop: 0,
-      marginBottom: "14px",
-      fontSize: "22px",
-      color: "#1f1a17",
-    }}
-  >
-    {t.title}
-  </h3>
+        <Script
+          src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=fca6e52d-12e6-4208-a7b1-a9d40f366b36"
+          strategy="afterInteractive"
+        />
 
-  <div style={{ display: "grid", gap: "10px" }}>
-    <div style={{ display: "flex", justifyContent: "space-between", gap: "12px" }}>
-      <span style={{ color: "#6b625b" }}>{isEn ? "Date" : "Tarih"}</span>
-      <strong>{bookingPreview.date}</strong>
-    </div>
-
-    <div style={{ display: "flex", justifyContent: "space-between", gap: "12px" }}>
-      <span style={{ color: "#6b625b" }}>{isEn ? "Guests" : "Kişi"}</span>
-      <strong>{bookingPreview.guests}</strong>
-    </div>
-
-    <div style={{ display: "flex", justifyContent: "space-between", gap: "12px" }}>
-      <span style={{ color: "#6b625b" }}>{isEn ? "Total" : "Toplam"}</span>
-      <strong>{bookingPreview.total}</strong>
-    </div>
-  </div>
-</div>
-  <Script
-    src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=fca6e52d-12e6-4208-a7b1-a9d40f366b36"
-    strategy="afterInteractive"
-  />
-
-  <div
-    className="bokunWidget"
-    data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience-calendar/1190618"
-    style={{ marginTop: "20px" }}
-  />
-</section>
+        <div
+          className="bokunWidget"
+          data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience-calendar/1190618"
+          style={{ marginTop: "20px" }}
+        />
+      </section>
     </main>
   );
 }
