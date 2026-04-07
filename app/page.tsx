@@ -1098,16 +1098,27 @@ textDecoration: "none",
               </a>
             </p>
             <p>
-              <a
-                href="mailto:comendrive@gmail.com"
-                style={{ color: "#fff", textDecoration: "none" }}
-              >
-                comendrive@gmail.com
-              </a>
+        <a
+  href="mailto:info@fethiyebuggy.com"
+  style={{ color: "#fff", textDecoration: "none" }}
+>
+  info@fethiyebuggy.com
+</a>
             </p>
             <p style={{ marginTop: "20px", opacity: 0.7 }}>
               TÜRSAB A-Group Travel Agency — License No: 11387
             </p>
+            <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
+  <a href="/cancellation-policy" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
+    Cancellation Policy / İptal Politikası
+  </a>
+  <a href="/privacy-policy" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
+    Privacy Policy / Gizlilik Politikası
+  </a>
+  <a href="/terms" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
+    Terms & Conditions / Kullanım Şartları
+  </a>
+</div>
           </div>
 
           <div>
