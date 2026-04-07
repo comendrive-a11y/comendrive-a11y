@@ -7,11 +7,6 @@ import Script from "next/script";
 export default function BuggyHalfDayPage() {
   const [lang, setLang] = React.useState<"en" | "tr">("en");
   const isEn = lang === "en";
-  const [bookingPreview, setBookingPreview] = React.useState({
-  date: "-",
-  guests: "-",
-  total: "-",
-});
 
   const t = {
     navBack: isEn ? "← Back to Home" : "← Ana Sayfaya Dön",
@@ -175,50 +170,7 @@ export default function BuggyHalfDayPage() {
     padding: "28px",
     boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
   };
-  React.useEffect(() => {
-  const bookingSection = document.getElementById("booking");
-  if (!bookingSection) return;
-
-  const readBokunSummary = () => {
-    const text = bookingSection.innerText || "";
-
-    // Tarih
-    const dateMatch =
-      text.match(/([A-Z][a-z]{2,9}\s\d{1,2},\s\d{4})/) || // April 12, 2026
-      text.match(/(\d{1,2}[./-]\d{1,2}[./-]\d{2,4})/);   // 12/04/2026
-
-    // Misafir / kişi
-    const guestsMatch =
-      text.match(/(\d+\s(?:guest|guests|adult|adults|child|children))/i) ||
-      text.match(/(\d+\s(?:kişi|yetişkin|çocuk))/i);
-
-    // Toplam fiyat
-    const totalMatch =
-      text.match(/(?:total|toplam)\s*[:\-]?\s*([€$£₺]\s?\d+[.,]?\d*)/i) ||
-      text.match(/([€$£₺]\s?\d+[.,]?\d*)/);
-
-    setBookingPreview({
-      date: dateMatch?.[1] || "-",
-      guests: guestsMatch?.[1] || "-",
-      total: totalMatch?.[1] || "-",
-    });
-  };
-
-  readBokunSummary();
-
-  const observer = new MutationObserver(() => {
-    readBokunSummary();
-  });
-
-  observer.observe(bookingSection, {
-    childList: true,
-    subtree: true,
-    characterData: true,
-  });
-
-  return () => observer.disconnect();
-}, []);
-
+ 
   return (
     <main style={{ background: "#f7f4ee", color: "#1f1a17", minHeight: "100vh" }}>
       <section
@@ -620,17 +572,6 @@ export default function BuggyHalfDayPage() {
     Turdan 24 saat öncesine kadar ücretsiz iptal
   </div>
         
-<div
-  style={{
-    background: "#ffffff",
-    borderRadius: "24px",
-    padding: "22px",
-    boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
-    border: "1px solid #e8dfd4",
-    marginBottom: "20px",
-  }}
->
-  <div
     style={{
       fontSize: "12px",
       letterSpacing: "1.5px",
