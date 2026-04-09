@@ -566,22 +566,23 @@ export default function BuggyHalfDayPage() {
             fontWeight: 500,
             lineHeight: 1.6,
           }}
-        >
+             >
           Free cancellation up to 24 hours before departure
           <br />
           Turdan 24 saat öncesine kadar ücretsiz iptal
         </div>
 
-       <Script
-  src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=fca6e52d-12e6-4208-a7b1-a9d40f366b36"
-  strategy="afterInteractive"
-/>
+        <Script
+          src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=fca6e52d-12e6-4208-a7b1-a9d40f366b36"
+          strategy="afterInteractive"
+        />
 
-<div
-  className="bokunWidget"
-  data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience-calendar/1190618"
-  style={{ marginTop: "20px" }}
-/>
+        <div
+          className="bokunWidget"
+          data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience-calendar/1190618"
+          style={{ marginTop: "20px" }}
+        />
+      </section>
     </main>
   );
 }
