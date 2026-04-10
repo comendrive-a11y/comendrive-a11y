@@ -546,43 +546,11 @@ export default function BuggyFullDayPage() {
   strategy="afterInteractive"
 />
 
-<style jsx>{`
-  #bokun_full_day_button {
-    display: inline-block;
-    padding: 14px 24px;
-    background: #25D366;
-    border-radius: 999px;
-    box-shadow: none;
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-
-  #bokun_full_day_button:hover {
-    background: #1faa52;
-  }
-
-  #bokun_full_day_button:active {
-    background: #189a48;
-  }
-`}</style>
-
-<div style={{ marginTop: "20px", textAlign: "center" }}>
-  <button
-    className="bokunButton"
-    disabled
-    id="bokun_full_day_button"
-    data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience/1190808?partialView=1"
-    data-testid="widget-book-button"
-  >
-    {isEn ? "Book Full Day" : "Tam Gün Rezervasyon"}
-  </button>
-</div>
+<div
+  className="bokunWidget"
+  data-src="https://widgets.bokun.io/online-sales/fca6e52d-12e6-4208-a7b1-a9d40f366b36/experience-calendar/1190808"
+  style={{ marginTop: "20px" }}
+/>
 </section>
     </main>
   );
