@@ -111,6 +111,7 @@ export default function HomePage() {
       "Horse Riding",
       "Private Boat Tour",
       "Paragliding",
+    "Quad Safari vs Buggy Safari",
      
     ]
   : [
@@ -120,6 +121,7 @@ export default function HomePage() {
       "At Turu",
       "Özel Tekne Turu",
       "Yamaç Paraşütü",
+    "ATV Turu ve Buggy Safari Farkları",
       
     ],
   };
