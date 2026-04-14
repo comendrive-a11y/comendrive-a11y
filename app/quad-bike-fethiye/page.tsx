@@ -336,8 +336,8 @@ export default function QuadBikeFethiyePage() {
           >
             <h2 style={{ fontSize: "clamp(26px, 5vw, 34px)", marginTop: 0 }}>
               {isEn
-                ? "Looking for Quad Safari in Fethiye?"
-                : "Fethiye’de ATV Turu mu Arıyorsunuz?"}
+                ? "Looking for Buggy Safari in Fethiye, Hisarönü or Ölüdeniz?"
+                : "Fethiye, Hisarönü veya Ölüdeniz’de buggy safari arıyorsanız, turlarımız daha uzun sürüş süresi, daha fazla konfor ve daha güçlü bir off-road deneyimi sunar."}
             </h2>
 
             <p
@@ -350,7 +350,7 @@ export default function QuadBikeFethiyePage() {
               }}
             >
               {isEn
-                ? "If you are staying in Fethiye, Hisarönü or Ölüdeniz and searching for quad safari, our buggy safari tours offer a longer route, better comfort and a more complete off-road day."
+                ? "If you are staying in Fethiye, Hisarönü or Ölüdeniz and searching for buggy safari, our tours offer a longer driving route, better comfort and a more complete off-road experience."
                 : "Fethiye, Hisarönü veya Ölüdeniz’de kalıyor ve ATV turu arıyorsanız, buggy safari turlarımız size daha uzun rota, daha fazla konfor ve daha dolu bir off-road günü sunar."}
             </p>
 
