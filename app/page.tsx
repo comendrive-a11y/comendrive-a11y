@@ -103,23 +103,25 @@ export default function HomePage() {
     contact: isEn ? "Contact" : "İletişim",
     followUs: isEn ? "Follow Us" : "Bizi Takip Et",
 
-    otherToursList: isEn
-      ? [
-          "Airport Transfer",
-          "Saklikent Canyon Safari",
-          "Ölüdeniz Boat Trip",
-          "Horse Riding",
-          "Private Boat Tour",
-          "Paragliding",
-        ]
-      : [
-          "Havalimanı Transferi",
-          "Saklıkent Kanyon Safari",
-          "Ölüdeniz Tekne Turu",
-          "At Turu",
-          "Özel Tekne Turu",
-          "Yamaç Paraşütü",
-        ],
+   otherToursList: isEn
+  ? [
+      "Airport Transfer",
+      "Saklikent Canyon Safari",
+      "Ölüdeniz Boat Trip",
+      "Horse Riding",
+      "Private Boat Tour",
+      "Paragliding",
+      "Quad Safari vs Buggy Safari",
+    ]
+  : [
+      "Havalimanı Transferi",
+      "Saklıkent Kanyon Safari",
+      "Ölüdeniz Tekne Turu",
+      "At Turu",
+      "Özel Tekne Turu",
+      "Yamaç Paraşütü",
+      "ATV Turu ve Buggy Safari Farkları",
+    ],
   };
 
   const cardStyle: React.CSSProperties = {
