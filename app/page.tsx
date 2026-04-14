@@ -952,7 +952,7 @@ onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
                       : tour === "Private Boat Tour" || tour === "Özel Tekne Turu"
                       ? "/private-boat-tour"
                       : tour === "Paragliding" || tour === "Yamaç Paraşütü"
-                      ? "/paragliding"
+                      ? "/paragliding" ||
                     : tour === "Quad Safari vs Buggy Safari" ||
   tour === "ATV Turu ve Buggy Safari Farkları"
 ? "/quad-bike-fethiye"
