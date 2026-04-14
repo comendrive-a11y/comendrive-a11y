@@ -110,7 +110,7 @@ export default function QuadBikeFethiyePage() {
             }}
           >
             {isEn
-              ? "Many holidaymakers searching for quad safari in Fethiye, Hisarönü and Ölüdeniz eventually choose buggy safari for longer driving time, more comfort and a more complete off-road experience."
+              ? "Fethiye, Hisarönü ve Ölüdeniz’de ATV turu arayan birçok tatilci, daha uzun sürüş süresi, daha fazla konfor ve daha güvenli bir off-road deneyimi sunduğu için buggy safariyi tercih eder. Kısa bir ATV turu yerine gerçek bir sürüş deneyimi istiyorsanız buggy safari genellikle daha doğru seçimdir."
               : "Fethiye, Hisarönü ve Ölüdeniz’de ATV turu arayan birçok tatilci, daha uzun sürüş süresi, daha fazla konfor ve daha dolu bir off-road deneyimi için sonunda buggy safariyi tercih ediyor."}
           </p>
         </div>
