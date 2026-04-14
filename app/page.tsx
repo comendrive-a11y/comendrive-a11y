@@ -453,6 +453,13 @@ justifyContent: "center",
           >
             {t.halfText}
           </p>
+          <p style={{ margin: "14px 0 0", fontWeight: 600, color: "#1f1a17" }}>
+  {isEn ? "Starting price £50 per person" : "Başlangıç fiyatı £50 kişi başı"}
+</p>
+
+<p style={{ margin: "4px 0 0", color: "#5f554d", lineHeight: 1.6 }}>
+  {isEn ? "3.5-hour trip · Swim break included" : "3,5 saatlik tur · Yüzme molası dahil"}
+</p>
 
           <a
             href="/buggy-half-day"
