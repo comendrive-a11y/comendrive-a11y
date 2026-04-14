@@ -942,6 +942,21 @@ onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
                 >
                   {tour}
                 </h3>
+                {tour === "Buggy Safari Half Day" && (
+  <>
+    <p style={{ margin: "8px 0 0", fontWeight: 600 }}>
+      {isEn
+        ? "Starting price £50 per person"
+        : "Başlangıç fiyatı £50 kişi başı"}
+    </p>
+
+    <p style={{ margin: "4px 0 0", opacity: 0.8 }}>
+      {isEn
+        ? "3.5-hour trip · Swim break included"
+        : "3,5 saatlik tur · Yüzme molası dahil"}
+    </p>
+  </>
+)}
 
                 <a
                   href={
