@@ -954,7 +954,7 @@ onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
                       : tour === "Private Boat Tour" || tour === "Özel Tekne Turu"
                       ? "/private-boat-tour"
                       : tour === "Paragliding" || tour === "Yamaç Paraşütü"
-                      ? "/paragliding" ||
+                      ? "/paragliding" 
                    
                       : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
                           tour
@@ -982,7 +982,7 @@ textDecoration: "none",
                   tour === "Private Boat Tour" ||
                   tour === "Özel Tekne Turu" ||
                   tour === "Paragliding" ||
-                  tour === "Yamaç Paraşütü" ||
+                  tour === "Yamaç Paraşütü" 
                     ? isEn
                       ? "View Details"
                       : "Detayları Gör"
