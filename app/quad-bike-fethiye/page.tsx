@@ -97,8 +97,8 @@ export default function QuadBikeFethiyePage() {
             }}
           >
             {isEn
-              ? "Quad Safari or Buggy Safari in Fethiye – Which One Is Better?"
-              : "Fethiye’de ATV Turu mu Buggy Safari mi – Hangisi Daha İyi?"}
+             ? "Quad Safari Fethiye / Hisarönü / Ölüdeniz – Quad Safari or Buggy Safari: Which One Is Better?"
+: "Fethiye ATV Turu – Hisarönü & Ölüdeniz’de Quad Safari mi Buggy Safari mi Daha İyi?"}
           </h1>
 
           <p
