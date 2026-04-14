@@ -986,7 +986,9 @@ textDecoration: "none",
                   tour === "Private Boat Tour" ||
                   tour === "Özel Tekne Turu" ||
                   tour === "Paragliding" ||
-                  tour === "Yamaç Paraşütü" 
+                  tour === "Yamaç Paraşütü" || 
+                    tour === "Quad Safari vs Buggy Safari" ||
+tour === "ATV Turu ve Buggy Safari Farkları"
                     ? isEn
                       ? "View Details"
                       : "Detayları Gör"
