@@ -111,7 +111,7 @@ export default function HomePage() {
       "Horse Riding",
       "Private Boat Tour",
       "Paragliding",
-      "Quad Safari vs Buggy Safari",
+     
     ]
   : [
       "Havalimanı Transferi",
@@ -120,7 +120,7 @@ export default function HomePage() {
       "At Turu",
       "Özel Tekne Turu",
       "Yamaç Paraşütü",
-      "ATV Turu ve Buggy Safari Farkları",
+      
     ],
   };
 
@@ -955,9 +955,7 @@ onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
                       ? "/private-boat-tour"
                       : tour === "Paragliding" || tour === "Yamaç Paraşütü"
                       ? "/paragliding" ||
-                    : tour === "Quad Safari vs Buggy Safari" ||
-  tour === "ATV Turu ve Buggy Safari Farkları" 
-? "/quad-bike-fethiye"
+                   
                       : `https://wa.me/905446358280?text=Hello%20I%20want%20to%20get%20information%20about%20${encodeURIComponent(
                           tour
                         )}`
@@ -985,8 +983,6 @@ textDecoration: "none",
                   tour === "Özel Tekne Turu" ||
                   tour === "Paragliding" ||
                   tour === "Yamaç Paraşütü" ||
-                    tour === "Quad Safari vs Buggy Safari" ||
-tour === "ATV Turu ve Buggy Safari Farkları" ||
                     ? isEn
                       ? "View Details"
                       : "Detayları Gör"
