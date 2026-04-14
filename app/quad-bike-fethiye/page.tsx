@@ -1,12 +1,6 @@
 "use client";
 
 import React from "react";
-export const metadata = {
-  title:
-    "Quad Safari Fethiye / Hisaronu / Oludeniz – Quad Safari or Buggy Safari: Which One Is Better?",
-  description:
-    "Quad safari mi buggy safari mi daha iyi? Fethiye, Hisarönü ve Ölüdeniz’de ATV turu ile buggy safari arasındaki farkları karşılaştırın ve tatiliniz için en doğru seçimi yapın.",
-};
 
 export default function QuadBikeFethiyePage() {
   const [lang, setLang] = React.useState("en");
