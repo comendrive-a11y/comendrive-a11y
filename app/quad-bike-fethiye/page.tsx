@@ -84,8 +84,8 @@ export default function QuadBikeFethiyePage() {
             }}
           >
             {isEn
-              ? "FETHIYE · HISARÖNÜ · ÖLÜDENIZ"
-              : "FETHİYE · HİSARÖNÜ · ÖLÜDENİZ"}
+  ? "QUAD SAFARI FETHIYE · HISARONU · OLUDENIZ"
+  : "ATV TURU FETHİYE · HİSARÖNÜ · ÖLÜDENİZ"}
           </p>
 
           <h1
