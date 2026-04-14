@@ -512,6 +512,15 @@ justifyContent: "center",
           >
             {t.fullText}
           </p>
+          <p style={{ margin: "14px 0 0", fontWeight: 600, color: "#1f1a17" }}>
+  {isEn ? "Starting price £100 per person" : "Başlangıç fiyatı £100 kişi başı"}
+</p>
+
+<p style={{ margin: "4px 0 0", color: "#5f554d", lineHeight: 1.6 }}>
+  {isEn
+    ? "7-hour trip · Lunch · Ancient city · Swim break"
+    : "7 saatlik tur · Öğle yemeği · Antik kent · Yüzme molası"}
+</p>
 
           <a
             href="/buggy-full-day"
@@ -572,6 +581,15 @@ justifyContent: "center",
           >
             {t.kidsText}
           </p>
+          <p style={{ margin: "14px 0 0", fontWeight: 600, color: "#1f1a17" }}>
+  {isEn ? "Starting price £35 per child" : "Başlangıç fiyatı £35 çocuk başı"}
+</p>
+
+<p style={{ margin: "4px 0 0", color: "#5f554d", lineHeight: 1.6 }}>
+  {isEn
+    ? "50-min guided ride · Yamaha 50cc ATVs"
+    : "50 dk rehberli sürüş · Yamaha 50cc ATV"}
+</p>
 
           <a
             href="/kids-quad-bike"
