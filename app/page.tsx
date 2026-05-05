@@ -1316,19 +1316,7 @@ bottom: "12px",
       >
         WhatsApp
       </a>
-        <div
-  style={{
-    textAlign: "center",
-    fontSize: "11px",
-    letterSpacing: "1px",
-    opacity: 0.5,
-    marginTop: "40px",
-    borderTop: "1px solid rgba(255,255,255,0.1)",
-    paddingTop: "16px",
-  }}
->
-  Licensed by TÜRSAB • A-Group • No: 11387
-</div>
+   
     </main>
   );
 }
