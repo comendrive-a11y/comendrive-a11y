@@ -1276,17 +1276,18 @@ tour === "ATV Turu ve Buggy Safari Farkları"
           </div>
         </div>
       </section>
-      <div
+  <div
   style={{
     textAlign: "center",
-    fontSize: "11px",
-    letterSpacing: "1px",
-    opacity: 0.5,
+    fontSize: "12px",
+    letterSpacing: "1.5px",
+    color: "#1f1a17",
+    fontWeight: 600,
     marginTop: "20px",
     marginBottom: "10px",
   }}
 >
-  Licensed by TÜRSAB • A-Group • No: 11387
+  TÜRSAB Licensed • A-Group • 11387
 </div>
       <a
   href="#top"
