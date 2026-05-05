@@ -209,6 +209,16 @@ justifyContent: "center",
               >
                 TRAVEL AGENCY
               </div>
+              <div
+  style={{
+    fontSize: "10px",
+    letterSpacing: "2px",
+    opacity: 0.55,
+    marginTop: "2px",
+  }}
+>
+  OFFICIAL TRAVEL AGENCY • TÜRSAB No: 11387
+</div>
             </div>
 
             <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
