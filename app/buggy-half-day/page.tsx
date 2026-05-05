@@ -26,8 +26,8 @@ export default function BuggyHalfDayPage() {
       : "35 km gerçek orman off-road sürüşü + Gemiler Beach’te 1 saat yüzme molası.",
 
     text: isEn
-      ? "This premium small-group experience starts from Hisarönü and runs on weekdays with two daily departures. You drive a 550cc automatic Mud Monster buggy through real off-road terrain. Each slot is limited to maximum 8 buggies, giving the tour a more private and comfortable feeling. We are the only company in the city combining buggy safari with a beach swim break."
-      : "Bu premium küçük grup deneyimi Hisarönü çıkışlıdır ve hafta içi her gün iki farklı saatte yapılır. Gerçek off-road arazisinde 550cc otomatik Mud Monster buggy ile sürüş yaparsınız. Her slot maksimum 8 buggy ile sınırlıdır, bu da daha özel ve konforlu bir his verir. Şehirde buggy safariyi plaj yüzme molasıyla birleştiren tek firmayız.",
+      ? "This premium small-group experience starts from Hisarönü and runs on weekdays with two daily departures. You drive a 550cc automatic Mud Monster buggy through real off-road terrain. Each slot is limited to maximum 8 people, giving the tour a more private and comfortable feeling. We are the only company in the city combining buggy safari with a beach swim break."
+      : "Bu premium küçük grup deneyimi Hisarönü çıkışlıdır ve hafta içi her gün iki farklı saatte yapılır. Gerçek off-road arazisinde 550cc otomatik Mud Monster buggy ile sürüş yaparsınız. Her slot maksimum 8 kisi ile sınırlıdır, bu da daha özel ve konforlu bir his verir. Şehirde buggy safariyi plaj yüzme molasıyla birleştiren tek firmayız.",
 
     heroNote: isEn
       ? "Weekdays only. Driver minimum age 18. Driving licence required."
