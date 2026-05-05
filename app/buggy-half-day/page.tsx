@@ -352,7 +352,39 @@ export default function BuggyHalfDayPage() {
 
       <section style={{ padding: "80px 20px 40px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p style={sectionTitleStyle}>{t.experienceTitle}</p>
+          <div style={{ ...cardStyle, marginBottom: "28px" }}>
+  <h2 style={{ fontSize: "clamp(24px, 5vw, 32px)", marginTop: 0 }}>
+    {isEn
+      ? "Looking for ATV Safari in Fethiye?"
+      : "Fethiye’de ATV Safari mi Arıyorsunuz?"}
+  </h2>
+
+  <p style={{ fontSize: "17px", lineHeight: 1.8, color: "#5f554d", marginBottom: 0 }}>
+    {isEn ? (
+      <>
+        Most ATV tours in Fethiye, Ölüdeniz and Hisarönü are around <strong>1 hour</strong> and
+        <strong> 10 km</strong>, usually without a beach stop.
+        <br />
+        <br />
+        Our Half Day Buggy Safari offers a <strong>35 km off-road route</strong>, around{" "}
+        <strong>3.5 hours total experience</strong> and a <strong>1-hour swim break at Gemiler Beach</strong>.
+        If you want more than a short ride, this is the better adventure.
+      </>
+    ) : (
+      <>
+        Fethiye, Ölüdeniz ve Hisarönü bölgesindeki ATV turları genelde yaklaşık{" "}
+        <strong>1 saat</strong> ve <strong>10 km</strong> sürer, çoğunda plaj molası yoktur.
+        <br />
+        <br />
+        Half Day Buggy Safari ise <strong>35 km off-road rota</strong>, toplam yaklaşık{" "}
+        <strong>3,5 saat deneyim</strong> ve <strong>Gemiler Beach’te 1 saat yüzme molası</strong> sunar.
+        Kısa bir turdan fazlasını istiyorsanız doğru seçenek budur.
+      </>
+    )}
+  </p>
+</div>
+         
+         <p style={sectionTitleStyle}>{t.experienceTitle}</p>
           <div style={cardStyle}>
             <p
               style={{
