@@ -217,7 +217,7 @@ justifyContent: "center",
     marginTop: "2px",
   }}
 >
-  OFFICIAL TRAVEL AGENCY • TÜRSAB No: 11387
+  LICENSED BY TÜRSAB • No: 11387
 </div>
             </div>
 
