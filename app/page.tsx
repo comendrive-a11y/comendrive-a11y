@@ -1163,6 +1163,7 @@ tour === "ATV Turu ve Buggy Safari Farkları"
 >
   info@fethiyebuggy.com
 </a>
+              </p>
           
             <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
 
