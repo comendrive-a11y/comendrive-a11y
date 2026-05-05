@@ -363,7 +363,7 @@ export default function BuggyHalfDayPage() {
     {isEn ? (
       <>
         Most ATV tours in Fethiye, Ölüdeniz and Hisarönü are around <strong>1 hour</strong> and
-        <strong> 10 km</strong>, usually without a beach stop.
+        <strong> 10 km</strong>, none of them include a beach stop.
         <br />
         <br />
         Our Half Day Buggy Safari offers a <strong>35 km off-road route</strong>, around{" "}
