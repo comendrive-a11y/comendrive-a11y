@@ -373,7 +373,7 @@ export default function BuggyHalfDayPage() {
     ) : (
       <>
         Fethiye, Ölüdeniz ve Hisarönü bölgesindeki ATV turları genelde yaklaşık{" "}
-        <strong>1 saat</strong> ve <strong>10 km</strong> sürer, çoğunda plaj molası yoktur.
+        <strong>1 saat</strong> ve <strong>10 km</strong> sürer, hiçbirinde plaj molası yoktur.
         <br />
         <br />
         Half Day Buggy Safari ise <strong>35 km off-road rota</strong>, toplam yaklaşık{" "}
