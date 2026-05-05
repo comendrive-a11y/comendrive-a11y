@@ -464,7 +464,7 @@ justifyContent: "center",
             {t.halfText}
           </p>
           <p style={{ margin: "14px 0 0", fontWeight: 600, color: "#1f1a17" }}>
-  {isEn ? "Starting price £50 per person" : "Başlangıç fiyatı £50 kişi başı"}
+  {isEn ? "Starting price £55 per person" : "Başlangıç fiyatı £55 kişi başı"}
 </p>
 
 <p style={{ margin: "4px 0 0", color: "#5f554d", lineHeight: 1.6 }}>
@@ -523,7 +523,7 @@ justifyContent: "center",
             {t.fullText}
           </p>
           <p style={{ margin: "14px 0 0", fontWeight: 600, color: "#1f1a17" }}>
-  {isEn ? "Starting price £100 per person" : "Başlangıç fiyatı £100 kişi başı"}
+  {isEn ? "Starting price £110 per person" : "Başlangıç fiyatı £110 kişi başı"}
 </p>
 
 <p style={{ margin: "4px 0 0", color: "#5f554d", lineHeight: 1.6 }}>
