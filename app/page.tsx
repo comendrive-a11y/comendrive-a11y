@@ -1163,10 +1163,7 @@ tour === "ATV Turu ve Buggy Safari Farkları"
 >
   info@fethiyebuggy.com
 </a>
-            </p>
-            <p style={{ marginTop: "20px", opacity: 0.7 }}>
-              TÜRSAB A-Group Travel Agency — License No: 11387
-            </p>
+          
             <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
 
   <a href="/cancellation-policy" style={{ color: "#fff", textDecoration: "none", opacity: 0.85 }}>
@@ -1319,6 +1316,19 @@ bottom: "12px",
       >
         WhatsApp
       </a>
+        <div
+  style={{
+    textAlign: "center",
+    fontSize: "11px",
+    letterSpacing: "1px",
+    opacity: 0.5,
+    marginTop: "40px",
+    borderTop: "1px solid rgba(255,255,255,0.1)",
+    paddingTop: "16px",
+  }}
+>
+  Licensed by TÜRSAB • A-Group • No: 11387
+</div>
     </main>
   );
 }
