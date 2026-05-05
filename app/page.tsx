@@ -1141,7 +1141,32 @@ tour === "ATV Turu ve Buggy Safari Farkları"
         >
           <div>
             <h2 style={{ marginTop: 0 }}>{t.contactTitle}</h2>
-            <p style={{ opacity: 0.85, lineHeight: 1.7 }}>{t.contactText}</p>
+            <p style={{ opacity: 0.85, lineHeight: 1.7 }}>
+  {t.contactText}
+  <br />
+  <span style={{ fontSize: "12px", opacity: 0.8 }}>
+    TÜRSAB Belge No: 11387
+  </span>
+</p>
+            <div style={{ marginTop: "14px" }}>
+  <a
+    href="https://www.google.com/maps?q=Fethiye+buggy+safari"
+    target="_blank"
+    rel="noreferrer"
+    style={{
+      display: "inline-block",
+      background: "#25D366",
+      color: "#fff",
+      padding: "10px 16px",
+      borderRadius: "999px",
+      textDecoration: "none",
+      fontSize: "13px",
+      fontWeight: 600,
+    }}
+  >
+    📍 {isEn ? "Open Track Location" : "Parkur Konumunu Aç"}
+  </a>
+</div>
           </div>
 
           <div>
