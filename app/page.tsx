@@ -1156,6 +1156,11 @@ tour === "ATV Turu ve Buggy Safari Farkları"
                 WhatsApp: +90 544 635 82 80
               </a>
             </p>
+            <p style={{ marginTop: "6px", opacity: 0.85 }}>
+  📍 {isEn ? "Office Address:" : "Ofis Adresi:"}<br />
+  Foça Mahallesi, 953 Sokak No:57<br />
+  Fethiye / Muğla
+</p>
             <p>
         <a
   href="mailto:info@fethiyebuggy.com"
