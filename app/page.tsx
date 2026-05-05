@@ -1150,7 +1150,7 @@ tour === "ATV Turu ve Buggy Safari Farkları"
 </p>
             <div style={{ marginTop: "14px" }}>
   <a
-    href="https://www.google.com/maps?q=Fethiye+buggy+safari"
+    href="https://maps.app.goo.gl/DUaXjwZQBDaK818q9"
     target="_blank"
     rel="noreferrer"
     style={{
