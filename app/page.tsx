@@ -1166,7 +1166,29 @@ tour === "ATV Turu ve Buggy Safari Farkları"
   >
     📍 {isEn ? "Open Track Location" : "Parkur Konumunu Aç"}
   </a>
+              <div style={{ marginTop: "16px", textAlign: "center" }}>
+  <a href="https://www.tursab.org.tr/tr/ddsv" target="_blank">
+    <img
+      src={isEn ? "/tursab-dvs-11387.png" : "/tursab-dds-11387.png"}
+      alt={isEn ? "TURSAB Digital Verification System" : "TÜRSAB Dijital Doğrulama Sistemi"}
+      style={{
+        width: "180px",
+        maxWidth: "100%",
+        height: "auto",
+        display: "block",
+        margin: "0 auto"
+      }}
+    />
+  </a>
+
+  <div style={{ marginTop: "6px", fontSize: "12px", opacity: 0.7 }}>
+    {isEn
+      ? "Official TÜRSAB Travel Agency"
+      : "TÜRSAB A Grubu Seyahat Acentası"}
+  </div>
 </div>
+
+            </div>
           </div>
 
           <div>
